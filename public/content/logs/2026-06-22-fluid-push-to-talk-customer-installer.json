@@ -2,6 +2,6 @@
   "id": "2026-06-22-fluid-push-to-talk-customer-installer",
   "date": "2026-06-22",
   "time": "16:20:00",
-  "text": "Turned Fluid Push-to-Talk into an installable voice tool",
-  "detail": "The macOS voice app gained a customer installer, guided setup, OpenAI-compatible config, configurable audio input routing, safer Bluetooth defaults, and a more reliable Hermes foreground handoff for voice-driven agent work."
+  "text": "Expanded the open-source Wispr alternative into a real Mac voice tool",
+  "detail": "The project now matches the GitHub repo name wispr-alternatve-local-llm and covers local FluidAudio dictation, OpenAI-compatible command LLMs, Markdown dumping, continuous note capture, optional ESP32 Bluetooth keyboard output, guided setup, configurable audio inputs, and visible Hermes Agent handoff."
 }
