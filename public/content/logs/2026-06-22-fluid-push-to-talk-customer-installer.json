@@ -1,0 +1,7 @@
+{
+  "id": "2026-06-22-fluid-push-to-talk-customer-installer",
+  "date": "2026-06-22",
+  "time": "16:20:00",
+  "text": "Turned Fluid Push-to-Talk into an installable voice tool",
+  "detail": "The macOS voice app gained a customer installer, guided setup, OpenAI-compatible config, configurable audio input routing, safer Bluetooth defaults, and a more reliable Hermes foreground handoff for voice-driven agent work."
+}

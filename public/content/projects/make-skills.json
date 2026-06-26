@@ -1,0 +1,15 @@
+{
+  "title": "Make Skills",
+  "slug": "make-skills",
+  "description": "A public skill package that teaches AI coding agents how to build and operate Make workflows with less guessing.",
+  "date": "2026-06-19",
+  "tags": [
+    "Make",
+    "Automation",
+    "Agent Skills"
+  ],
+  "status": "shipped",
+  "featured": false,
+  "repoUrl": "https://github.com/integromat/make-skills",
+  "body": "Make Skills is a public skill package for AI coding agents. It gives agents a practical way to build Make scenarios, configure modules, use the Make MCP server, and create reusable API-call shells without guessing every step from scratch.\n\nThe project exists because workflow automation is easy to describe but hard to do correctly. A small mistake in a Make module, connection, mapping field, webhook, or error route can break the whole scenario. Agents need a clear operating guide: how to discover apps, choose modules, create blueprints, ask for missing credentials, test runs, and recover when a direct API path is blocked.\n\n## What it does\n\n- Packages Make knowledge as agent-readable skills.\n- Covers scenario building, module configuration, MCP setup, and API shell workflows.\n- Works with Claude Code, Codex, Cursor, GitHub Copilot, Windsurf, Cline, and other agents through the Open Agent Skills format.\n- Gives agents a safer path for connection requests instead of inventing credentials or pretending access exists.\n- Documents when to use Make MCP, when to use the Make API, and when to fall back to a shell scenario.\n- Includes release packaging so the same skill content can be installed by different agent tools.\n\n## Recent work\n\nThe June updates focused on reliability and honesty. The API shell workflow was strengthened so an agent can create or reuse a Make scenario that calls a SaaS app through an existing Make connection. The workflow also explains what to do when a required connection is missing: request access, guide the user, and retry after the user connects it.\n\nThe package added clearer field-omission rules for updates and upserts, better examples for logical operators, and stronger fallback guidance for cases where MCP is unavailable or incomplete. Later changes reduced hallucination risk by pushing the agent toward source-backed discovery and explicit verification.\n\n## Value for users\n\nThe value is less broken automation. A user can ask an agent to build or inspect a Make workflow, and the agent has a step-by-step process instead of relying on vague Make knowledge. That saves time, reduces false confidence, and makes the final scenario easier to test.\n\n## Current direction\n\nThe project is moving toward reusable automation operations. The skills should not only explain Make concepts; they should help agents finish real work: create a scenario, configure modules, validate mappings, run a test, and report the exact result.\n\n## Public boundary\n\nThe project page talks about the public skill package and workflow method. It does not include private Make tokens, connection IDs, customer scenarios, or private automation payloads."
+}

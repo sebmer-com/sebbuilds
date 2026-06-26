@@ -1,0 +1,7 @@
+{
+  "id": "2026-06-25-von-thomas-offer-pricing-repair",
+  "date": "2026-06-25",
+  "time": "18:30:00",
+  "text": "Repaired the Von Thomas offer and pricing flow",
+  "detail": "The catering system gained a pricing orchestrator, proposal dialog fixes, menu image variants, carryover inventory fixes, confirmation cutoff logic, payment polling, tax export support, and admin repair guards so customer offers are easier to prepare and safer to operate."
+}

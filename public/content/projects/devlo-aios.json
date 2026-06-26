@@ -1,0 +1,14 @@
+{
+  "title": "DEVLO AIOS",
+  "slug": "devlo-aios",
+  "description": "A governed operations system for agent-assisted business work, research, SEO checks, task routing, and source-backed decision records.",
+  "date": "2026-06-12",
+  "tags": [
+    "Agents",
+    "Operations",
+    "Research"
+  ],
+  "status": "building",
+  "featured": false,
+  "body": "DEVLO AIOS is an operations system for agent-assisted business work. It is not a single chat prompt or one automation. It is a working structure for turning research, tasks, checks, decisions, and reports into a process that can be reviewed.\n\nThe project is useful because agent work can become messy fast. Agents can make claims without sources, skip a handoff, repeat old work, or mark something done before it is verified. DEVLO AIOS adds structure around that: intake, task records, source-backed reports, status gates, and review steps.\n\n## What it does\n\n- Keeps business operations work organized across tasks, reports, and decisions.\n- Tracks tool and model changes so the system can react when agent tools improve or break.\n- Supports source-backed research and run cards for business execution.\n- Adds gates around SEO, GEO, website-copy feedback, and outreach workflows.\n- Records decisions in a way that can be checked later.\n- Helps turn repeated agent work into a managed process instead of a loose chat history.\n\n## Recent work\n\nThe June work focused on governance and feedback loops. The system gained stronger source-backed run card intake, Fable-governed business execution, LLM skill gates, SEO and GEO workflow hardening, multi-site Search Console export support, and public website copy feedback gates.\n\nThere was also steady work on model-watch and tool-watch reporting. Those reports matter because agent systems depend on changing tools. If a model changes behavior or a tool becomes available, the operating process should notice and adapt. The task registry automation also became cleaner, with isolated automation branches and generated task records.\n\n## Value for users\n\nThe value is safer agent work. A user gets a system that asks for evidence, keeps records, and makes it harder for an agent to skip verification. That is especially helpful for research, SEO, operations, and client-adjacent work where a wrong claim can waste time.\n\n## Current direction\n\nThe current direction is a more dependable operating layer. The system should keep making agent work easier to inspect: what was asked, what sources were used, what changed, what still needs review, and what can be safely repeated.\n\n## Public boundary\n\nThe public page only describes the operating pattern. It does not publish private client data, lead lists, reports, credentials, internal spreadsheets, or confidential task details."
+}
