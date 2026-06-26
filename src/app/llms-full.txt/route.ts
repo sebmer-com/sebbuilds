@@ -31,7 +31,7 @@ ${project.body}
     .map((log) => {
       const image = log.imageUrl ? ` Image: ${siteConfig.url}${log.imageUrl}` : "";
 
-      return `- ${log.date} ${log.time}: ${log.text} - ${log.detail}${image}`;
+      return `- ${log.date}: ${log.text} - ${log.detail}${image}`;
     })
     .join("\n");
   const socialLinks = siteConfig.socials

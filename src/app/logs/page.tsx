@@ -38,7 +38,6 @@ export default function LogsPage() {
               <article className="log-entry" id={item.id} key={item.id}>
                 <div className="log-entry__meta">
                   <span>{item.date}</span>
-                  <span>{item.time}</span>
                 </div>
                 <div>
                   <h2>{item.text}</h2>
