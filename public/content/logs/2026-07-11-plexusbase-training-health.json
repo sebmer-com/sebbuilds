@@ -1,0 +1,6 @@
+{
+  "id": "2026-07-11-plexusbase-training-health",
+  "date": "2026-07-11",
+  "text": "Added actionable training-health views to PlexusBase",
+  "detail": "Progress signals now lead to clearer follow-up actions for trainees, mentors, and administrators instead of staying as raw status data."
+}

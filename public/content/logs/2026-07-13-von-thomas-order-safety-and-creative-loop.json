@@ -1,6 +1,0 @@
-{
-  "id": "2026-07-13-von-thomas-order-safety-and-creative-loop",
-  "date": "2026-07-13",
-  "text": "Strengthened Von Thomas order safety",
-  "detail": "The catering system gained safer order-queue checks, clearer retry and audit handling, improved basket-unit validation, and operational guards that keep automatic steps reviewable."
-}
