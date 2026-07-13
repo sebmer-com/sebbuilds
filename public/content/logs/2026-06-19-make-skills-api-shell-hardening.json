@@ -1,7 +1,6 @@
 {
   "id": "2026-06-19-make-skills-api-shell-hardening",
   "date": "2026-06-19",
-  "time": "12:15:00",
   "text": "Hardened Make Skills for real agent automation",
   "detail": "The Make Skills package improved API-shell fallback execution, credential request guidance, update/upsert examples, logical operator docs, and anti-hallucination rules so agents can build Make workflows with clearer steps and fewer invented details."
 }

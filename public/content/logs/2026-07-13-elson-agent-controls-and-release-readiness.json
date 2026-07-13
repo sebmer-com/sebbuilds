@@ -1,0 +1,6 @@
+{
+  "id": "2026-07-13-elson-agent-controls-and-release-readiness",
+  "date": "2026-07-13",
+  "text": "Refined Elson’s local agent controls and release path",
+  "detail": "The macOS assistant now has clearer agent and transcript controls, stronger screenshot-aware reply behaviour, tidier settings and keyboard handling, and a distribution-ready signing path."
+}

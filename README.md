@@ -26,6 +26,10 @@ Content is public and folder-based:
 
 Projects render as long-form Markdown pages at `/projects/[slug]`. Logs stay short and render on `/logs`.
 
+### Build-log content rule
+
+Build logs use a calendar date only (`YYYY-MM-DD`). Do not add a time field to log JSON, expose time data in public JSON/LLM endpoints, or render times in the UI. When several logs share one date, order them deliberately in `public/content/logs/index.json` without adding chronological metadata.
+
 ## Static Endpoints
 
 Agents and scripts can read the public site without scraping UI pages:

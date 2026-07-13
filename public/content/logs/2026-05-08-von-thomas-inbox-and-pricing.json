@@ -1,7 +1,6 @@
 {
   "id": "2026-05-08-von-thomas-inbox-and-pricing",
   "date": "2026-05-08",
-  "time": "21:30:32",
   "text": "Reworked Von Thomas inbox and pricing details",
   "detail": "Von Thomas rebuilt admin inbox handling around Resend metadata, fixed canonical dates, and improved package pricing and mobile trust surfaces."
 }

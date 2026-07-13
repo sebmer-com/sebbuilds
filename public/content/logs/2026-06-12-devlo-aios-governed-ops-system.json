@@ -1,7 +1,6 @@
 {
   "id": "2026-06-12-devlo-aios-governed-ops-system",
   "date": "2026-06-12",
-  "time": "09:40:00",
   "text": "Shaped DEVLO AIOS into a governed agent-ops system",
   "detail": "DEVLO AIOS added source-backed run cards, skill gates, SEO and GEO workflow hardening, model and tool watch reports, task registry automation, and feedback gates so agent-assisted operations are easier to review and repeat."
 }

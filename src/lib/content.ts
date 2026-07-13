@@ -34,7 +34,6 @@ export type ContentEntry = ProjectEntry;
 export type LogEntry = {
   id: string;
   date: string;
-  time: string;
   text: string;
   detail: string;
   imageUrl?: string;
@@ -62,7 +61,6 @@ type RawProject = {
 type RawLog = {
   id?: unknown;
   date?: unknown;
-  time?: unknown;
   text?: unknown;
   detail?: unknown;
   imageUrl?: unknown;
@@ -164,7 +162,6 @@ function readLog(fileName: string): LogEntry {
   return {
     id: requireString(raw.id, "id", filePath),
     date: requireString(raw.date, "date", filePath),
-    time: requireString(raw.time, "time", filePath),
     text: requireString(raw.text, "text", filePath),
     detail: requireString(raw.detail, "detail", filePath),
     imageUrl: optionalString(raw.imageUrl),

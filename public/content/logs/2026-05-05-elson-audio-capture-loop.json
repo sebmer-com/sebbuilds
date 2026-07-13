@@ -1,7 +1,6 @@
 {
   "id": "2026-05-05-elson-audio-capture-loop",
   "date": "2026-05-05",
-  "time": "23:40:28",
   "text": "Improved Elson audio capture",
   "detail": "Elson added persisted audio captures, menu copy buttons, chunked recording, overlap metadata, bubble recording state, and low-energy audio forwarding to ASR."
 }

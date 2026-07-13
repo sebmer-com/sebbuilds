@@ -1,7 +1,6 @@
 {
   "id": "2026-05-01-remote-project-workbench",
   "date": "2026-05-01",
-  "time": "16:20:00",
   "text": "Moved active work toward a remote project bench",
   "detail": "Collected the active project landscape around Thomas, Elson, market-data tools, and agent workflows into a more stable remote-workbench model, while keeping secrets and environment-specific setup out of the public build log."
 }

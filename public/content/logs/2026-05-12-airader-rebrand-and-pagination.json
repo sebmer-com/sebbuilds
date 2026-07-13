@@ -1,7 +1,6 @@
 {
   "id": "2026-05-12-airader-rebrand-and-pagination",
   "date": "2026-05-12",
-  "time": "23:23:10",
   "text": "Rebranded trakkker to airader",
   "detail": "The tracker product was rebranded to airader while session pagination, login/site flows, and worker-backed session surfaces moved forward."
 }

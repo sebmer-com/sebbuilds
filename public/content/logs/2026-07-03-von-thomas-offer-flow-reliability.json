@@ -1,0 +1,6 @@
+{
+  "id": "2026-07-03-von-thomas-offer-flow-reliability",
+  "date": "2026-07-03",
+  "text": "Made the Von Thomas offer flow more reliable",
+  "detail": "Buffet completion checks, quote loading, guidance recovery, and proposal behaviour were tightened so customers can finish a valid request without getting stuck."
+}

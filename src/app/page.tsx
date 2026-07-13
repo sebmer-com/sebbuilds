@@ -76,7 +76,7 @@ export default function Home() {
             >
               <div className="build-log">
                 {latestLogs.map((item) => (
-                  <div className="build-log__row" key={`${item.date}-${item.time}`}>
+                  <div className="build-log__row" key={item.id}>
                     <span className="build-log__date">{item.date}</span>
                     <span className="build-log__dot" aria-hidden="true" />
                     <span>

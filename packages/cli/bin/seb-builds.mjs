@@ -131,7 +131,7 @@ async function printLogs() {
   console.log("");
 
   for (const log of logs) {
-    console.log(`${log.date} ${log.time}  ${log.text}`);
+    console.log(`${log.date}  ${log.text}`);
     console.log(`  ${log.detail}`);
 
     if (log.imageUrl) {

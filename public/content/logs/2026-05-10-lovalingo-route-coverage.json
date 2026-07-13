@@ -1,7 +1,6 @@
 {
   "id": "2026-05-10-lovalingo-route-coverage",
   "date": "2026-05-10",
-  "time": "08:39:32",
   "text": "Hardened Lovalingo route coverage",
   "detail": "Lovalingo released package 0.5.29 and documented manifest maintenance while the web surface restored the language switcher, locale fallback, and public route coverage."
 }

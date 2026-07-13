@@ -1,7 +1,6 @@
 {
   "id": "2026-05-02-github-pages-and-cli-foundation",
   "date": "2026-05-02",
-  "time": "22:33:04",
   "text": "Set up the publishing foundation",
   "detail": "Prepared the static GitHub Pages deployment, notes and project routes, legal pages, sitemap updates, and a small CLI foundation so Seb Builds can be published and inspected through repeatable project tooling."
 }
