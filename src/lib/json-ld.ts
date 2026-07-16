@@ -22,8 +22,20 @@ export function personJsonLd() {
     "@type": "Person",
     name: siteConfig.author.name,
     url: siteConfig.url,
-    jobTitle: "AI Product Leader, Speaker & Trainer",
-    knowsAbout: ["AI products", "Product development", "Automation", "iPaaS", "Agentic coding"],
+    jobTitle: "Founder in Residence & Member of Technical Staff",
+    worksFor: {
+      "@type": "Organization",
+      name: "Make",
+      url: "https://www.make.com",
+    },
+    knowsAbout: [
+      "AI products",
+      "Zero-to-one product development",
+      "AI agents",
+      "Automation",
+      "iPaaS",
+      "Agentic coding",
+    ],
     address: {
       "@type": "PostalAddress",
       addressLocality: siteConfig.author.location,

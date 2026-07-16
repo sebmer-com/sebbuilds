@@ -2,29 +2,33 @@
 
 ## Short Bio
 
-I build AI products, AI agents, automation systems, and public software experiments for mostly US customers.
+I work as a Founder in Residence and Member of Technical Staff at Make. I build and test new AI products, startup ideas, and markets from the first customer conversation through launch.
 
 Seb Builds is where I share projects, build logs, agent workflows, and lessons from shipping in public.
 
 ## What Sebastian Builds
 
-- AI-native product workflows that turn practical use cases into shipped software.
-- AI Agents, Automation and iPaaS systems that connect tools, teams, and business processes.
-- Public build logs, CLI-friendly context, and agent-readable documentation. Claude and Codex projects.
-- Experiments around generated interfaces, agentic coding, evals, model cost, and product distribution.
+- Zero-to-one AI products that move from a real customer problem to a launched product.
+- AI agents, automation, and iPaaS systems that connect tools, teams, and business processes.
+- Public build logs, CLI-friendly context, and agent-readable documentation for Claude, Codex, and Hermes projects.
+- Experiments around generated interfaces, agentic coding, evals, model cost, new markets, and product distribution.
 
 ## Current Work
 
-Sebastian is working as Head of applied AI at Make, where he works on AI product development and internal AI transformation. His public profile describes work across AI product strategy, applied AI enablement, workflow optimization, operational efficiency, compliance-aware AI systems, and collaboration with LLM providers including OpenAI, Google, and Anthropic.
+Sebastian works at Make as a Founder in Residence and Member of Technical Staff. He stepped away from day-to-day management responsibilities to return to hands-on product building: finding a sharp customer problem, testing the market, shipping the first product, and learning from real use.
+
+In practice, the role combines technical founder work with principal-level AI product management. He works with product, engineering, and go-to-market teams to test startup ideas and product concepts, open new markets, and take promising ideas through customer discovery, prototyping, implementation, launch, and iteration.
+
+Most of that work happens directly in the technical machinery. Sebastian uses AI agents heavily for product research, software development, testing, and operations, with long stretches of focused build work rather than managing from a distance.
 
 Seb Builds is his public builder surface at sebmer.com. It documents selected products, technical experiments, and the process behind building with AI.
 
 ## Experience Highlights
 
-- Deep expert in AI agents, Claude Code, Codex implementations, and software development projects that move from prototype to operational reality.
-- Harness expert building contextual AI layers and AI-agentic operational systems for teams, tools, and business workflows.
-- Active Hermes and OpenClaw advocate and user, with a strong focus on practical agent workflows, repeatable build systems, and CLI-first operations.
-- Head of applied AI at Make, working across AI product development, internal AI transformation, automation, and applied AI enablement.
+- Founder in Residence and Member of Technical Staff at Make, focused on new AI products, startup concepts, and market exploration.
+- Hands-on principal-level AI product builder who works from customer discovery and product strategy through implementation, launch, and iteration.
+- Builds with Claude Code, Codex, Hermes, and multi-agent workflows that move software from prototype to operational use.
+- Designs contextual AI layers and agent systems for teams, tools, and business workflows.
 - Co-Founder and investor in makeitfuture, focused on integration, automation, and AI solutions.
 - Chairman and Co-Founder of wemakefuture, a future-leading AI agent and automation company.
 - Working with automation and AI tooling since 2016 (I built AI systems before it was cool), across iPaaS and OCR/NLP/Forrestalgos, business automation, agentic software systems, and product implementation.
