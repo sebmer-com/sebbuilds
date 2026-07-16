@@ -1,13 +1,13 @@
 {
   "items": [
-    "elson-ai.json",
-    "social-rocket.json",
-    "seb-builds.json",
-    "wispr-alternatve-local-llm.json",
+    "von-thomas-next.json",
     "plexusbase.json",
+    "wispr-alternatve-local-llm.json",
     "project-elson.json",
-    "make-skills.json",
+    "elson-ai.json",
     "project-apex.json",
+    "seb-builds.json",
+    "make-skills.json",
     "devlo-aios.json",
     "airader.json",
     "tempo-ai.json",
@@ -15,9 +15,9 @@
     "mono-trade.json",
     "hermes-on-rocket.json",
     "tracker.json",
-    "lovalingo.json",
-    "von-thomas-next.json",
     "gairvis.json",
-    "enhanced-onvista.json"
+    "enhanced-onvista.json",
+    "lovalingo.json",
+    "social-rocket.json"
   ]
 }

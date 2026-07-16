@@ -1,0 +1,6 @@
+{
+  "id": "2026-07-16-von-thomas-pricing-and-inventory-safeguards",
+  "date": "2026-07-16",
+  "text": "Hardened Von Thomas menu pricing and inventory safeguards",
+  "detail": "Menu calculations now handle package sizes and fractional sales units more carefully, use existing bread and butter inventory before suggesting additional purchasing, and provide clearer audit evidence for pricing and fulfillment decisions."
+}
