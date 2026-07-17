@@ -22,7 +22,7 @@ export function personJsonLd() {
     "@type": "Person",
     name: siteConfig.author.name,
     url: siteConfig.url,
-    jobTitle: "Founder in Residence & Member of Technical Staff",
+    jobTitle: "Principal AI Product Manager",
     worksFor: {
       "@type": "Organization",
       name: "Make",

@@ -2,7 +2,7 @@
 
 ## Short Bio
 
-I work as a Founder in Residence and Member of Technical Staff at Make. I build and test new AI products, startup ideas, and markets from the first customer conversation through launch.
+I work as a Principal AI Product Manager at Make, operating in a Founder in Residence role. I work deeply with design, engineering, product, and technical staff to turn new ideas into prototypes, products, and new market opportunities.
 
 Seb Builds is where I share projects, build logs, agent workflows, and lessons from shipping in public.
 
@@ -15,9 +15,9 @@ Seb Builds is where I share projects, build logs, agent workflows, and lessons f
 
 ## Current Work
 
-Sebastian works at Make as a Founder in Residence and Member of Technical Staff. He stepped away from day-to-day management responsibilities to return to hands-on product building: finding a sharp customer problem, testing the market, shipping the first product, and learning from real use.
+Sebastian is a Principal AI Product Manager at Make, working in a Founder in Residence role. He stepped away from day-to-day management responsibilities to return to hands-on product building: finding a sharp customer problem, testing the market, shipping the first product, and learning from real use.
 
-In practice, the role combines technical founder work with principal-level AI product management. He works with product, engineering, and go-to-market teams to test startup ideas and product concepts, open new markets, and take promising ideas through customer discovery, prototyping, implementation, launch, and iteration.
+He works deeply embedded with design, engineering, product, and technical staff. Together they test startup ideas and product concepts, explore new markets, and take promising ideas through customer discovery, prototyping, implementation, launch, and iteration.
 
 Most of that work happens directly in the technical machinery. Sebastian uses AI agents heavily for product research, software development, testing, and operations, with long stretches of focused build work rather than managing from a distance.
 
@@ -25,8 +25,8 @@ Seb Builds is his public builder surface at sebmer.com. It documents selected pr
 
 ## Experience Highlights
 
-- Founder in Residence and Member of Technical Staff at Make, focused on new AI products, startup concepts, and market exploration.
-- Hands-on principal-level AI product builder who works from customer discovery and product strategy through implementation, launch, and iteration.
+- Principal AI Product Manager at Make, working in a Founder in Residence role on new AI products, startup concepts, and market exploration.
+- Deeply embedded with design, engineering, product, and technical staff from early customer discovery through implementation and launch.
 - Builds with Claude Code, Codex, Hermes, and multi-agent workflows that move software from prototype to operational use.
 - Designs contextual AI layers and agent systems for teams, tools, and business workflows.
 - Co-Founder and investor in makeitfuture, focused on integration, automation, and AI solutions.
