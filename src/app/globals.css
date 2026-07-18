@@ -1136,6 +1136,61 @@ select {
   margin-top: 8px;
 }
 
+.mdx-content p:has(> img:only-child) {
+  max-width: none;
+  margin: 28px 0 10px;
+}
+
+.mdx-content img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+.mdx-content pre {
+  max-width: 100%;
+  overflow-x: auto;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 16px;
+  background: var(--surface);
+}
+
+.mdx-content pre code {
+  border: 0;
+  padding: 0;
+  background: transparent;
+  color: var(--text-strong);
+}
+
+.mdx-content table {
+  width: 100%;
+  margin: 20px 0;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+}
+
+.mdx-content th,
+.mdx-content td {
+  border-bottom: 1px solid var(--border);
+  padding: 10px 12px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.mdx-content th {
+  color: var(--text-strong);
+  font-family: var(--mono);
+}
+
+.mdx-content th:last-child,
+.mdx-content td:last-child {
+  text-align: right;
+}
+
 @keyframes blink {
   0%,
   45% {
