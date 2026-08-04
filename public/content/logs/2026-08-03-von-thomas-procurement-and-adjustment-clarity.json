@@ -1,0 +1,6 @@
+{
+  "id": "2026-08-03-von-thomas-procurement-and-adjustment-clarity",
+  "date": "2026-08-03",
+  "text": "Clarified Von Thomas purchasing and order adjustments",
+  "detail": "Purchasing review now shows required customer quantities alongside the actual package units being ordered, while order changes require a clear reason that remains part of the reviewable change record."
+}
