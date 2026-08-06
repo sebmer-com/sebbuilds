@@ -1,0 +1,6 @@
+{
+  "id": "2026-07-02-lovalingo-runtime-reliability",
+  "date": "2026-07-02",
+  "text": "Hardened Lovalingo’s multilingual runtime",
+  "detail": "Locale routes, partial project sync, retry handling, page discovery, live overrides, and page-status summaries were tightened so a multilingual site is less likely to lose context when a translation pipeline needs to recover."
+}

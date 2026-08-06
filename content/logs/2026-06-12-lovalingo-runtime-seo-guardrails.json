@@ -1,0 +1,6 @@
+{
+  "id": "2026-06-12-lovalingo-runtime-seo-guardrails",
+  "date": "2026-06-12",
+  "text": "Strengthened Lovalingo runtime and SEO guardrails",
+  "detail": "Lovalingo gained safer translation job handling, Worker-limit protections, TanStack locale route support, Stripe checkout persistence, clearer production positioning, sitemap and schema checks, and a simpler dashboard for checking translated pages."
+}

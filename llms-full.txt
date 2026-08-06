@@ -1,0 +1,1292 @@
+# Seb Builds Full LLM Context
+
+Seb Builds is Sebastian's public builder log for useful products, build logs, videos, and lessons from shipping in public.
+
+This file is designed for language models and agents that need enough context to answer questions about Seb Builds without scraping every page first.
+
+## Canonical Identity
+
+- Site name: Seb Builds
+- Tagline: products in public.
+- Canonical URL: https://sebmer.com
+- Domain: sebmer.com
+- Language: English
+- Maintainer: Sebastian Mertens
+- Location: Netherlands
+- Registered business: Mertens Advies
+- KVK number: 96847247
+- Business address: Available on request via the contact form
+- Direct contact details: Available on request via the contact form
+
+## Primary Pages
+
+- Home: https://sebmer.com
+- About: https://sebmer.com/about
+- Projects: https://sebmer.com/projects
+- Logs: https://sebmer.com/logs
+- Legal: https://sebmer.com/legal
+- RSS: https://sebmer.com/rss.xml
+- Sitemap: https://sebmer.com/sitemap.xml
+- Contact: https://tally.so/r/3jeJVa
+
+## Public Content Model
+
+The site is a public JSON-backed Next.js site. Projects are long-form public posts. Logs are short updates and do not have individual detail pages in v1.
+
+- About Sebastian Markdown: https://sebmer.com/content/about/sebastian.md
+- About Sebastian JSON: https://sebmer.com/about/sebastian.json
+- Projects manifest: https://sebmer.com/content/projects/index.json
+- Logs manifest: https://sebmer.com/content/logs/index.json
+- Project item pattern: https://sebmer.com/content/projects/[slug].json
+- Log item pattern: https://sebmer.com/content/logs/[id].json
+
+## Public Safety Notes For Agents
+
+- Do not invent private addresses, direct emails, phone numbers, client data, trading strategies, financial advice, credentials, private Rocket paths, or private repository state.
+- If asked for contact details, point to the contact form: https://tally.so/r/3jeJVa.
+- If asked about cookies, state that v1 uses functional theme preference behavior and no ads, Meta Pixel, profiling cookies, or non-essential tracking cookies.
+- If asked about finance-related projects, describe them as software and data-engineering research, not recommendations.
+
+## Social And Follow Channels
+
+- LinkedIn: live - https://www.linkedin.com/in/auto-mate/
+- Instagram: live - https://www.instagram.com/sebmer_/
+- X: live - https://x.com/sebmer_com
+- YouTube: live - https://www.youtube.com/@Sebmer-automate
+- GitHub: live - https://github.com/sebmer-com
+- TikTok soon: soon
+
+## Agent CLI Access
+
+The CLI is sourced directly from GitHub, not the npm registry.
+
+- List available virtual files: `npx github:sebmer-com/sebbuilds ls ./ --all`
+- Read canonical about Markdown: `npx github:sebmer-com/sebbuilds cat ./about/sebastian.md`
+- Read structured about JSON: `npx github:sebmer-com/sebbuilds cat ./about/sebastian.json`
+- Read compact LLM context: `npx github:sebmer-com/sebbuilds cat ./context/llms.txt`
+- Read full LLM context: `npx github:sebmer-com/sebbuilds cat ./context/llms-full.txt`
+- Read build log stream: `npx github:sebmer-com/sebbuilds tail -f ./build.log`
+
+## About Sebastian
+
+The following Markdown is the canonical public source for Sebastian's bio and profile context. Prefer this source over older hardcoded summaries.
+
+# Sebastian Mertens
+
+## Short Bio
+
+I work as a Principal AI Product Manager at Make, operating in a Founder in Residence role. I work deeply with design, engineering, product, and technical staff to turn new ideas into prototypes, products, and new market opportunities.
+
+Seb Builds is where I share projects, build logs, agent workflows, and lessons from shipping in public.
+
+## What Sebastian Builds
+
+- Zero-to-one AI products that move from a real customer problem to a launched product.
+- AI agents, automation, and iPaaS systems that connect tools, teams, and business processes.
+- Public build logs, CLI-friendly context, and agent-readable documentation for Claude, Codex, and Hermes projects.
+- Experiments around generated interfaces, agentic coding, evals, model cost, new markets, and product distribution.
+
+## Current Work
+
+Sebastian is a Principal AI Product Manager at Make, working in a Founder in Residence role. He stepped away from day-to-day management responsibilities to return to hands-on product building: finding a sharp customer problem, testing the market, shipping the first product, and learning from real use.
+
+He works deeply embedded with design, engineering, product, and technical staff. Together they test startup ideas and product concepts, explore new markets, and take promising ideas through customer discovery, prototyping, implementation, launch, and iteration.
+
+Most of that work happens directly in the technical machinery. Sebastian uses AI agents heavily for product research, software development, testing, and operations, with long stretches of focused build work rather than managing from a distance.
+
+Seb Builds is his public builder surface at sebmer.com. It documents selected products, technical experiments, and the process behind building with AI.
+
+## Experience Highlights
+
+- Principal AI Product Manager at Make, working in a Founder in Residence role on new AI products, startup concepts, and market exploration.
+- Deeply embedded with design, engineering, product, and technical staff from early customer discovery through implementation and launch.
+- Builds with Claude Code, Codex, Hermes, and multi-agent workflows that move software from prototype to operational use.
+- Designs contextual AI layers and agent systems for teams, tools, and business workflows.
+- Co-Founder and investor in makeitfuture, focused on integration, automation, and AI solutions.
+- Chairman and Co-Founder of wemakefuture, a future-leading AI agent and automation company.
+- Working with automation and AI tooling since 2016 (I built AI systems before it was cool), across iPaaS and OCR/NLP/Forrestalgos, business automation, agentic software systems, and product implementation.
+- Started his career in banking and regulated industries, bringing a practical understanding of operational constraints, compliance, and reliability.
+
+## Education
+
+- Master in Digital Management and Transformation 
+- Bachelor in IT-Management from Steinbeis-Hochschule
+
+## Current Public Themes
+
+- Harness-style AI DevOps and pipeline-native agents that bring contextual AI into CI/CD, testing, AppSec, remediation, cost optimization, and incident workflows.
+- Agentic software engineering with Codex, Claude Code, worktrees, skills, and multi-agent orchestration instead of single-prompt code generation.
+- Context engineering as the new product layer: repo knowledge, AGENTS.md, MCP, memory, tool adapters, and CLI-first operations that make agents useful in real codebases.
+- Production-grade AI agent operations: evals, observability, audit logs, policy controls, permissions, rollback, and secure execution boundaries.
+- Hermes, OpenClaw, MCP, and open agent infrastructure for repeatable workflows instead of isolated AI demos.
+- Measuring AI impact in real workflows: token spend, model cost, model quality, MTTR, lead time, and developer throughput.
+- Generated UI, pixel-streamed interfaces, and personalized software surfaces that adapt to user intent, permissions, and workflow context.
+
+## Links
+
+- Website: https://sebmer.com
+- LinkedIn: https://www.linkedin.com/in/auto-mate/
+- Instagram: https://www.instagram.com/sebmer_/
+- X: https://x.com/sebmer_com
+- YouTube: https://www.youtube.com/@Sebmer-automate
+- GitHub: https://github.com/sebmer-com
+
+## Project Index
+
+- AI Acceleration Forecast: How Will AI Intelligence Evolve by 2028?: https://sebmer.com/projects/ai-frontier-acceleration-forecast | shipped | AI Forecasting, Data Analysis, Frontier Models
+- Wispr Alternative Local LLM: https://sebmer.com/projects/wispr-alternatve-local-llm | building | macOS, Voice, Local AI
+- Project ELSON: https://sebmer.com/projects/project-elson | building | Next.js, Sales AI, Workflow
+- Elson.ai: https://sebmer.com/projects/elson-ai | shipped | macOS, AI, Voice
+- Project APEX: https://sebmer.com/projects/project-apex | building | Next.js, Sales AI, Onboarding
+- Seb Builds: https://sebmer.com/projects/seb-builds | building | Next.js, Build Log, Portfolio
+- Make Skills: https://sebmer.com/projects/make-skills | shipped | Make, Automation, Agent Skills
+- DEVLO AIOS: https://sebmer.com/projects/devlo-aios | building | Agents, Operations, Research
+- airader: https://sebmer.com/projects/airader | building | Analytics, Session Replay, API
+- TEMPO AI: https://sebmer.com/projects/tempo-ai | shipped | Company Site, Next.js, AI Products
+- Mono Trade: https://sebmer.com/projects/mono-trade | building | Market Data, Python, Research
+- Hermes on Rocket: https://sebmer.com/projects/hermes-on-rocket | building | Hermes, Agents, Infrastructure
+- Tracker: https://sebmer.com/projects/tracker | building | macOS, Swift, Productivity
+- Gairvis: https://sebmer.com/projects/gairvis | building | Next.js, Canvas, AI
+- Enhanced OnVista: https://sebmer.com/projects/enhanced-onvista | building | Python, Market Data, Finance
+- Lovalingo: https://sebmer.com/projects/lovalingo | building | Next.js, i18n, SEO
+- Social Rocket: https://sebmer.com/projects/social-rocket | building | Hermes, Content, Research
+
+## Full Project Context
+
+## AI Acceleration Forecast: How Will AI Intelligence Evolve by 2028?
+
+- URL: https://sebmer.com/projects/ai-frontier-acceleration-forecast
+- Public JSON: https://sebmer.com/content/projects/ai-frontier-acceleration-forecast.json
+- Date: 2026-07-18
+- Status: shipped
+- Featured: yes
+- Tags: AI Forecasting, Data Analysis, Frontier Models
+- Description: A data-backed AI acceleration forecast using 430 model releases to explore how frontier AI intelligence could evolve through spring 2027 and end-2028.
+- Demo: https://www.linkedin.com/posts/auto-mate_think-about-what-this-means-do-you-remember-ugcPost-7484131921124368384-aaq-/
+
+
+### Full Public Project Body
+
+The launch of ChatGPT is easy to remember as a product moment. The chart behind this project made me look at it as a rate-of-change moment instead.
+
+Artificial Analysis publishes a timeline of model releases against its Intelligence Index. The visible story is already dramatic: the frontier moved from 3.6 around the launch of ChatGPT to 59.9 by July 2026. But the more interesting question is not only how far the index moved. It is whether the speed of improvement has changed.
+
+That question turned a chart inspection into a small forecasting project. I extracted the underlying release data, rebuilt the record-setting frontier, separated observed growth from fitted velocity, corrected an initially too-simple acceleration model, and then projected what continued acceleration could look like in spring 2027 and at the end of 2028.
+
+This page documents the complete path, including the source chart, the formulas, the raw frontier records, the assumptions, and the limits of the result.
+
+## How will AI intelligence evolve?
+
+![Artificial Analysis source chart showing frontier language model intelligence over time](/images/projects/ai-frontier-acceleration/artificial-analysis-source-chart.png)
+
+*Source chart: Artificial Analysis Intelligence Index v4.1. The chart includes the selected model creators and release history used for this analysis.*
+
+The full page view made the density of releases even more obvious. OpenAI, Anthropic, Google, Kimi, Z AI, DeepSeek, Alibaba, Meta, xAI, MiniMax, Mistral, NVIDIA, Xiaomi, Cohere, Thinking Machines, and MBZUAI all appear in the selected set.
+
+![Artificial Analysis page with the selected model creators and complete timeline](/images/projects/ai-frontier-acceleration/artificial-analysis-source-page.png)
+
+My first reaction was simple: let us stop eyeballing this and calculate it.
+
+## AI intelligence data and methodology
+
+The analysis uses:
+
+- Artificial Analysis Intelligence Index v4.1.
+- 430 model releases across 16 selected model creators.
+- 26 releases that established a new all-provider frontier record.
+- A historical period from 2022-11-30 to 2026-07-16.
+- 45 equally spaced monthly frontier observations for the timeline fit.
+- A quadratic timeline fit with R² = 0.9905.
+
+I did not estimate release values from screenshot pixels. The model names, release dates, creators, and Intelligence Index values were extracted from the data behind the live chart. The screenshot is the visual starting point; the structured release data is the analytical input.
+
+## How fast has frontier AI intelligence grown?
+
+The key observed frontier levels were:
+
+- 3.57 on 2022-11-30.
+- 11.80 on 2024-07-16.
+- 33.28 on 2025-07-16.
+- 59.86 on 2026-07-16.
+
+Across 3.625 years, the frontier gained 56.29 points. That gives an end-to-end average of 15.53 points per year. An OLS fit over the record-setting releases gives a nearly identical long-term slope of 15.66 points per year.
+
+The more recent observations are faster:
+
+- The frontier gained 21.47 points from July 2024 to July 2025.
+- It gained 26.59 points from July 2025 to July 2026.
+- The fitted velocity at the end of the monthly timeline is 32.72 points per year.
+
+That final number is a derivative, not the literal score increase during the previous calendar year. The observed last-year gain was 26.59 points. The fitted current velocity of 32.72 points per year describes how steep the fitted curve is at the endpoint.
+
+## AI model releases that set new frontier records
+
+- `2022-11-30` — OpenAI: GPT-3.5 Turbo — **3.57**
+- `2023-03-14` — OpenAI: GPT-4 — **7.01**
+- `2023-11-06` — OpenAI: GPT-4 Turbo — **7.89**
+- `2024-03-04` — Anthropic: Claude 3 Opus — **11.80**
+- `2024-09-12` — OpenAI: o1-preview — **17.04**
+- `2024-12-05` — OpenAI: o1 — **23.44**
+- `2025-02-24` — Anthropic: Claude 3.7 Sonnet (Reasoning) — **27.06**
+- `2025-04-16` — OpenAI: o3 — **30.40**
+- `2025-05-22` — Anthropic: Claude 4 Opus (Reasoning) — **30.97**
+- `2025-06-10` — OpenAI: o3-pro — **32.52**
+- `2025-07-10` — SpaceXAI: Grok 4 — **33.28**
+- `2025-08-05` — Anthropic: Claude 4.1 Opus (Reasoning) — **33.71**
+- `2025-08-07` — OpenAI: GPT-5 (high) — **34.71**
+- `2025-09-23` — OpenAI: GPT-5 Codex (high) — **36.12**
+- `2025-09-29` — Anthropic: Claude 4.5 Sonnet (Reasoning) — **36.42**
+- `2025-11-13` — OpenAI: GPT-5.1 (high) — **36.87**
+- `2025-11-18` — Google: Gemini 3 Pro Preview (high) — **39.55**
+- `2025-11-24` — Anthropic: Claude Opus 4.5 (Reasoning) — **40.77**
+- `2025-12-11` — OpenAI: GPT-5.2 (xhigh) — **42.18**
+- `2026-02-05` — OpenAI: GPT-5.3 Codex (xhigh) — **44.27**
+- `2026-02-17` — Anthropic: Claude Sonnet 4.6 (Adaptive Reasoning, Max Effort) — **47.21**
+- `2026-03-05` — OpenAI: GPT-5.4 (xhigh) — **51.40**
+- `2026-04-16` — Anthropic: Claude Opus 4.7 (Adaptive Reasoning, Max Effort) — **53.53**
+- `2026-04-23` — OpenAI: GPT-5.5 (xhigh) — **54.84**
+- `2026-05-28` — Anthropic: Claude Opus 4.8 (Adaptive Reasoning, Max Effort) — **55.69**
+- `2026-06-09` — Anthropic: Claude Fable 5 (Adaptive Reasoning, Max Effort, Opus 4.8 Fallback) — **59.86**
+
+These 26 releases matter because they define the upper envelope. Hundreds of models can launch without changing the frontier. For this question, the record setters carry the signal.
+
+## AI growth rate, velocity, and acceleration
+
+The long-term fitted velocity is:
+
+```text
+15.6606 points/year
+```
+
+The current fitted velocity is:
+
+```text
+32.7249 points/year
+```
+
+The ratio is:
+
+```text
+32.7249 / 15.6606 = 2.0896
+```
+
+The frontier is therefore improving about 2.09 times as fast as its long-term historical rate.
+
+The quadratic fit also gives an additive second derivative of:
+
+```text
+9.5779 points/year²
+```
+
+That 9.58 figure is useful for describing the historical curve. It was not, however, the right mechanism for the final forecast.
+
+## Why the AI forecast model changed
+
+My first forecast added a fixed acceleration term directly to the index:
+
+```text
+I(t) = I₀ + v₀t + ½at²
+```
+
+That produced several curves that ended almost on top of one another. Over a short horizon, the additional `½at²` contribution is small. Mathematically the curves were valid, but they did not represent the assumption I actually wanted to test.
+
+The stronger assumption is about the velocity itself: what if the speed of frontier improvement keeps increasing at the rate implied by the historical timeline?
+
+The current velocity is 2.0896 times the long-term velocity. Spread across 3.625 years, the implied annual velocity multiplier is:
+
+```text
+m = (current velocity / long-term velocity)^(1 / historical years)
+
+m = (32.7249 / 15.6606)^(1 / 3.6250)
+
+m = 1.22545
+```
+
+That corresponds to an annual increase in growth velocity of:
+
+```text
+1.22545 - 1 = 0.22545 = 22.545%
+```
+
+Rounded for communication: the growth velocity has compounded by roughly 22.5% per year. That is close to a 1.25× annual velocity scenario.
+
+## The AI acceleration forecast function
+
+The forecast starts on 2026-07-16 with:
+
+- Initial index `I₀ = 59.8606`.
+- Initial velocity `v₀ = 32.7249 points/year`.
+- Annual velocity multiplier `m = 1.22545`.
+- Time `t` measured in years after 2026-07-16.
+
+The velocity compounds over time:
+
+```text
+v(t) = v₀ × mᵗ
+
+v(t) = 32.7249 × 1.22545ᵗ
+```
+
+The Intelligence Index is the integral of that increasing velocity:
+
+```text
+I(t) = I₀ + ∫₀ᵗ v(s) ds
+
+I(t) = I₀ + v₀ × (mᵗ - 1) / ln(m)
+```
+
+With the fitted values:
+
+```text
+I(t) = 59.8606
+     + 32.7249 × (1.22545ᵗ - 1) / ln(1.22545)
+```
+
+This is the central scenario used in the two forecast slides.
+
+## AI intelligence forecast for spring 2027
+
+![Projection of the AI model frontier to spring 2027](/images/projects/ai-frontier-acceleration/projection-spring-2027.png)
+
+*Spring 2027 scenario: projected Intelligence Index 81.5, with frontier velocity around 37.1 points per year.*
+
+The spring view deliberately uses a short horizon. It shows the immediate implication of the model without pretending that compounding becomes visually dramatic overnight.
+
+## AI intelligence forecast for the end of 2028
+
+![Projection of the AI model frontier through the end of 2028](/images/projects/ai-frontier-acceleration/projection-end-2028.png)
+
+*End-of-2028 scenario: projected Intelligence Index 164.4, with frontier velocity around 54.0 points per year.*
+
+The central projection is:
+
+- **End of 2026:** index 75.6; velocity 35.9 points/year.
+- **Spring 2027:** index 81.5; velocity 37.1 points/year.
+- **End of 2027:** index 115.5; velocity 44.0 points/year.
+- **End of 2028:** index 164.4; velocity 54.0 points/year.
+
+From July 2026 to the end of 2028, the scenario adds approximately 104.5 Intelligence Index points.
+
+## What the AI acceleration forecast means
+
+This is a scenario, not a prediction, confidence interval, or claim that the index will definitely reach 164.4.
+
+The calculation assumes that:
+
+- The historically inferred increase in frontier velocity continues.
+- No major structural break changes the trajectory.
+- The Artificial Analysis Intelligence Index remains comparable over time.
+- Capability improvements near the benchmark frontier continue to be reflected by the index.
+
+The exact endpoint will be wrong. The direction is the part I keep thinking about: progress is getting faster because the speed of progress is increasing too.
+
+That changes the questions.
+
+For white-collar work, what happens when the useful capability boundary moves materially within planning cycles rather than between them? For software, what should teams build when model assumptions can become stale before the product is fully rolled out? For society, which institutions can adapt at the speed implied by the technology, and which ones cannot?
+
+The point is not that one fitted curve answers those questions. The point is that a constant-rate mental model may already be the wrong starting point.
+
+We are entering the acceleration.
+
+## Artificial Analysis source data and reproducibility
+
+The public source is the [Artificial Analysis model intelligence timeline](https://artificialanalysis.ai/). The original discussion and social post are available on [LinkedIn](https://www.linkedin.com/posts/auto-mate_think-about-what-this-means-do-you-remember-ugcPost-7484131921124368384-aaq-/?utm_source=share&utm_medium=member_desktop&rcm=ACoAACOt2nwB9sqCmMNfbXS86pROdaPFLQ_ydts).
+
+The supporting artifacts include the full 430-release dataset, the 26 record-setting frontier releases, the monthly projection values, and the scripts used to generate both forecast slides. The source data belongs to Artificial Analysis; the transformation, fitting choices, scenario design, and visualizations are documented here so the reasoning can be inspected rather than hidden behind a chart.
+
+---
+
+## Wispr Alternative Local LLM
+
+- URL: https://sebmer.com/projects/wispr-alternatve-local-llm
+- Public JSON: https://sebmer.com/content/projects/wispr-alternatve-local-llm.json
+- Date: 2026-07-08
+- Status: building
+- Featured: yes
+- Tags: macOS, Voice, Local AI
+- Description: An open-source macOS Wispr Flow alternative for local dictation, language-aware LLM commands, optional screen context, Markdown notes, Bluetooth typing, and Hermes Agent handoff.
+
+- Repository: https://github.com/sebmer-com/wispr-alternatve-local-llm
+
+### Full Public Project Body
+
+Wispr Alternative Local LLM is the open-source macOS voice tool behind the current GitHub repo `sebmer-com/wispr-alternatve-local-llm`. It is built as a local-first alternative to cloud voice apps like Wispr Flow. The goal is simple: hold a shortcut, speak, and get useful text or an agent action without opening another app.
+
+The app is more than a plain dictation recorder. It combines local speech recognition, configurable output routes, local command generation, Markdown note capture, Bluetooth keyboard output, and a visible Hermes Agent handoff. It is meant to sit close to the Mac desktop and help with real work.
+
+## What it does
+
+- Records while a hotkey is held and transcribes with FluidAudio and CoreML on macOS.
+- Uses the multilingual FluidAudio v3 model by default with a German language hint.
+- Supports model and language overrides for other setups.
+- Applies fast text replacements after speech recognition, before paste, dump, or command work.
+- Pastes normal dictation into the active app through the clipboard.
+- Can restore the old clipboard after paste, so dictation does not destroy what was already copied.
+- Supports a two-step command mode: first speak the information, then speak what the app should do with it.
+- Sends command work to an OpenAI-compatible local or hosted LLM endpoint.
+- Keeps MLX and Azure provider paths available as fallback options.
+- Loads prompt templates from config instead of hard-coding all LLM behavior in Swift.
+- Selects local skills from `skills/*/SKILL.md` and can attach registered tool output.
+- Dumps raw notes or command results into a Markdown daily note.
+- Supports a continuous note mode with terminal commands like `go`, `stop`, `status`, `help`, and `quit`.
+- Supports optional Bluetooth keyboard output through an ESP32 device.
+- Talks to the ESP32 directly over the `KBD1` serial protocol, without launching a separate keyboard process.
+- Opens a real Hermes Agent terminal session for agent work and brings the final answer back to the original app or clipboard.
+
+## Why this is different
+
+Most voice tools stop at transcription or hide the important parts in a cloud product. This project is different because the useful loop is visible and configurable. The user can choose where text goes, how command generation works, what model endpoint is used, and whether the output should be pasted, written to notes, or typed through a Bluetooth keyboard.
+
+It is also different from a simple Whisper wrapper. It is not only “speech to text.” It is a full desktop control layer: dictation, command rewriting, note capture, skill context, tool output, optional hardware typing, and agent handoff.
+
+## Recent work
+
+The recent work added the features that make the app feel like a real product instead of a script. Headset handling improved, so recording works better with more audio devices. Bluetooth keyboard support was added with direct Swift serial handling, chunked UTF-8 transfer, CRC checks, connection status checks, and a direct test command.
+
+The command LLM layer was rebuilt around OpenAI-compatible chat completions. Setup can now ask for provider details, model name, base URL, and API key environment variable. API keys live in an `.env` file, not in JSON config. If command generation is turned off or unavailable, the app falls back to skill output or the original transcript.
+
+The app also gained a guided setup flow, config inspection and repair commands, audio input routing, safer Bluetooth defaults, and a GitHub installer that can clone, update, build, link the command, reset state, and open setup. The recorder was made more stable, and the test suite now covers installer behavior, config setup, audio routing, Bluetooth protocol behavior, command LLM toggles, text replacements, Markdown dumping, continuous recording, and Hermes shortcut behavior.
+
+The Hermes mode changed a lot. Instead of running a hidden command and hoping for the best, the app opens or reuses a real Hermes terminal session, visibly pastes the prompt there, tracks the run with a unique ID, and exports the answer from that same session. That makes agent work easier to trust because the user can see what happened.
+
+## Value for users
+
+The value is speed and control. A user can speak instead of type, rewrite spoken notes with an LLM, save thoughts to a daily note, send text to another computer through Bluetooth, or hand a task to Hermes without building a whole workflow every time.
+
+The app is useful for people who want the speed of a voice assistant but still want local control, visible behavior, and simple config files. It is especially useful for builders who switch between chat, coding, notes, browser work, and agent sessions all day.
+
+## Current direction
+
+The current direction is to make the open-source Wispr-style alternative easier to install, easier to configure, and safer to run every day. The main work is reliability: clean setup, clear hotkeys, stable recording, predictable output, and less hidden state.
+
+## Public boundary
+
+This page explains the public repo and product behavior. It does not include private recordings, daily notes, API keys, local config values, personal prompts, or private Hermes session contents.
+
+## July command-context update
+
+The July work improved the command path without changing the local-first dictation flow. Command prompts now preserve the speaker’s language instead of blindly treating the instruction language as the reply language. This matters when someone dictates an instruction in one language but is replying inside a document, thread, or app that uses another.
+
+Optional screen context can now be attached to a voice command when the user has enabled it and granted macOS permission. The image is used only for that command and removed after the result is generated. That gives an LLM more useful context for a real desktop task while keeping the feature explicit and bounded.
+
+The result is a more practical command loop: local speech capture first, then language-aware and context-aware help only when the user asks for it.
+
+---
+
+## Project ELSON
+
+- URL: https://sebmer.com/projects/project-elson
+- Public JSON: https://sebmer.com/content/projects/project-elson.json
+- Date: 2026-07-07
+- Status: building
+- Featured: yes
+- Tags: Next.js, Sales AI, Workflow
+- Description: A sales-workspace prototype for turning market signals into clear research, outreach, pipeline, and review steps.
+
+- Repository: https://github.com/TEMPO-AI-LLC/elson-backend
+
+### Full Public Project Body
+
+Project ELSON is a sales-workspace prototype. It explores a simple operating model: collect useful market signals, give an operator a clear workspace, and move the right account toward the right next step.
+
+The product is built around a focused interface instead of a crowded CRM. A user should be able to see what the system is watching, search the market, connect the sources they need, and choose a practical action. That can mean research, outreach, a meeting, or a handoff to a person.
+
+## What it does
+
+- Provides a focused workspace for market signals, outreach, pipeline work, and settings.
+- Gives an operator direct entry points for CRM connections, inbox sync, account import, and meeting work.
+- Uses a clear activity view so recent signals do not disappear into a generic dashboard.
+- Includes an early onboarding flow for defining the audience, signal, and handoff that matter to a sales process.
+- Keeps product screens, reusable components, and a public landing surface in one visual system.
+- Makes room for review before an automated action is taken.
+
+## Recent work
+
+The July build created the initial ELSON app and its public web surface. The work established a black-and-white product system, a component library, full-screen workflow screens, and a simple account entry path. It also added a working shell for signals, outreach, pipeline, and operator actions rather than leaving the idea as a design file.
+
+The product flow now has a clearer starting point. An operator can define the flow name, intended audience, and important buying signal, then work from a direct workspace. The build also introduced a small local account layer so the product can be tested as a real application with protected entry and a visible workspace state.
+
+This is a separate sales-workspace experiment from the macOS assistant called Elson.ai. They share a name but solve different problems: Elson.ai is the desktop assistant, while Project ELSON focuses on the sales workflow itself.
+
+## Value for users
+
+Sales teams often have information in too many places: a CRM, email, notes, research tabs, and a list of tasks. Project ELSON is built to make the next useful action clearer. The goal is not to replace every system at once. It is to give the operator a calmer place to understand the signal and make a good handoff.
+
+## Current direction
+
+The next step is to connect the early workspace with real, reviewable sales workflows. The product should keep its simple interface while adding better research, qualification, and operator control.
+
+## Public boundary
+
+This page describes a public prototype and build direction. It does not include customer lists, real account data, private inboxes, access tokens, or internal automation rules.
+
+---
+
+## Elson.ai
+
+- URL: https://sebmer.com/projects/elson-ai
+- Public JSON: https://sebmer.com/content/projects/elson-ai.json
+- Date: 2026-05-19
+- Status: shipped
+- Featured: no
+- Tags: macOS, AI, Voice
+- Description: A local-first AI assistant for macOS with clear shortcuts, screenshot-aware agent mode, and clearer installer behavior.
+
+- Repository: https://github.com/TEMPO-AI-LLC/elson.ai
+
+### Full Public Project Body
+
+Elson.ai is a local-first AI assistant for macOS. It is built around fast shortcuts, visible agent control, and a clearer boundary between simple commands and deeper agent work.
+
+The product is useful when the user wants an assistant that sits close to the desktop. Instead of opening a chat app for every task, the user can trigger a shortcut, capture context, and send the right kind of request. Some actions should stay small and local. Other actions need a real agent session with screenshots, context, and a goal.
+
+## What it does
+
+- Uses explicit shortcuts for different assistant modes.
+- Captures useful screen context when the agent needs to see what the user sees.
+- Routes shortcut intent in a clear way instead of relying on unclear state.
+- Keeps history titles inside the primary prompt output so the agent has better context.
+- Removes stale feedback-learning paths that made behavior harder to reason about.
+- Ships installer and release artifacts for easier testing.
+
+## Recent work
+
+The latest Elson work finished the shortcut cleanup that started in the previous Seb Builds update. Shortcut routing became explicit, stale shortcut handler state was deleted, and old history-summary helpers were removed. Agent prompts now receive clearer history titles in the main output.
+
+The app also improved how agent screenshots are sent. Instead of giving the agent weak or confusing visual context, the flow now aims to pass useful screenshots and align the copy around agent mode. Release builds moved through refreshed installer artifacts and version bumps, including a release with distinct agent-goal feedback.
+
+The next day of work adopted new Gemini defaults and shipped a bounded Gemini agent context loop. That points the product toward a more controlled assistant loop: enough context to help, but not an unbounded pile of stale state.
+
+## Value for users
+
+The value is trust. If a user presses a shortcut, they should know what mode they triggered and what the assistant will do. The assistant should use the screen when that helps, avoid stale memory paths, and keep the result tied to the user’s real desktop task.
+
+## Current direction
+
+The current direction is a simpler local agent loop. Elson should keep reducing hidden behavior, make shortcut modes easier to understand, and improve context capture without making the app feel heavy.
+
+## Public boundary
+
+This page describes product behavior and public build work. It does not include private prompts, screenshots, keys, user history, or unreleased distribution details.
+
+---
+
+## Project APEX
+
+- URL: https://sebmer.com/projects/project-apex
+- Public JSON: https://sebmer.com/content/projects/project-apex.json
+- Date: 2026-07-02
+- Status: building
+- Featured: no
+- Tags: Next.js, Sales AI, Onboarding
+- Description: An autonomous sales-agent prototype with guided voice onboarding, live brief review, source grounding, and a provider-ready intake backend.
+
+
+### Full Public Project Body
+
+Project APEX is an autonomous sales-agent prototype. It is built around a simple idea: a sales system should collect the right business context first, then use that context to support outreach, qualification, and follow-up work.
+
+The project started with a strong visual baseline. The design work created a black-and-white shadcn-style system, a fullscreen product feel, and a clear onboarding direction. After that, the app moved from a static design into a working intake flow that can collect a business brief and prepare it for backend use.
+
+## What it does
+
+- Presents a focused onboarding flow for a sales-agent product.
+- Collects live intake information instead of only showing a static landing page.
+- Uses a clean visual system so the product feels direct and serious.
+- Persists onboarding data so the next agent step can use it.
+- Keeps the runtime in the main app instead of leaving the useful parts inside a design-only workspace.
+- Adds an intro flow that makes the product easier to understand before the user starts.
+
+## Recent work
+
+The June work built the foundation in layers. First came the style guide and component baseline. Then the fullscreen UI system was expanded. The design workspace was moved into the project so the visual system could be reused instead of treated as a throwaway mockup.
+
+After the visual foundation, the product gained an onboarding backend. The intake flow can now persist a brief at the end of the flow, and later commits made the onboarding input faster and simpler. The app runtime moved to the root so the project is easier to run and deploy. The most recent work added an Elson-style orb intro, which gives the onboarding flow a clearer first moment.
+
+## Value for users
+
+The value is a better start for a sales agent. Most sales tools ask for too much setup or too little context. APEX tries to ask for the right context in a clean flow, then turn that into something an agent can use. That helps users move from a rough idea to a prepared sales workflow faster.
+
+## Current direction
+
+The next step is turning intake into action. The product should take the brief, understand the offer, identify the target customer, and support the first practical sales steps. The interface should stay simple while the backend gets more useful.
+
+## Public boundary
+
+This page describes the public product shape and build direction. It does not include private lead lists, customer data, prompt internals, or provider credentials.
+
+## Voice onboarding update
+
+The latest APEX work turned the intake into a more natural guided conversation. A user can speak through the business context while the product keeps the brief updated in the background, asks the next useful question, and gives the user a live review before the onboarding is completed.
+
+The flow was also grounded more carefully. Source collection, answer extraction, and the final handoff were separated so the agent does not keep asking the same question or lose the information that has already been captured. The landing surface was brought into the root app as part of the same pass, so the public story and the working onboarding flow now live together.
+
+The value is a calmer start. Instead of filling out a long static form or trusting an opaque conversation, a user can talk through the context, watch the brief take shape, correct it, and approve the next step.
+
+---
+
+## Seb Builds
+
+- URL: https://sebmer.com/projects/seb-builds
+- Public JSON: https://sebmer.com/content/projects/seb-builds.json
+- Date: 2026-05-06
+- Status: building
+- Featured: no
+- Tags: Next.js, Build Log, Portfolio
+- Description: The public build log and project index for Sebastian Mertens: project pages, notes, CLI access, and GitHub Pages deployment for sebmer.com.
+- Demo: https://sebmer.com
+
+- Repository: https://github.com/sebmer-com/sebbuilds
+
+### Full Public Project Body
+
+Seb Builds is the public build surface behind sebmer.com. It turns active work into project pages, build logs, notes, metadata routes, and agent-readable context files.
+
+The site exists because private work logs are not enough. Projects move quickly, and without a public memory layer the story disappears into Git commits, local notes, agent transcripts, and deployment chores. Seb Builds gives that work a cleaner public shape: project pages for the long-lived context, notes for dated progress, and metadata surfaces for people and agents that want to inspect what is going on.
+
+## What the site contains
+
+- Project pages for active products, experiments, and infrastructure.
+- Build logs that capture concrete dated changes without leaking private details.
+- Static routes for notes, projects, RSS, sitemap, robots, llms.txt, and llms-full.txt.
+- A public About surface and profile JSON for Sebastian Mertens.
+- A small CLI foundation so the same public content can be inspected from developer workflows.
+- A GitHub Pages deployment path for sebmer.com.
+
+## Recent work
+
+The June update refreshed the timeline from the last May update through the latest public build evidence. It added new project pages for Fluid Push-to-Talk, Make Skills, Project APEX, and DEVLO AIOS. It also expanded the active pages for Lovalingo and Elson.ai so the site explains what was built in simple words.
+
+The update focuses on the projects included in this public portfolio pass. The public site should show the broader build story while keeping excluded work out of the page.
+
+## Why it matters
+
+A builder site should not only show finished launches. It should also preserve the middle of the build: what changed, why it matters, and what value the product gives to users. That is especially important when many projects are active at the same time.
+
+Seb Builds gives each project a home. A build log can say what happened on a date, but the project page explains the full context in plain language: what the product does, who it helps, why it matters, and what stays private.
+
+## Current direction
+
+The current direction is quality over shorthand. Project pages should not read like commit messages. They should be clear enough for a normal visitor to understand the product and useful enough for an agent to recover context later.
+
+## Public boundary
+
+Seb Builds is public. The content is written to explain the product value without publishing secrets, private local paths, customer data, credentials, or internal operating details.
+
+---
+
+## Make Skills
+
+- URL: https://sebmer.com/projects/make-skills
+- Public JSON: https://sebmer.com/content/projects/make-skills.json
+- Date: 2026-06-19
+- Status: shipped
+- Featured: no
+- Tags: Make, Automation, Agent Skills
+- Description: A public skill package that teaches AI coding agents how to build and operate Make workflows with less guessing.
+
+- Repository: https://github.com/integromat/make-skills
+
+### Full Public Project Body
+
+Make Skills is a public skill package for AI coding agents. It gives agents a practical way to build Make scenarios, configure modules, use the Make MCP server, and create reusable API-call shells without guessing every step from scratch.
+
+The project exists because workflow automation is easy to describe but hard to do correctly. A small mistake in a Make module, connection, mapping field, webhook, or error route can break the whole scenario. Agents need a clear operating guide: how to discover apps, choose modules, create blueprints, ask for missing credentials, test runs, and recover when a direct API path is blocked.
+
+## What it does
+
+- Packages Make knowledge as agent-readable skills.
+- Covers scenario building, module configuration, MCP setup, and API shell workflows.
+- Works with Claude Code, Codex, Cursor, GitHub Copilot, Windsurf, Cline, and other agents through the Open Agent Skills format.
+- Gives agents a safer path for connection requests instead of inventing credentials or pretending access exists.
+- Documents when to use Make MCP, when to use the Make API, and when to fall back to a shell scenario.
+- Includes release packaging so the same skill content can be installed by different agent tools.
+
+## Recent work
+
+The June updates focused on reliability and honesty. The API shell workflow was strengthened so an agent can create or reuse a Make scenario that calls a SaaS app through an existing Make connection. The workflow also explains what to do when a required connection is missing: request access, guide the user, and retry after the user connects it.
+
+The package added clearer field-omission rules for updates and upserts, better examples for logical operators, and stronger fallback guidance for cases where MCP is unavailable or incomplete. Later changes reduced hallucination risk by pushing the agent toward source-backed discovery and explicit verification.
+
+## Value for users
+
+The value is less broken automation. A user can ask an agent to build or inspect a Make workflow, and the agent has a step-by-step process instead of relying on vague Make knowledge. That saves time, reduces false confidence, and makes the final scenario easier to test.
+
+## Current direction
+
+The project is moving toward reusable automation operations. The skills should not only explain Make concepts; they should help agents finish real work: create a scenario, configure modules, validate mappings, run a test, and report the exact result.
+
+## Public boundary
+
+The project page talks about the public skill package and workflow method. It does not include private Make tokens, connection IDs, customer scenarios, or private automation payloads.
+
+---
+
+## DEVLO AIOS
+
+- URL: https://sebmer.com/projects/devlo-aios
+- Public JSON: https://sebmer.com/content/projects/devlo-aios.json
+- Date: 2026-06-12
+- Status: building
+- Featured: no
+- Tags: Agents, Operations, Research
+- Description: A governed operations system for agent-assisted business work, research, SEO checks, task routing, and source-backed decision records.
+
+
+### Full Public Project Body
+
+DEVLO AIOS is an operations system for agent-assisted business work. It is not a single chat prompt or one automation. It is a working structure for turning research, tasks, checks, decisions, and reports into a process that can be reviewed.
+
+The project is useful because agent work can become messy fast. Agents can make claims without sources, skip a handoff, repeat old work, or mark something done before it is verified. DEVLO AIOS adds structure around that: intake, task records, source-backed reports, status gates, and review steps.
+
+## What it does
+
+- Keeps business operations work organized across tasks, reports, and decisions.
+- Tracks tool and model changes so the system can react when agent tools improve or break.
+- Supports source-backed research and run cards for business execution.
+- Adds gates around SEO, GEO, website-copy feedback, and outreach workflows.
+- Records decisions in a way that can be checked later.
+- Helps turn repeated agent work into a managed process instead of a loose chat history.
+
+## Recent work
+
+The June work focused on governance and feedback loops. The system gained stronger source-backed run card intake, Fable-governed business execution, LLM skill gates, SEO and GEO workflow hardening, multi-site Search Console export support, and public website copy feedback gates.
+
+There was also steady work on model-watch and tool-watch reporting. Those reports matter because agent systems depend on changing tools. If a model changes behavior or a tool becomes available, the operating process should notice and adapt. The task registry automation also became cleaner, with isolated automation branches and generated task records.
+
+## Value for users
+
+The value is safer agent work. A user gets a system that asks for evidence, keeps records, and makes it harder for an agent to skip verification. That is especially helpful for research, SEO, operations, and client-adjacent work where a wrong claim can waste time.
+
+## Current direction
+
+The current direction is a more dependable operating layer. The system should keep making agent work easier to inspect: what was asked, what sources were used, what changed, what still needs review, and what can be safely repeated.
+
+## Public boundary
+
+The public page only describes the operating pattern. It does not publish private client data, lead lists, reports, credentials, internal spreadsheets, or confidential task details.
+
+---
+
+## airader
+
+- URL: https://sebmer.com/projects/airader
+- Public JSON: https://sebmer.com/content/projects/airader.json
+- Date: 2026-05-12
+- Status: building
+- Featured: no
+- Tags: Analytics, Session Replay, API
+- Description: A session-replay and customer-journey analysis product with public API docs, OpenAPI surfaces, and SEO comparison pages.
+
+
+### Full Public Project Body
+
+airader is the renamed product surface from the recent trakkker repository work: a session-replay tool for watching user sessions, understanding customer-journey friction, and exporting session data into analysis workflows.
+
+The project is moving away from a generic tracking shell and toward a more specific product idea: session replay that is useful for humans, agents, and downstream analysis. The value is not just recording clicks. It is making the journey inspectable enough that product teams can understand where users hesitate, break, rage-click, or abandon a flow.
+
+## What it does
+
+- Captures session-replay style interaction data for product and UX debugging.
+- Provides a clearer landing page around the session-replay and customer-journey angle.
+- Supports session pagination so longer lists can be explored instead of only sampling the first page.
+- Adds public API documentation and an OpenAPI schema for external access.
+- Positions against common analytics/session tools through comparison pages.
+- Keeps the door open for analysis workflows beyond a closed dashboard.
+
+## Why this project exists
+
+Most analytics tools tell you what happened in aggregate. Session replay helps answer the more painful question: why did that user get stuck? The product direction behind airader is to make those moments easier to inspect and easier to connect to follow-up work.
+
+That matters more as products are increasingly built and modified with AI assistance. Teams need a way to feed real user friction back into the build loop. A replay tool with a usable API can become more than a dashboard; it can become evidence for prioritization, QA, support, and automated analysis.
+
+## Recent work from local commits
+
+The recent commits moved it toward a clearer product: landing-page copy, session pagination, login and site-detail flows, public API documentation, OpenAPI schema, and comparison pages for teams looking beyond generic analytics tools.
+
+A rebrand pass changed the public surface from trakkker to airader. Another pass improved the landing page, SEO copy, metrics state, HUD state, and notification-hook state. The comparison work added Hotjar and Lucky Orange alternatives, making the product angle more explicit: session replay, API access, and exportable journey data.
+
+## Product story
+
+airader is strongest when it is framed as a bridge between visual replay and operational follow-up. A product person wants to watch what happened. A developer wants enough detail to reproduce or fix it. A support workflow may need a shareable summary. An agent workflow may need structured session data. The project direction is to support those different consumers without making the replay data disappear inside a single UI.
+
+## Current direction
+
+The useful next steps are deeper replay inspection, clearer API examples, stronger onboarding for sites/projects, and more concrete analysis loops that turn session evidence into product decisions. The comparison pages are a start, but the product needs to keep proving what it can do that a generic analytics dashboard cannot.
+
+## Public boundary
+
+This public page explains product direction and surfaced work. It does not expose private recordings, customer-identifying session data, credentials, or raw operational logs.
+
+---
+
+## TEMPO AI
+
+- URL: https://sebmer.com/projects/tempo-ai
+- Public JSON: https://sebmer.com/content/projects/tempo-ai.json
+- Date: 2026-05-06
+- Status: shipped
+- Featured: no
+- Tags: Company Site, Next.js, AI Products
+- Description: A minimal company profile site for the TEMPO AI product family, linking Lovalingo and Elson into one public company surface.
+
+- Repository: https://github.com/TEMPO-AI-LLC/tempo-ai-llc
+
+### Full Public Project Body
+
+TEMPO AI is the small public company profile site that connects the product family into one surface.
+
+The company layer is intentionally minimal. Lovalingo and Elson are different products, but they need a shared public home so the product family does not look like a pile of unrelated experiments. TEMPO AI provides that front door: a brand page, product grid, deployment workflow, metadata, and domain configuration.
+
+## What it does
+
+- Presents the company and product family in one simple public surface.
+- Links Lovalingo and Elson as visible products under the same umbrella.
+- Gives the company a GitHub Pages-ready deployment path.
+- Keeps brand, metadata, styling, and domain configuration in one lightweight site.
+- Avoids overbuilding the company layer before the product surfaces need it.
+
+## Why this project exists
+
+Product companies often need a credibility layer before they need a giant marketing site. TEMPO AI is that layer. It answers the basic questions: what is the company, what does it build, and where should people go next?
+
+The important decision is restraint. A company site can become a distraction if it grows faster than the products. This version keeps the public message narrow: AI products that help teams move faster, with Lovalingo and Elson as the first visible examples.
+
+## Recent work from local commits
+
+The recent commits created a minimal GitHub Pages-ready site: a brand page, product grid, global styling, metadata, CNAME, and deployment workflow. The page keeps the message simple and gives the product family a stable public surface.
+
+The deployment work matters because it turns the company site from a local artifact into something maintainable. GitHub Pages, domain wiring, and a small static surface are enough for the current stage. The site does not need a CMS or a heavy app shell yet.
+
+## Product family context
+
+Lovalingo is about translation and localization for fast web builders. Elson is about local-first voice and desktop assistance on macOS. They solve different problems, but both sit inside the same broader pattern: practical AI products that reduce friction in real workflows.
+
+TEMPO AI gives those products a parent narrative without forcing them into one monolithic platform. That is useful because each product can keep its own audience, roadmap, and public story while still having a shared company reference.
+
+## Current direction
+
+The next sensible step is not a huge redesign. It is keeping the company surface accurate as products mature: clearer product cards, stronger proof links, a concise company story, and updated metadata as public launches become more concrete.
+
+## Public boundary
+
+This entry covers the public company website only. It does not include private company operations, credentials, analytics, financial details, or account data.
+
+---
+
+## Mono Trade
+
+- URL: https://sebmer.com/projects/mono-trade
+- Public JSON: https://sebmer.com/content/projects/mono-trade.json
+- Date: 2026-04-29
+- Status: building
+- Featured: no
+- Tags: Market Data, Python, Research
+- Description: A market-data research stack for scanners, snapshots, and boringly reliable finance tooling.
+
+
+### Full Public Project Body
+
+Mono Trade is market-data infrastructure for research, scanners, and repeatable finance experiments.
+
+The interesting part is not a magic trading signal. The interesting part is making messy market data boring enough to trust: collect it, normalize it, compare it, and keep the system observable when it runs again tomorrow. That is the work most finance experiments skip, and it is the work that determines whether later research means anything.
+
+## What it explores
+
+- Structured market snapshots that can be reused instead of eyeballed once.
+- Scanners that watch larger instrument sets without turning into dashboard chaos.
+- Python connectors and data pipelines that fail loudly instead of silently drifting.
+- Intraday snapshot bars and repeatable analysis surfaces.
+- A clear split between research infrastructure and any execution logic.
+- Operational checks that make scheduled data work easier to trust.
+
+## Why this project exists
+
+Finance experiments often die in notebook soup. One script pulls data, another ranks symbols, a third saves a file with an unclear timestamp, and a week later nobody knows which result was real. Mono Trade is the opposite direction: build the dull infrastructure first, then let research sit on something solid.
+
+That means the project is more about data discipline than prediction. If a scanner changes, it should be clear what changed. If a market snapshot fails, the failure should be visible. If a research question comes back later, the earlier data should be inspectable instead of trapped in a one-off notebook run.
+
+## Current system direction
+
+The public story around Mono Trade is scanner and snapshot infrastructure. It is designed to support larger watchlists, repeatable market-data pulls, and comparisons across instruments without turning every question into manual browser work.
+
+The recent public update summarized scanners and intraday snapshots because those are the pieces that make the system feel less like a script collection and more like a research stack. A good market-data system should answer “what did we know at the time?” and “can we re-run this?” before it tries to answer “what should we buy?”
+
+## How it fits into Seb Builds
+
+Mono Trade is part of the broader theme of making workflows observable. Elson makes voice work inspectable. Hermes makes agent work repeatable. Mono Trade applies the same mindset to financial research: collect the inputs, structure the outputs, and leave a trail that can be audited later.
+
+## Current direction
+
+The next useful direction is more boring reliability: cleaner data contracts, better snapshots, clearer scanner outputs, and stronger separation between data collection, research, and any future execution layer.
+
+## Public boundary
+
+This is software and data-engineering research. It does not publish financial advice, trading recommendations, private account data, broker credentials, or execution rules.
+
+---
+
+## Hermes on Rocket
+
+- URL: https://sebmer.com/projects/hermes-on-rocket
+- Public JSON: https://sebmer.com/content/projects/hermes-on-rocket.json
+- Date: 2026-04-20
+- Status: building
+- Featured: no
+- Tags: Hermes, Agents, Infrastructure
+- Description: An AI-agent workbench for skills, checkpoints, context, remote projects, and long-running build workflows.
+
+- Repository: https://github.com/NousResearch/hermes-agent
+
+### Full Public Project Body
+
+Hermes on Rocket is the agent workbench behind a lot of the Seb Builds process.
+
+It is where skills, checkpoints, local scripts, and longer-running build sessions start to feel like an operating system for work instead of another prompt box. The point is not to make agents look impressive. The point is to make them useful twice: once during the work, and again when the workflow becomes reusable.
+
+## What it supports
+
+- Agent workflows that remember enough context to continue real work.
+- Checkpoint-based sessions for experiments, recovery, and longer tasks.
+- Local skills that connect agent behavior to actual project folders and workflows.
+- A practical bridge between research, content operations, coding, and automation.
+- Remote project operations where one workbench can host repos, long-running agents, build scripts, and verification checks.
+- Public-safe summaries that convert private work into reusable project memory.
+
+## Why this project exists
+
+A single prompt is not enough for real operations. Real work involves repos, background processes, credentials that must stay private, build logs, remote machines, browser sessions, deployment checks, and recurring workflows. Hermes on Rocket is the attempt to make that environment coherent.
+
+The “Rocket” side matters because some work is better handled on a stable remote machine: long-running services, social research loops, local model experiments, project mirrors, scheduled jobs, and workflows that should not depend on a laptop being open. The Hermes side matters because the agent needs procedures, skills, and verification habits instead of improvising every time.
+
+## Recent work
+
+The remote build machine became a more complete project workbench. Active repositories were mirrored, environment-specific configuration was separated from public code, and core developer CLIs were prepared so projects can be inspected, run, and deployed from one place.
+
+This matters for projects like Thomas, Elson, Social Rocket, and Mono Trade because they all need repeatable operations. Some tasks are code changes. Some are research. Some are content updates. Some are deployment verification. Hermes on Rocket provides the common operating layer.
+
+## Product story
+
+The project is partly infrastructure and partly methodology. Skills capture procedures. Checkpoints preserve task state. Tooling turns vague requests into inspected changes. Verification keeps the agent from claiming work is done before it is actually live. That combination is what makes the workbench useful.
+
+The best version feels less like “AI assistant” and more like “remote project operator”: able to inspect, change, validate, document, and repeat work across a portfolio.
+
+## Current direction
+
+The next direction is stronger operational memory: better skills, cleaner project conventions, safer remote access, more reliable scheduled jobs, and clearer public summaries of what the private systems enabled.
+
+## Public boundary
+
+This page intentionally avoids private paths, credentials, raw checkpoints, private transcripts, and sensitive infrastructure details. It describes the workflow pattern, not the secrets behind it.
+
+---
+
+## Tracker
+
+- URL: https://sebmer.com/projects/tracker
+- Public JSON: https://sebmer.com/content/projects/tracker.json
+- Date: 2026-04-08
+- Status: building
+- Featured: no
+- Tags: macOS, Swift, Productivity
+- Description: A Swift-first macOS utility for activity context, permissions, and local workflow signals.
+
+
+### Full Public Project Body
+
+Tracker is a native macOS utility for local activity context and permission-aware workflows.
+
+It focuses on the part most AI productivity tools try to skip: what can the app actually see, what did the user approve, and how do you make that state obvious without turning onboarding into a support ticket generator?
+
+## What it explores
+
+- Native Swift flows for screen, activity, and system permission states.
+- Clear onboarding that reflects the real macOS state instead of guessing.
+- Local-first workflow signals that can support future productivity tools.
+- Permission-aware UX for assistants that need context without being creepy.
+- A calmer foundation for desktop products that depend on system access.
+
+## Why this project exists
+
+Useful agents need context. Good products need trust. Tracker sits in that gap and treats permissions as product design, not boilerplate.
+
+On macOS, permissions are not a detail you can hide. Screen recording, accessibility, input monitoring, notifications, and local context all have user-facing implications. If the product guesses wrong, the user loses trust. If the onboarding is unclear, the product feels broken before it has a chance to help.
+
+## Product story
+
+Tracker is not trying to be a giant analytics product. It is a foundation for understanding local activity state in a way that could support future desktop agents. The important pieces are native behavior, visible permission state, and clear feedback when the app needs something from the user.
+
+That makes it related to Elson, but not identical. Elson is the voice assistant surface. Tracker is more about the local context substrate: what is visible, what is allowed, and how a desktop tool can reason about state safely.
+
+## Recent direction
+
+Recent work tightened onboarding and made the UI line up with what macOS actually allows. That sounds small, but it is exactly the kind of product detail that determines whether a local utility feels trustworthy.
+
+The next useful work would be clearer state visualization, sharper permission recovery flows, and a stronger bridge between local activity signals and assistant workflows.
+
+## Why it matters
+
+AI desktop tools often jump straight to model behavior. Tracker starts earlier: before an assistant can help with context, it needs a safe way to know what context exists. That is the unglamorous layer that makes more ambitious local agents possible.
+
+## Public boundary
+
+This page describes product direction and permission-aware UX only. It does not expose private activity data, screen contents, local logs, or user-specific context.
+
+---
+
+## Gairvis
+
+- URL: https://sebmer.com/projects/gairvis
+- Public JSON: https://sebmer.com/content/projects/gairvis.json
+- Date: 2026-03-05
+- Status: building
+- Featured: no
+- Tags: Next.js, Canvas, AI
+- Description: A branded AI product surface that combines a public site with canvas-style work interfaces.
+- Demo: https://gairvis.com
+
+
+### Full Public Project Body
+
+Gairvis is a branded AI product surface built around a public web presence and canvas-style work interfaces.
+
+The goal is to make the AI layer feel like a real product, not another generic chat box. The public site gives the brand a front door. The canvas direction explores how work can happen visually, with context, structure, and room for agents to help without taking over the whole screen.
+
+## What it explores
+
+- A Next.js web surface with brand, SEO, and product foundations.
+- Canvas-style interaction patterns for AI-assisted work.
+- Product structure that can grow beyond a static marketing page.
+- Interface patterns where agents support the workflow instead of stealing the whole screen.
+- Reliability improvements around the canvas-side product experience.
+
+## Why this project exists
+
+A lot of AI products still feel like a prompt field with branding around it. That is fine for simple tasks, but it is not enough for workflows that need spatial structure, persistent context, and multiple pieces of information visible at once.
+
+Gairvis explores a different surface. A canvas gives the product more room: documents, plans, generated outputs, references, and agent actions can exist side by side. The user does not have to compress every instruction into a single chat turn, and the agent does not have to pretend the whole workflow is linear.
+
+## Product story
+
+The public site is the simple part: brand, positioning, and a front door. The more interesting part is the work surface. Canvas-style AI tools can make collaboration between humans and agents feel less like command-and-response and more like shared workspace.
+
+That direction fits the broader Seb Builds pattern. Elson explores voice as an interface. Hermes explores agents as operators. Gairvis explores the visual work surface where those agents might become easier to direct, inspect, and correct.
+
+## Recent direction
+
+Recent work focused on web structure, brand-ready components, and reliability improvements in the canvas-side product. The page is still early, but the project has enough shape to explain what it is exploring: better AI interfaces for work that needs context and structure.
+
+## Current direction
+
+The next useful direction is making the canvas story more concrete: example workflows, clearer object types, better persistence, and stronger public demos that show why a canvas is better than a chat box for certain tasks.
+
+## Public boundary
+
+This page describes the public product concept and interface direction. It does not expose private prototypes, credentials, unreleased customer workflows, or internal implementation details.
+
+---
+
+## Enhanced OnVista
+
+- URL: https://sebmer.com/projects/enhanced-onvista
+- Public JSON: https://sebmer.com/content/projects/enhanced-onvista.json
+- Date: 2025-09-05
+- Status: building
+- Featured: no
+- Tags: Python, Market Data, Finance
+- Description: A Python toolkit that turns German market-data pages into something scripts can actually use.
+
+- Repository: https://github.com/sebmer-com/enhanced-onvista
+
+### Full Public Project Body
+
+Enhanced OnVista is a Python toolkit for making German market-data sources easier to work with in code.
+
+The job is simple and useful: take data that normally lives in pages and brittle manual workflows, then turn it into something scripts can collect, rank, compare, and reuse. It sits close to Mono Trade, but the focus here is narrower: improve access to OnVista-style market data so downstream research does not start with copy-paste.
+
+## What it supports
+
+- Access to German market data from OnVista-style sources.
+- Instrument ranking and fundamentals extraction.
+- Batch processing for larger research runs.
+- Structured outputs that can feed scanners, comparisons, and reports.
+- A bridge between raw market pages and repeatable analysis code.
+
+## Why this project exists
+
+A lot of finance research starts in a browser. That is fine for one lookup, but it breaks down when the question becomes comparative: rank these instruments, check multiple fundamentals, collect a batch, or re-run the same research later. Manual workflows are slow, inconsistent, and hard to audit.
+
+Enhanced OnVista turns that work into code. The value is not in pretending the data source is perfect. The value is in making the collection step explicit enough that failures, changes, and assumptions can be seen.
+
+## How it fits with Mono Trade
+
+Mono Trade is the broader research stack. Enhanced OnVista is one possible data-access layer inside that world. It helps turn German market-data pages into structured inputs that other scanners or ranking tools can consume.
+
+That separation matters. A connector should focus on retrieval and normalization. A scanner should focus on comparison. A research workflow should focus on the question. Keeping those layers separate makes the system easier to debug when a source changes or a ranking result looks wrong.
+
+## Product story
+
+This is not a polished consumer app. It is engineering infrastructure for better research habits. It exists because repeatability matters: if a result cannot be collected again, compared again, or inspected later, it is not a very useful foundation for decisions.
+
+## Current direction
+
+The next useful direction is stronger parsing resilience, clearer output contracts, better batch ergonomics, and tighter integration with broader market-data research workflows.
+
+## Public boundary
+
+This is not investment advice and does not publish trading recommendations, broker credentials, account data, or execution rules. It is shared as an engineering project for market-data access and analysis.
+
+---
+
+## Lovalingo
+
+- URL: https://sebmer.com/projects/lovalingo
+- Public JSON: https://sebmer.com/content/projects/lovalingo.json
+- Date: 2026-07-13
+- Status: building
+- Featured: no
+- Tags: Next.js, i18n, SEO
+- Description: A translation and localization tool for AI-built web apps, with route coverage, SEO checks, billing, and runtime guardrails.
+- Demo: https://lovalingo.com
+
+
+### Full Public Project Body
+
+Lovalingo is a translation and localization tool for people building web apps quickly with tools like Lovable, Replit, Claude Code, and modern React or TanStack stacks. It is built for the point where a fast-built app needs more than a copied translation file.
+
+Translation looks simple when a site has one page. It gets hard when the app has routes, metadata, sitemaps, language switchers, billing, dashboards, status checks, and SEO pages. Lovalingo treats those pieces as part of the translation job.
+
+## What it does
+
+- Helps turn AI-built web apps into multilingual sites.
+- Supports locale routes, translated content, and SEO metadata.
+- Checks whether pages are live and healthy instead of only checking if a translation job ran.
+- Gives users a clearer dashboard for project and page status.
+- Supports billing and checkout flows for paid translation work.
+- Adds production guardrails around sitemaps, schema, redirects, and stale copy.
+
+## Recent work
+
+The June work made the system more practical and safer to run. Translation jobs were hardened so transient failures do not break the whole flow. Sendwire translation jobs were kept inside Worker limits, large project queries were chunked, and healthy pages stopped being reported as “Not live” only because the delivery index was cold.
+
+The app also gained a clearer dashboard with a simpler nav, binary page status, and a darker shell. Billing work persisted new Stripe customers during checkout while preserving older billing behavior during the cutover. Deploy work made Vercel use the built Vite output and kept authorized deployment identity in place.
+
+The web surface was tightened around Lovable TanStack positioning. Locale route support, sitemap validation retries, schema validation, dynamic locale slug pages, locale redirects, and SEO intent pages were all improved. Public copy was also cleaned up so the product does not promise the wrong framework path.
+
+## Value for users
+
+The value is less manual cleanup after a fast build. A user can ship a product with AI tools, then use Lovalingo to make the multilingual layer more complete: routes, copy, metadata, and status checks. That helps the user reach more markets without turning localization into a second engineering project.
+
+## Current direction
+
+The current direction is dependable localization for modern AI-built apps. The product should make it clear which pages are translated, which pages are live, which pages need work, and what a user has to do next.
+
+## Public boundary
+
+This page describes the public product and technical direction. It does not expose customer projects, payment data, private keys, or internal translation payloads.
+
+## July reliability work
+
+The July pass focused on keeping multilingual projects correct after the first translation run. Page discovery was cleaned up for sites whose source language does not use a locale prefix. Partial project sync now keeps the important project configuration instead of overwriting it, and retry paths preserve locale settings rather than silently changing the route model.
+
+The product also gained clearer page-status summaries, safer live-translation overrides, stronger domain adoption, and more reliable handling of live translations. These changes make it easier for a team to see what is actually translated, what is live, and which page still needs attention.
+
+For users, that means less time checking whether a translation job only looked successful. The system now does more to keep project configuration, page discovery, live state, and status reporting aligned as the site changes.
+
+---
+
+## Social Rocket
+
+- URL: https://sebmer.com/projects/social-rocket
+- Public JSON: https://sebmer.com/content/projects/social-rocket.json
+- Date: 2026-04-29
+- Status: building
+- Featured: no
+- Tags: Hermes, Content, Research
+- Description: A Hermes-assisted research loop for spotting better build signals before posting in public.
+
+
+### Full Public Project Body
+
+Social Rocket is the research loop behind the public side of Seb Builds.
+
+The idea is simple: better inputs create better posts. Instead of guessing what to write about, the system helps collect public signals, review what is worth attention, and turn real building activity into useful updates. It is less “content calendar” and more operating system for noticing what matters while building.
+
+## What it does
+
+- Tracks public creator patterns, product signals, and AI-builder topics across social channels.
+- Keeps lightweight review queues for follows, references, content angles, and accounts worth watching.
+- Uses Hermes-assisted workflows to summarize, compare, and organize public research.
+- Connects the work being built with the story worth telling about it.
+- Helps separate useful build-in-public material from generic AI noise.
+- Keeps public writeups tied to actual work instead of vague AI commentary.
+
+## Why this project exists
+
+Build-in-public only works when the public story is grounded in real building. Otherwise posts become either shallow inspiration quotes or over-polished announcements that do not teach anything. Social Rocket is meant to keep the research and storytelling layer close to the work itself.
+
+The system watches for useful public patterns: what AI builders are launching, how technical products explain themselves, which topics are becoming repetitive, and where a project has a real angle worth sharing. The output should be sharper posts, better follows, and fewer “what should I write today?” moments.
+
+## How it connects to Seb Builds
+
+Seb Builds is the public archive. Social Rocket is the signal engine feeding it. When a project page changes, a build log ships, or a real workflow gets cleaned up, Social Rocket helps identify the public angle: what changed, why it matters, and what can be said without exposing private operational details.
+
+That makes content less detached from the product work. Elson, Thomas, Hermes, Mono Trade, and Lovalingo all produce raw activity. The useful job is turning that activity into a clear story: what was built, what was learned, and what is worth revisiting later.
+
+## Recent work
+
+The current pass connected the research loop back into Seb Builds itself. Project pages, build logs, and the homepage now make it easier to turn real work into concise public updates instead of private notes that disappear.
+
+The important change is that content is no longer treated as a separate task after the work is done. The site now has a place for short build logs, longer project narratives, and a clearer public trail across systems like Thomas, Elson, Hermes, and Mono Trade.
+
+## Product direction
+
+The practical direction is a tighter loop: collect public signals, classify them, keep only the high-signal items, compare them against active projects, then draft usable public output. The best version feels like a research assistant that understands the builder’s taste rather than a generic social-media scheduler.
+
+## Public boundary
+
+Social Rocket only publishes public-safe summaries. It does not expose private DMs, credentials, raw account exports, unpublished client details, or internal scoring rules that would make the system fragile.
+
+
+## Build Logs
+
+- 2026-07-18: Modeled the accelerating AI frontier through 2028 - Reconstructed 26 frontier records from 430 model releases, separated long-term growth from current fitted velocity, derived a 1.225× annual velocity multiplier, and published scenario projections for spring 2027 and the end of 2028. Image: https://sebmer.com/images/projects/ai-frontier-acceleration/projection-end-2028.png
+- 2026-07-13: Made Lovalingo page coverage easier to trust - The localization platform now has stronger page discovery, domain adoption, live-translation controls, scoped page status, and safer handling of locale routes so teams can see what is translated and what still needs attention.
+- 2026-07-08: Improved context handling in the open-source Wispr alternative - The macOS voice tool now keeps the speaker’s language intact in command prompts and can attach optional screen context to a voice command, making spoken instructions more useful without changing its local-first dictation flow.
+- 2026-07-07: Built the first Project ELSON sales workspace - Project ELSON now has a public product surface, protected entry, a reusable interface system, and an operator workspace for market signals, research, outreach, pipeline work, and reviewable handoffs.
+- 2026-07-03: Gave Project ELSON a public product surface - A branded web experience and guided product flow now give the AI sales-assistant prototype a clearer public home and a structured starting point for teams.
+- 2026-07-02: Turned Project APEX onboarding into a guided voice conversation - The sales-agent prototype now supports faster business intake, live brief updates, smarter follow-up questions, a guided voice review, source grounding, and a cleaner handoff from setup into the first sales workflow.
+- 2026-07-02: Hardened Lovalingo’s multilingual runtime - Locale routes, partial project sync, retry handling, page discovery, live overrides, and page-status summaries were tightened so a multilingual site is less likely to lose context when a translation pipeline needs to recover.
+- 2026-06-22: Expanded the open-source Wispr alternative into a real Mac voice tool - The project now matches the GitHub repo name wispr-alternatve-local-llm and covers local FluidAudio dictation, OpenAI-compatible command LLMs, Markdown dumping, continuous note capture, optional ESP32 Bluetooth keyboard output, guided setup, configurable audio inputs, and visible Hermes Agent handoff.
+- 2026-06-19: Hardened Make Skills for real agent automation - The Make Skills package improved API-shell fallback execution, credential request guidance, update/upsert examples, logical operator docs, and anti-hallucination rules so agents can build Make workflows with clearer steps and fewer invented details.
+- 2026-06-15: Built the Project APEX onboarding foundation - Project APEX moved from visual system work into a real onboarding flow with provider-ready app structure, faster intake input, persisted briefs, deployment cleanup, and an Elson-style intro for the autonomous sales-agent concept.
+- 2026-06-12: Strengthened Lovalingo runtime and SEO guardrails - Lovalingo gained safer translation job handling, Worker-limit protections, TanStack locale route support, Stripe checkout persistence, clearer production positioning, sitemap and schema checks, and a simpler dashboard for checking translated pages.
+- 2026-06-12: Shaped DEVLO AIOS into a governed agent-ops system - DEVLO AIOS added source-backed run cards, skill gates, SEO and GEO workflow hardening, model and tool watch reports, task registry automation, and feedback gates so agent-assisted operations are easier to review and repeat.
+- 2026-05-19: Simplified Elson shortcut routing - Elson removed stale feedback-learning and history-summary paths, added explicit shortcut intent reduction, filtered skill selection, and moved history titles into the primary prompt output for a cleaner local-agent loop.
+- 2026-05-14: Restored Lovalingo public routes - Lovalingo Web restored the public route set across guides, comparisons, middleware, MDX components, and the well-known manifest route.
+- 2026-05-13: Added airader API and comparison surfaces - airader gained public API documentation, OpenAPI schema, improved landing copy, metrics/HUD state updates, and Hotjar/Lucky Orange comparison pages.
+- 2026-05-12: Rebranded trakkker to airader - The tracker product was rebranded to airader while session pagination, login/site flows, and worker-backed session surfaces moved forward.
+- 2026-05-12: Sharpened Elson public positioning - Elson updated the README headline around the open-source Mac voice-assistant positioning after the release-artifact work.
+- 2026-05-10: Hardened Lovalingo route coverage - Lovalingo released package 0.5.29 and documented manifest maintenance while the web surface restored the language switcher, locale fallback, and public route coverage.
+- 2026-05-07: Shipped Elson release artifacts - Elson shipped 0.0.44 release artifacts with modern and compatibility DMGs plus the universal installer.
+- 2026-05-06: Ran a Lovalingo SEO/GEO pass - Lovalingo Web added sitemap validation, legacy redirects, production sitemap checks, GSC baseline records, priority use-case SEO, and extractable answer content.
+- 2026-05-06: Published the TEMPO AI company site - TEMPO AI added a minimal company profile, product grid, GitHub Pages workflow, deployment trigger, and apex-domain configuration.
+- 2026-05-05: Improved Elson audio capture - Elson added persisted audio captures, menu copy buttons, chunked recording, overlap metadata, bubble recording state, and low-energy audio forwarding to ASR.
+- 2026-05-03: Reworked the public Seb Builds surface - Refreshed the homepage, about page, project copy, live-status links, and build-log archive so the site reads more like an active builder dashboard than a static portfolio.
+- 2026-05-03: Refreshed the project story - Sharper project copy, public demo links, and a new visual for the agentic Seb Builds context. Image: https://sebmer.com/content/logs/2026-05-03-agentic-project-refresh.svg
+- 2026-05-02: Set up the publishing foundation - Prepared the static GitHub Pages deployment, notes and project routes, legal pages, sitemap updates, and a small CLI foundation so Seb Builds can be published and inspected through repeatable project tooling.
+- 2026-04-30: Rebuilt the public project list from Rocket - Nine active projects replaced the starter placeholders.
+- 2026-04-30: Featured Elson.ai as the lead build - Local-first macOS voice assistant, installer work, and open-source positioning.
+- 2026-04-30: Added Social Rocket - Public-safe summary of the Hermes-assisted social research loop.
+- 2026-04-29: Updated Mono Trade - Market-data research summary now covers scanners and intraday snapshots.
+- 2026-04-20: Documented Hermes on Rocket - Agent workbench summarized without private paths or raw checkpoint details.
+
+## Legal, Privacy, And Cookies Summary
+
+- Legal page: https://sebmer.com/legal
+- Company: Mertens Advies
+- Owner: Sebastian Mertens
+- KVK: 96847247
+- Address and direct contact details are available on request via the contact form.
+- Privacy: the site may process basic server logs; Tally processes submitted contact form data; external links are handled by their own providers.
+- Cookies: no non-essential tracking cookies are used in v1; no cookie banner is shown in v1.

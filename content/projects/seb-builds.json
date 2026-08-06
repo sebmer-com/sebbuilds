@@ -1,0 +1,16 @@
+{
+  "title": "Seb Builds",
+  "slug": "seb-builds",
+  "description": "The public build log and project index for Sebastian Mertens: project pages, notes, CLI access, and GitHub Pages deployment for sebmer.com.",
+  "date": "2026-05-06",
+  "tags": [
+    "Next.js",
+    "Build Log",
+    "Portfolio"
+  ],
+  "status": "building",
+  "featured": false,
+  "repoUrl": "https://github.com/sebmer-com/sebbuilds",
+  "demoUrl": "https://sebmer.com",
+  "body": "Seb Builds is the public build surface behind sebmer.com. It turns active work into project pages, build logs, notes, metadata routes, and agent-readable context files.\n\nThe site exists because private work logs are not enough. Projects move quickly, and without a public memory layer the story disappears into Git commits, local notes, agent transcripts, and deployment chores. Seb Builds gives that work a cleaner public shape: project pages for the long-lived context, notes for dated progress, and metadata surfaces for people and agents that want to inspect what is going on.\n\n## What the site contains\n\n- Project pages for active products, experiments, and infrastructure.\n- Build logs that capture concrete dated changes without leaking private details.\n- Static routes for notes, projects, RSS, sitemap, robots, llms.txt, and llms-full.txt.\n- A public About surface and profile JSON for Sebastian Mertens.\n- A small CLI foundation so the same public content can be inspected from developer workflows.\n- A GitHub Pages deployment path for sebmer.com.\n\n## Recent work\n\nThe June update refreshed the timeline from the last May update through the latest public build evidence. It added new project pages for Fluid Push-to-Talk, Make Skills, Project APEX, and DEVLO AIOS. It also expanded the active pages for Lovalingo and Elson.ai so the site explains what was built in simple words.\n\nThe update focuses on the projects included in this public portfolio pass. The public site should show the broader build story while keeping excluded work out of the page.\n\n## Why it matters\n\nA builder site should not only show finished launches. It should also preserve the middle of the build: what changed, why it matters, and what value the product gives to users. That is especially important when many projects are active at the same time.\n\nSeb Builds gives each project a home. A build log can say what happened on a date, but the project page explains the full context in plain language: what the product does, who it helps, why it matters, and what stays private.\n\n## Current direction\n\nThe current direction is quality over shorthand. Project pages should not read like commit messages. They should be clear enough for a normal visitor to understand the product and useful enough for an agent to recover context later.\n\n## Public boundary\n\nSeb Builds is public. The content is written to explain the product value without publishing secrets, private local paths, customer data, credentials, or internal operating details."
+}

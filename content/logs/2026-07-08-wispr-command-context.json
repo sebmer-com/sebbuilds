@@ -1,0 +1,6 @@
+{
+  "id": "2026-07-08-wispr-command-context",
+  "date": "2026-07-08",
+  "text": "Improved context handling in the open-source Wispr alternative",
+  "detail": "The macOS voice tool now keeps the speaker’s language intact in command prompts and can attach optional screen context to a voice command, making spoken instructions more useful without changing its local-first dictation flow."
+}

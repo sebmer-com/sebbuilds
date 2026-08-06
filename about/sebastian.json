@@ -1,0 +1,53 @@
+{
+  "markdown": "# Sebastian Mertens\n\n## Short Bio\n\nI work as a Principal AI Product Manager at Make, operating in a Founder in Residence role. I work deeply with design, engineering, product, and technical staff to turn new ideas into prototypes, products, and new market opportunities.\n\nSeb Builds is where I share projects, build logs, agent workflows, and lessons from shipping in public.\n\n## What Sebastian Builds\n\n- Zero-to-one AI products that move from a real customer problem to a launched product.\n- AI agents, automation, and iPaaS systems that connect tools, teams, and business processes.\n- Public build logs, CLI-friendly context, and agent-readable documentation for Claude, Codex, and Hermes projects.\n- Experiments around generated interfaces, agentic coding, evals, model cost, new markets, and product distribution.\n\n## Current Work\n\nSebastian is a Principal AI Product Manager at Make, working in a Founder in Residence role. He stepped away from day-to-day management responsibilities to return to hands-on product building: finding a sharp customer problem, testing the market, shipping the first product, and learning from real use.\n\nHe works deeply embedded with design, engineering, product, and technical staff. Together they test startup ideas and product concepts, explore new markets, and take promising ideas through customer discovery, prototyping, implementation, launch, and iteration.\n\nMost of that work happens directly in the technical machinery. Sebastian uses AI agents heavily for product research, software development, testing, and operations, with long stretches of focused build work rather than managing from a distance.\n\nSeb Builds is his public builder surface at sebmer.com. It documents selected products, technical experiments, and the process behind building with AI.\n\n## Experience Highlights\n\n- Principal AI Product Manager at Make, working in a Founder in Residence role on new AI products, startup concepts, and market exploration.\n- Deeply embedded with design, engineering, product, and technical staff from early customer discovery through implementation and launch.\n- Builds with Claude Code, Codex, Hermes, and multi-agent workflows that move software from prototype to operational use.\n- Designs contextual AI layers and agent systems for teams, tools, and business workflows.\n- Co-Founder and investor in makeitfuture, focused on integration, automation, and AI solutions.\n- Chairman and Co-Founder of wemakefuture, a future-leading AI agent and automation company.\n- Working with automation and AI tooling since 2016 (I built AI systems before it was cool), across iPaaS and OCR/NLP/Forrestalgos, business automation, agentic software systems, and product implementation.\n- Started his career in banking and regulated industries, bringing a practical understanding of operational constraints, compliance, and reliability.\n\n## Education\n\n- Master in Digital Management and Transformation \n- Bachelor in IT-Management from Steinbeis-Hochschule\n\n## Current Public Themes\n\n- Harness-style AI DevOps and pipeline-native agents that bring contextual AI into CI/CD, testing, AppSec, remediation, cost optimization, and incident workflows.\n- Agentic software engineering with Codex, Claude Code, worktrees, skills, and multi-agent orchestration instead of single-prompt code generation.\n- Context engineering as the new product layer: repo knowledge, AGENTS.md, MCP, memory, tool adapters, and CLI-first operations that make agents useful in real codebases.\n- Production-grade AI agent operations: evals, observability, audit logs, policy controls, permissions, rollback, and secure execution boundaries.\n- Hermes, OpenClaw, MCP, and open agent infrastructure for repeatable workflows instead of isolated AI demos.\n- Measuring AI impact in real workflows: token spend, model cost, model quality, MTTR, lead time, and developer throughput.\n- Generated UI, pixel-streamed interfaces, and personalized software surfaces that adapt to user intent, permissions, and workflow context.\n\n## Links\n\n- Website: https://sebmer.com\n- LinkedIn: https://www.linkedin.com/in/auto-mate/\n- Instagram: https://www.instagram.com/sebmer_/\n- X: https://x.com/sebmer_com\n- YouTube: https://www.youtube.com/@Sebmer-automate\n- GitHub: https://github.com/sebmer-com",
+  "sections": [
+    {
+      "level": 1,
+      "title": "Sebastian Mertens",
+      "slug": "sebastian-mertens",
+      "content": ""
+    },
+    {
+      "level": 2,
+      "title": "Short Bio",
+      "slug": "short-bio",
+      "content": "I work as a Principal AI Product Manager at Make, operating in a Founder in Residence role. I work deeply with design, engineering, product, and technical staff to turn new ideas into prototypes, products, and new market opportunities.\n\nSeb Builds is where I share projects, build logs, agent workflows, and lessons from shipping in public."
+    },
+    {
+      "level": 2,
+      "title": "What Sebastian Builds",
+      "slug": "what-sebastian-builds",
+      "content": "- Zero-to-one AI products that move from a real customer problem to a launched product.\n- AI agents, automation, and iPaaS systems that connect tools, teams, and business processes.\n- Public build logs, CLI-friendly context, and agent-readable documentation for Claude, Codex, and Hermes projects.\n- Experiments around generated interfaces, agentic coding, evals, model cost, new markets, and product distribution."
+    },
+    {
+      "level": 2,
+      "title": "Current Work",
+      "slug": "current-work",
+      "content": "Sebastian is a Principal AI Product Manager at Make, working in a Founder in Residence role. He stepped away from day-to-day management responsibilities to return to hands-on product building: finding a sharp customer problem, testing the market, shipping the first product, and learning from real use.\n\nHe works deeply embedded with design, engineering, product, and technical staff. Together they test startup ideas and product concepts, explore new markets, and take promising ideas through customer discovery, prototyping, implementation, launch, and iteration.\n\nMost of that work happens directly in the technical machinery. Sebastian uses AI agents heavily for product research, software development, testing, and operations, with long stretches of focused build work rather than managing from a distance.\n\nSeb Builds is his public builder surface at sebmer.com. It documents selected products, technical experiments, and the process behind building with AI."
+    },
+    {
+      "level": 2,
+      "title": "Experience Highlights",
+      "slug": "experience-highlights",
+      "content": "- Principal AI Product Manager at Make, working in a Founder in Residence role on new AI products, startup concepts, and market exploration.\n- Deeply embedded with design, engineering, product, and technical staff from early customer discovery through implementation and launch.\n- Builds with Claude Code, Codex, Hermes, and multi-agent workflows that move software from prototype to operational use.\n- Designs contextual AI layers and agent systems for teams, tools, and business workflows.\n- Co-Founder and investor in makeitfuture, focused on integration, automation, and AI solutions.\n- Chairman and Co-Founder of wemakefuture, a future-leading AI agent and automation company.\n- Working with automation and AI tooling since 2016 (I built AI systems before it was cool), across iPaaS and OCR/NLP/Forrestalgos, business automation, agentic software systems, and product implementation.\n- Started his career in banking and regulated industries, bringing a practical understanding of operational constraints, compliance, and reliability."
+    },
+    {
+      "level": 2,
+      "title": "Education",
+      "slug": "education",
+      "content": "- Master in Digital Management and Transformation \n- Bachelor in IT-Management from Steinbeis-Hochschule"
+    },
+    {
+      "level": 2,
+      "title": "Current Public Themes",
+      "slug": "current-public-themes",
+      "content": "- Harness-style AI DevOps and pipeline-native agents that bring contextual AI into CI/CD, testing, AppSec, remediation, cost optimization, and incident workflows.\n- Agentic software engineering with Codex, Claude Code, worktrees, skills, and multi-agent orchestration instead of single-prompt code generation.\n- Context engineering as the new product layer: repo knowledge, AGENTS.md, MCP, memory, tool adapters, and CLI-first operations that make agents useful in real codebases.\n- Production-grade AI agent operations: evals, observability, audit logs, policy controls, permissions, rollback, and secure execution boundaries.\n- Hermes, OpenClaw, MCP, and open agent infrastructure for repeatable workflows instead of isolated AI demos.\n- Measuring AI impact in real workflows: token spend, model cost, model quality, MTTR, lead time, and developer throughput.\n- Generated UI, pixel-streamed interfaces, and personalized software surfaces that adapt to user intent, permissions, and workflow context."
+    },
+    {
+      "level": 2,
+      "title": "Links",
+      "slug": "links",
+      "content": "- Website: https://sebmer.com\n- LinkedIn: https://www.linkedin.com/in/auto-mate/\n- Instagram: https://www.instagram.com/sebmer_/\n- X: https://x.com/sebmer_com\n- YouTube: https://www.youtube.com/@Sebmer-automate\n- GitHub: https://github.com/sebmer-com"
+    }
+  ]
+}

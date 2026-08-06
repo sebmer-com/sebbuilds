@@ -1,0 +1,60 @@
+# Seb Builds
+
+Seb Builds is Sebastian's public builder log for useful products, long-form project posts, and short build logs.
+
+## About Sebastian
+
+I work as a Principal AI Product Manager at Make, operating in a Founder in Residence role. I work deeply with design, engineering, product, and technical staff to turn new ideas into prototypes, products, and new market opportunities.
+
+Seb Builds is where I share projects, build logs, agent workflows, and lessons from shipping in public.
+
+## Key Pages
+
+- [Home](https://sebmer.com)
+- [About Sebastian](https://sebmer.com/about)
+- [Projects](https://sebmer.com/projects)
+- [Latest Build Logs](https://sebmer.com/logs)
+- [Legal, Privacy, and Cookies](https://sebmer.com/legal)
+- [Full LLM Context](https://sebmer.com/llms-full.txt)
+- [RSS](https://sebmer.com/rss.xml)
+- [Sitemap](https://sebmer.com/sitemap.xml)
+
+## Public JSON Content
+
+- [About Sebastian JSON](https://sebmer.com/about/sebastian.json)
+- [About Sebastian Markdown](https://sebmer.com/content/about/sebastian.md)
+- [Projects manifest](https://sebmer.com/content/projects/index.json)
+- [Logs manifest](https://sebmer.com/content/logs/index.json)
+
+## Projects
+
+- [AI Acceleration Forecast: How Will AI Intelligence Evolve by 2028?](https://sebmer.com/projects/ai-frontier-acceleration-forecast): A data-backed AI acceleration forecast using 430 model releases to explore how frontier AI intelligence could evolve through spring 2027 and end-2028.
+- [Wispr Alternative Local LLM](https://sebmer.com/projects/wispr-alternatve-local-llm): An open-source macOS Wispr Flow alternative for local dictation, language-aware LLM commands, optional screen context, Markdown notes, Bluetooth typing, and Hermes Agent handoff.
+- [Project ELSON](https://sebmer.com/projects/project-elson): A sales-workspace prototype for turning market signals into clear research, outreach, pipeline, and review steps.
+- [Elson.ai](https://sebmer.com/projects/elson-ai): A local-first AI assistant for macOS with clear shortcuts, screenshot-aware agent mode, and clearer installer behavior.
+- [Project APEX](https://sebmer.com/projects/project-apex): An autonomous sales-agent prototype with guided voice onboarding, live brief review, source grounding, and a provider-ready intake backend.
+- [Seb Builds](https://sebmer.com/projects/seb-builds): The public build log and project index for Sebastian Mertens: project pages, notes, CLI access, and GitHub Pages deployment for sebmer.com.
+- [Make Skills](https://sebmer.com/projects/make-skills): A public skill package that teaches AI coding agents how to build and operate Make workflows with less guessing.
+- [DEVLO AIOS](https://sebmer.com/projects/devlo-aios): A governed operations system for agent-assisted business work, research, SEO checks, task routing, and source-backed decision records.
+- [airader](https://sebmer.com/projects/airader): A session-replay and customer-journey analysis product with public API docs, OpenAPI surfaces, and SEO comparison pages.
+- [TEMPO AI](https://sebmer.com/projects/tempo-ai): A minimal company profile site for the TEMPO AI product family, linking Lovalingo and Elson into one public company surface.
+- [Mono Trade](https://sebmer.com/projects/mono-trade): A market-data research stack for scanners, snapshots, and boringly reliable finance tooling.
+- [Hermes on Rocket](https://sebmer.com/projects/hermes-on-rocket): An AI-agent workbench for skills, checkpoints, context, remote projects, and long-running build workflows.
+- [Tracker](https://sebmer.com/projects/tracker): A Swift-first macOS utility for activity context, permissions, and local workflow signals.
+- [Gairvis](https://sebmer.com/projects/gairvis): A branded AI product surface that combines a public site with canvas-style work interfaces.
+- [Enhanced OnVista](https://sebmer.com/projects/enhanced-onvista): A Python toolkit that turns German market-data pages into something scripts can actually use.
+- [Lovalingo](https://sebmer.com/projects/lovalingo): A translation and localization tool for AI-built web apps, with route coverage, SEO checks, billing, and runtime guardrails.
+- [Social Rocket](https://sebmer.com/projects/social-rocket): A Hermes-assisted research loop for spotting better build signals before posting in public.
+
+## Agent CLI
+
+- `npx github:sebmer-com/sebbuilds ls ./ --all`
+- `npx github:sebmer-com/sebbuilds cat ./about/sebastian.md`
+- `npx github:sebmer-com/sebbuilds cat ./about/sebastian.json`
+- `npx github:sebmer-com/sebbuilds cat ./context/llms-full.txt`
+
+## Notes For AI Agents
+
+- Projects are long-form posts with Markdown bodies.
+- Logs are short build updates and do not have individual detail pages.
+- The canonical domain is https://sebmer.com.

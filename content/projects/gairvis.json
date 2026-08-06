@@ -1,0 +1,15 @@
+{
+  "title": "Gairvis",
+  "slug": "gairvis",
+  "description": "A branded AI product surface that combines a public site with canvas-style work interfaces.",
+  "date": "2026-03-05",
+  "tags": [
+    "Next.js",
+    "Canvas",
+    "AI"
+  ],
+  "status": "building",
+  "featured": false,
+  "demoUrl": "https://gairvis.com",
+  "body": "Gairvis is a branded AI product surface built around a public web presence and canvas-style work interfaces.\n\nThe goal is to make the AI layer feel like a real product, not another generic chat box. The public site gives the brand a front door. The canvas direction explores how work can happen visually, with context, structure, and room for agents to help without taking over the whole screen.\n\n## What it explores\n\n- A Next.js web surface with brand, SEO, and product foundations.\n- Canvas-style interaction patterns for AI-assisted work.\n- Product structure that can grow beyond a static marketing page.\n- Interface patterns where agents support the workflow instead of stealing the whole screen.\n- Reliability improvements around the canvas-side product experience.\n\n## Why this project exists\n\nA lot of AI products still feel like a prompt field with branding around it. That is fine for simple tasks, but it is not enough for workflows that need spatial structure, persistent context, and multiple pieces of information visible at once.\n\nGairvis explores a different surface. A canvas gives the product more room: documents, plans, generated outputs, references, and agent actions can exist side by side. The user does not have to compress every instruction into a single chat turn, and the agent does not have to pretend the whole workflow is linear.\n\n## Product story\n\nThe public site is the simple part: brand, positioning, and a front door. The more interesting part is the work surface. Canvas-style AI tools can make collaboration between humans and agents feel less like command-and-response and more like shared workspace.\n\nThat direction fits the broader Seb Builds pattern. Elson explores voice as an interface. Hermes explores agents as operators. Gairvis explores the visual work surface where those agents might become easier to direct, inspect, and correct.\n\n## Recent direction\n\nRecent work focused on web structure, brand-ready components, and reliability improvements in the canvas-side product. The page is still early, but the project has enough shape to explain what it is exploring: better AI interfaces for work that needs context and structure.\n\n## Current direction\n\nThe next useful direction is making the canvas story more concrete: example workflows, clearer object types, better persistence, and stronger public demos that show why a canvas is better than a chat box for certain tasks.\n\n## Public boundary\n\nThis page describes the public product concept and interface direction. It does not expose private prototypes, credentials, unreleased customer workflows, or internal implementation details."
+}

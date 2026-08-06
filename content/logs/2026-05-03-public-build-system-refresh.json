@@ -1,0 +1,6 @@
+{
+  "id": "2026-05-03-public-build-system-refresh",
+  "date": "2026-05-03",
+  "text": "Reworked the public Seb Builds surface",
+  "detail": "Refreshed the homepage, about page, project copy, live-status links, and build-log archive so the site reads more like an active builder dashboard than a static portfolio."
+}

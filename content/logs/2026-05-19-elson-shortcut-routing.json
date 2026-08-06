@@ -1,0 +1,6 @@
+{
+  "id": "2026-05-19-elson-shortcut-routing",
+  "date": "2026-05-19",
+  "text": "Simplified Elson shortcut routing",
+  "detail": "Elson removed stale feedback-learning and history-summary paths, added explicit shortcut intent reduction, filtered skill selection, and moved history titles into the primary prompt output for a cleaner local-agent loop."
+}

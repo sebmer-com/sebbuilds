@@ -1,0 +1,5 @@
+User-Agent: *
+Allow: /
+
+Host: https://sebmer.com
+Sitemap: https://sebmer.com/sitemap.xml

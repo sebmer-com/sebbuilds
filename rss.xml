@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <rss version="2.0">
+      <channel>
+        <title>Seb Builds</title>
+        <link>https://sebmer.com</link>
+        <description>Seb Builds is Sebastian&apos;s public builder log for useful products, build logs, videos, and lessons from shipping in public.</description>
+        <language>en</language>
+        <lastBuildDate>Sat, 18 Jul 2026 00:00:00 GMT</lastBuildDate>
+        
+        <item>
+          <title>AI Acceleration Forecast: How Will AI Intelligence Evolve by 2028?</title>
+          <link>https://sebmer.com/projects/ai-frontier-acceleration-forecast</link>
+          <guid>https://sebmer.com/projects/ai-frontier-acceleration-forecast</guid>
+          <pubDate>Sat, 18 Jul 2026 00:00:00 GMT</pubDate>
+          <description>A data-backed AI acceleration forecast using 430 model releases to explore how frontier AI intelligence could evolve through spring 2027 and end-2028.</description>
+        </item>
+        <item>
+          <title>Modeled the accelerating AI frontier through 2028</title>
+          <link>https://sebmer.com/logs#2026-07-18-ai-frontier-acceleration-forecast</link>
+          <guid>https://sebmer.com/logs#2026-07-18-ai-frontier-acceleration-forecast</guid>
+          <pubDate>Sat, 18 Jul 2026 00:00:00 GMT</pubDate>
+          <description>Reconstructed 26 frontier records from 430 model releases, separated long-term growth from current fitted velocity, derived a 1.225× annual velocity multiplier, and published scenario projections for spring 2027 and the end of 2028.</description>
+        </item>
+        <item>
+          <title>Lovalingo</title>
+          <link>https://sebmer.com/projects/lovalingo</link>
+          <guid>https://sebmer.com/projects/lovalingo</guid>
+          <pubDate>Mon, 13 Jul 2026 00:00:00 GMT</pubDate>
+          <description>A translation and localization tool for AI-built web apps, with route coverage, SEO checks, billing, and runtime guardrails.</description>
+        </item>
+        <item>
+          <title>Made Lovalingo page coverage easier to trust</title>
+          <link>https://sebmer.com/logs#2026-07-13-lovalingo-page-coverage-controls</link>
+          <guid>https://sebmer.com/logs#2026-07-13-lovalingo-page-coverage-controls</guid>
+          <pubDate>Mon, 13 Jul 2026 00:00:00 GMT</pubDate>
+          <description>The localization platform now has stronger page discovery, domain adoption, live-translation controls, scoped page status, and safer handling of locale routes so teams can see what is translated and what still needs attention.</description>
+        </item>
+        <item>
+          <title>Wispr Alternative Local LLM</title>
+          <link>https://sebmer.com/projects/wispr-alternatve-local-llm</link>
+          <guid>https://sebmer.com/projects/wispr-alternatve-local-llm</guid>
+          <pubDate>Wed, 08 Jul 2026 00:00:00 GMT</pubDate>
+          <description>An open-source macOS Wispr Flow alternative for local dictation, language-aware LLM commands, optional screen context, Markdown notes, Bluetooth typing, and Hermes Agent handoff.</description>
+        </item>
+        <item>
+          <title>Improved context handling in the open-source Wispr alternative</title>
+          <link>https://sebmer.com/logs#2026-07-08-wispr-command-context</link>
+          <guid>https://sebmer.com/logs#2026-07-08-wispr-command-context</guid>
+          <pubDate>Wed, 08 Jul 2026 00:00:00 GMT</pubDate>
+          <description>The macOS voice tool now keeps the speaker’s language intact in command prompts and can attach optional screen context to a voice command, making spoken instructions more useful without changing its local-first dictation flow.</description>
+        </item>
+        <item>
+          <title>Project ELSON</title>
+          <link>https://sebmer.com/projects/project-elson</link>
+          <guid>https://sebmer.com/projects/project-elson</guid>
+          <pubDate>Tue, 07 Jul 2026 00:00:00 GMT</pubDate>
+          <description>A sales-workspace prototype for turning market signals into clear research, outreach, pipeline, and review steps.</description>
+        </item>
+        <item>
+          <title>Built the first Project ELSON sales workspace</title>
+          <link>https://sebmer.com/logs#2026-07-07-project-elson-sales-workspace</link>
+          <guid>https://sebmer.com/logs#2026-07-07-project-elson-sales-workspace</guid>
+          <pubDate>Tue, 07 Jul 2026 00:00:00 GMT</pubDate>
+          <description>Project ELSON now has a public product surface, protected entry, a reusable interface system, and an operator workspace for market signals, research, outreach, pipeline work, and reviewable handoffs.</description>
+        </item>
+        <item>
+          <title>Gave Project ELSON a public product surface</title>
+          <link>https://sebmer.com/logs#2026-07-03-elson-public-product-surface</link>
+          <guid>https://sebmer.com/logs#2026-07-03-elson-public-product-surface</guid>
+          <pubDate>Fri, 03 Jul 2026 00:00:00 GMT</pubDate>
+          <description>A branded web experience and guided product flow now give the AI sales-assistant prototype a clearer public home and a structured starting point for teams.</description>
+        </item>
+        <item>
+          <title>Project APEX</title>
+          <link>https://sebmer.com/projects/project-apex</link>
+          <guid>https://sebmer.com/projects/project-apex</guid>
+          <pubDate>Thu, 02 Jul 2026 00:00:00 GMT</pubDate>
+          <description>An autonomous sales-agent prototype with guided voice onboarding, live brief review, source grounding, and a provider-ready intake backend.</description>
+        </item>
+        <item>
+          <title>Turned Project APEX onboarding into a guided voice conversation</title>
+          <link>https://sebmer.com/logs#2026-07-02-project-apex-voice-onboarding</link>
+          <guid>https://sebmer.com/logs#2026-07-02-project-apex-voice-onboarding</guid>
+          <pubDate>Thu, 02 Jul 2026 00:00:00 GMT</pubDate>
+          <description>The sales-agent prototype now supports faster business intake, live brief updates, smarter follow-up questions, a guided voice review, source grounding, and a cleaner handoff from setup into the first sales workflow.</description>
+        </item>
+        <item>
+          <title>Hardened Lovalingo’s multilingual runtime</title>
+          <link>https://sebmer.com/logs#2026-07-02-lovalingo-runtime-reliability</link>
+          <guid>https://sebmer.com/logs#2026-07-02-lovalingo-runtime-reliability</guid>
+          <pubDate>Thu, 02 Jul 2026 00:00:00 GMT</pubDate>
+          <description>Locale routes, partial project sync, retry handling, page discovery, live overrides, and page-status summaries were tightened so a multilingual site is less likely to lose context when a translation pipeline needs to recover.</description>
+        </item>
+        <item>
+          <title>Expanded the open-source Wispr alternative into a real Mac voice tool</title>
+          <link>https://sebmer.com/logs#2026-06-22-fluid-push-to-talk-customer-installer</link>
+          <guid>https://sebmer.com/logs#2026-06-22-fluid-push-to-talk-customer-installer</guid>
+          <pubDate>Mon, 22 Jun 2026 00:00:00 GMT</pubDate>
+          <description>The project now matches the GitHub repo name wispr-alternatve-local-llm and covers local FluidAudio dictation, OpenAI-compatible command LLMs, Markdown dumping, continuous note capture, optional ESP32 Bluetooth keyboard output, guided setup, configurable audio inputs, and visible Hermes Agent handoff.</description>
+        </item>
+        <item>
+          <title>Make Skills</title>
+          <link>https://sebmer.com/projects/make-skills</link>
+          <guid>https://sebmer.com/projects/make-skills</guid>
+          <pubDate>Fri, 19 Jun 2026 00:00:00 GMT</pubDate>
+          <description>A public skill package that teaches AI coding agents how to build and operate Make workflows with less guessing.</description>
+        </item>
+        <item>
+          <title>Hardened Make Skills for real agent automation</title>
+          <link>https://sebmer.com/logs#2026-06-19-make-skills-api-shell-hardening</link>
+          <guid>https://sebmer.com/logs#2026-06-19-make-skills-api-shell-hardening</guid>
+          <pubDate>Fri, 19 Jun 2026 00:00:00 GMT</pubDate>
+          <description>The Make Skills package improved API-shell fallback execution, credential request guidance, update/upsert examples, logical operator docs, and anti-hallucination rules so agents can build Make workflows with clearer steps and fewer invented details.</description>
+        </item>
+        <item>
+          <title>Built the Project APEX onboarding foundation</title>
+          <link>https://sebmer.com/logs#2026-06-15-project-apex-onboarding-intake</link>
+          <guid>https://sebmer.com/logs#2026-06-15-project-apex-onboarding-intake</guid>
+          <pubDate>Mon, 15 Jun 2026 00:00:00 GMT</pubDate>
+          <description>Project APEX moved from visual system work into a real onboarding flow with provider-ready app structure, faster intake input, persisted briefs, deployment cleanup, and an Elson-style intro for the autonomous sales-agent concept.</description>
+        </item>
+        <item>
+          <title>DEVLO AIOS</title>
+          <link>https://sebmer.com/projects/devlo-aios</link>
+          <guid>https://sebmer.com/projects/devlo-aios</guid>
+          <pubDate>Fri, 12 Jun 2026 00:00:00 GMT</pubDate>
+          <description>A governed operations system for agent-assisted business work, research, SEO checks, task routing, and source-backed decision records.</description>
+        </item>
+        <item>
+          <title>Strengthened Lovalingo runtime and SEO guardrails</title>
+          <link>https://sebmer.com/logs#2026-06-12-lovalingo-runtime-seo-guardrails</link>
+          <guid>https://sebmer.com/logs#2026-06-12-lovalingo-runtime-seo-guardrails</guid>
+          <pubDate>Fri, 12 Jun 2026 00:00:00 GMT</pubDate>
+          <description>Lovalingo gained safer translation job handling, Worker-limit protections, TanStack locale route support, Stripe checkout persistence, clearer production positioning, sitemap and schema checks, and a simpler dashboard for checking translated pages.</description>
+        </item>
+        <item>
+          <title>Shaped DEVLO AIOS into a governed agent-ops system</title>
+          <link>https://sebmer.com/logs#2026-06-12-devlo-aios-governed-ops-system</link>
+          <guid>https://sebmer.com/logs#2026-06-12-devlo-aios-governed-ops-system</guid>
+          <pubDate>Fri, 12 Jun 2026 00:00:00 GMT</pubDate>
+          <description>DEVLO AIOS added source-backed run cards, skill gates, SEO and GEO workflow hardening, model and tool watch reports, task registry automation, and feedback gates so agent-assisted operations are easier to review and repeat.</description>
+        </item>
+        <item>
+          <title>Elson.ai</title>
+          <link>https://sebmer.com/projects/elson-ai</link>
+          <guid>https://sebmer.com/projects/elson-ai</guid>
+          <pubDate>Tue, 19 May 2026 00:00:00 GMT</pubDate>
+          <description>A local-first AI assistant for macOS with clear shortcuts, screenshot-aware agent mode, and clearer installer behavior.</description>
+        </item>
+        <item>
+          <title>Simplified Elson shortcut routing</title>
+          <link>https://sebmer.com/logs#2026-05-19-elson-shortcut-routing</link>
+          <guid>https://sebmer.com/logs#2026-05-19-elson-shortcut-routing</guid>
+          <pubDate>Tue, 19 May 2026 00:00:00 GMT</pubDate>
+          <description>Elson removed stale feedback-learning and history-summary paths, added explicit shortcut intent reduction, filtered skill selection, and moved history titles into the primary prompt output for a cleaner local-agent loop.</description>
+        </item>
+        <item>
+          <title>Restored Lovalingo public routes</title>
+          <link>https://sebmer.com/logs#2026-05-14-lovalingo-route-restore</link>
+          <guid>https://sebmer.com/logs#2026-05-14-lovalingo-route-restore</guid>
+          <pubDate>Thu, 14 May 2026 00:00:00 GMT</pubDate>
+          <description>Lovalingo Web restored the public route set across guides, comparisons, middleware, MDX components, and the well-known manifest route.</description>
+        </item>
+        <item>
+          <title>Added airader API and comparison surfaces</title>
+          <link>https://sebmer.com/logs#2026-05-13-airader-api-and-seo-pages</link>
+          <guid>https://sebmer.com/logs#2026-05-13-airader-api-and-seo-pages</guid>
+          <pubDate>Wed, 13 May 2026 00:00:00 GMT</pubDate>
+          <description>airader gained public API documentation, OpenAPI schema, improved landing copy, metrics/HUD state updates, and Hotjar/Lucky Orange comparison pages.</description>
+        </item>
+        <item>
+          <title>airader</title>
+          <link>https://sebmer.com/projects/airader</link>
+          <guid>https://sebmer.com/projects/airader</guid>
+          <pubDate>Tue, 12 May 2026 00:00:00 GMT</pubDate>
+          <description>A session-replay and customer-journey analysis product with public API docs, OpenAPI surfaces, and SEO comparison pages.</description>
+        </item>
+        <item>
+          <title>Rebranded trakkker to airader</title>
+          <link>https://sebmer.com/logs#2026-05-12-airader-rebrand-and-pagination</link>
+          <guid>https://sebmer.com/logs#2026-05-12-airader-rebrand-and-pagination</guid>
+          <pubDate>Tue, 12 May 2026 00:00:00 GMT</pubDate>
+          <description>The tracker product was rebranded to airader while session pagination, login/site flows, and worker-backed session surfaces moved forward.</description>
+        </item>
+        <item>
+          <title>Sharpened Elson public positioning</title>
+          <link>https://sebmer.com/logs#2026-05-12-elson-readme-positioning</link>
+          <guid>https://sebmer.com/logs#2026-05-12-elson-readme-positioning</guid>
+          <pubDate>Tue, 12 May 2026 00:00:00 GMT</pubDate>
+          <description>Elson updated the README headline around the open-source Mac voice-assistant positioning after the release-artifact work.</description>
+        </item>
+        <item>
+          <title>Hardened Lovalingo route coverage</title>
+          <link>https://sebmer.com/logs#2026-05-10-lovalingo-route-coverage</link>
+          <guid>https://sebmer.com/logs#2026-05-10-lovalingo-route-coverage</guid>
+          <pubDate>Sun, 10 May 2026 00:00:00 GMT</pubDate>
+          <description>Lovalingo released package 0.5.29 and documented manifest maintenance while the web surface restored the language switcher, locale fallback, and public route coverage.</description>
+        </item>
+        <item>
+          <title>Shipped Elson release artifacts</title>
+          <link>https://sebmer.com/logs#2026-05-07-elson-release-artifacts</link>
+          <guid>https://sebmer.com/logs#2026-05-07-elson-release-artifacts</guid>
+          <pubDate>Thu, 07 May 2026 00:00:00 GMT</pubDate>
+          <description>Elson shipped 0.0.44 release artifacts with modern and compatibility DMGs plus the universal installer.</description>
+        </item>
+        <item>
+          <title>Seb Builds</title>
+          <link>https://sebmer.com/projects/seb-builds</link>
+          <guid>https://sebmer.com/projects/seb-builds</guid>
+          <pubDate>Wed, 06 May 2026 00:00:00 GMT</pubDate>
+          <description>The public build log and project index for Sebastian Mertens: project pages, notes, CLI access, and GitHub Pages deployment for sebmer.com.</description>
+        </item>
+        <item>
+          <title>TEMPO AI</title>
+          <link>https://sebmer.com/projects/tempo-ai</link>
+          <guid>https://sebmer.com/projects/tempo-ai</guid>
+          <pubDate>Wed, 06 May 2026 00:00:00 GMT</pubDate>
+          <description>A minimal company profile site for the TEMPO AI product family, linking Lovalingo and Elson into one public company surface.</description>
+        </item>
+        <item>
+          <title>Ran a Lovalingo SEO/GEO pass</title>
+          <link>https://sebmer.com/logs#2026-05-06-lovalingo-seo-geo-pass</link>
+          <guid>https://sebmer.com/logs#2026-05-06-lovalingo-seo-geo-pass</guid>
+          <pubDate>Wed, 06 May 2026 00:00:00 GMT</pubDate>
+          <description>Lovalingo Web added sitemap validation, legacy redirects, production sitemap checks, GSC baseline records, priority use-case SEO, and extractable answer content.</description>
+        </item>
+        <item>
+          <title>Published the TEMPO AI company site</title>
+          <link>https://sebmer.com/logs#2026-05-06-tempo-ai-company-site</link>
+          <guid>https://sebmer.com/logs#2026-05-06-tempo-ai-company-site</guid>
+          <pubDate>Wed, 06 May 2026 00:00:00 GMT</pubDate>
+          <description>TEMPO AI added a minimal company profile, product grid, GitHub Pages workflow, deployment trigger, and apex-domain configuration.</description>
+        </item>
+        <item>
+          <title>Improved Elson audio capture</title>
+          <link>https://sebmer.com/logs#2026-05-05-elson-audio-capture-loop</link>
+          <guid>https://sebmer.com/logs#2026-05-05-elson-audio-capture-loop</guid>
+          <pubDate>Tue, 05 May 2026 00:00:00 GMT</pubDate>
+          <description>Elson added persisted audio captures, menu copy buttons, chunked recording, overlap metadata, bubble recording state, and low-energy audio forwarding to ASR.</description>
+        </item>
+        <item>
+          <title>Reworked the public Seb Builds surface</title>
+          <link>https://sebmer.com/logs#2026-05-03-public-build-system-refresh</link>
+          <guid>https://sebmer.com/logs#2026-05-03-public-build-system-refresh</guid>
+          <pubDate>Sun, 03 May 2026 00:00:00 GMT</pubDate>
+          <description>Refreshed the homepage, about page, project copy, live-status links, and build-log archive so the site reads more like an active builder dashboard than a static portfolio.</description>
+        </item>
+        <item>
+          <title>Refreshed the project story</title>
+          <link>https://sebmer.com/logs#2026-05-03-agentic-project-refresh</link>
+          <guid>https://sebmer.com/logs#2026-05-03-agentic-project-refresh</guid>
+          <pubDate>Sun, 03 May 2026 00:00:00 GMT</pubDate>
+          <description>Sharper project copy, public demo links, and a new visual for the agentic Seb Builds context.</description>
+        </item>
+        <item>
+          <title>Set up the publishing foundation</title>
+          <link>https://sebmer.com/logs#2026-05-02-github-pages-and-cli-foundation</link>
+          <guid>https://sebmer.com/logs#2026-05-02-github-pages-and-cli-foundation</guid>
+          <pubDate>Sat, 02 May 2026 00:00:00 GMT</pubDate>
+          <description>Prepared the static GitHub Pages deployment, notes and project routes, legal pages, sitemap updates, and a small CLI foundation so Seb Builds can be published and inspected through repeatable project tooling.</description>
+        </item>
+        <item>
+          <title>Rebuilt the public project list from Rocket</title>
+          <link>https://sebmer.com/logs#2026-04-30-rocket-project-inventory</link>
+          <guid>https://sebmer.com/logs#2026-04-30-rocket-project-inventory</guid>
+          <pubDate>Thu, 30 Apr 2026 00:00:00 GMT</pubDate>
+          <description>Nine active projects replaced the starter placeholders.</description>
+        </item>
+        <item>
+          <title>Featured Elson.ai as the lead build</title>
+          <link>https://sebmer.com/logs#2026-04-30-elson-featured</link>
+          <guid>https://sebmer.com/logs#2026-04-30-elson-featured</guid>
+          <pubDate>Thu, 30 Apr 2026 00:00:00 GMT</pubDate>
+          <description>Local-first macOS voice assistant, installer work, and open-source positioning.</description>
+        </item>
+        <item>
+          <title>Added Social Rocket</title>
+          <link>https://sebmer.com/logs#2026-04-30-social-rocket-added</link>
+          <guid>https://sebmer.com/logs#2026-04-30-social-rocket-added</guid>
+          <pubDate>Thu, 30 Apr 2026 00:00:00 GMT</pubDate>
+          <description>Public-safe summary of the Hermes-assisted social research loop.</description>
+        </item>
+        <item>
+          <title>Mono Trade</title>
+          <link>https://sebmer.com/projects/mono-trade</link>
+          <guid>https://sebmer.com/projects/mono-trade</guid>
+          <pubDate>Wed, 29 Apr 2026 00:00:00 GMT</pubDate>
+          <description>A market-data research stack for scanners, snapshots, and boringly reliable finance tooling.</description>
+        </item>
+        <item>
+          <title>Social Rocket</title>
+          <link>https://sebmer.com/projects/social-rocket</link>
+          <guid>https://sebmer.com/projects/social-rocket</guid>
+          <pubDate>Wed, 29 Apr 2026 00:00:00 GMT</pubDate>
+          <description>A Hermes-assisted research loop for spotting better build signals before posting in public.</description>
+        </item>
+        <item>
+          <title>Updated Mono Trade</title>
+          <link>https://sebmer.com/logs#2026-04-29-mono-trade-snapshot-bars</link>
+          <guid>https://sebmer.com/logs#2026-04-29-mono-trade-snapshot-bars</guid>
+          <pubDate>Wed, 29 Apr 2026 00:00:00 GMT</pubDate>
+          <description>Market-data research summary now covers scanners and intraday snapshots.</description>
+        </item>
+        <item>
+          <title>Hermes on Rocket</title>
+          <link>https://sebmer.com/projects/hermes-on-rocket</link>
+          <guid>https://sebmer.com/projects/hermes-on-rocket</guid>
+          <pubDate>Mon, 20 Apr 2026 00:00:00 GMT</pubDate>
+          <description>An AI-agent workbench for skills, checkpoints, context, remote projects, and long-running build workflows.</description>
+        </item>
+        <item>
+          <title>Documented Hermes on Rocket</title>
+          <link>https://sebmer.com/logs#2026-04-20-hermes-rocket-setup</link>
+          <guid>https://sebmer.com/logs#2026-04-20-hermes-rocket-setup</guid>
+          <pubDate>Mon, 20 Apr 2026 00:00:00 GMT</pubDate>
+          <description>Agent workbench summarized without private paths or raw checkpoint details.</description>
+        </item>
+        <item>
+          <title>Tracker</title>
+          <link>https://sebmer.com/projects/tracker</link>
+          <guid>https://sebmer.com/projects/tracker</guid>
+          <pubDate>Wed, 08 Apr 2026 00:00:00 GMT</pubDate>
+          <description>A Swift-first macOS utility for activity context, permissions, and local workflow signals.</description>
+        </item>
+        <item>
+          <title>Gairvis</title>
+          <link>https://sebmer.com/projects/gairvis</link>
+          <guid>https://sebmer.com/projects/gairvis</guid>
+          <pubDate>Thu, 05 Mar 2026 00:00:00 GMT</pubDate>
+          <description>A branded AI product surface that combines a public site with canvas-style work interfaces.</description>
+        </item>
+        <item>
+          <title>Enhanced OnVista</title>
+          <link>https://sebmer.com/projects/enhanced-onvista</link>
+          <guid>https://sebmer.com/projects/enhanced-onvista</guid>
+          <pubDate>Fri, 05 Sep 2025 00:00:00 GMT</pubDate>
+          <description>A Python toolkit that turns German market-data pages into something scripts can actually use.</description>
+        </item>
+      </channel>
+    </rss>
