@@ -1,0 +1,6 @@
+{
+  "id": "2026-08-24-wispr-provider-hermes-images",
+  "date": "2026-08-24",
+  "text": "Added provider commands and visible Hermes image context",
+  "detail": "Expanded the local macOS dictation app with explicit command-provider paths, ordered screenshot context, secret-safe diagnostics, failed-turn retention, and a visible Hermes handoff while keeping normal transcription local."
+}

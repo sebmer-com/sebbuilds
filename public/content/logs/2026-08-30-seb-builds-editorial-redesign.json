@@ -1,0 +1,6 @@
+{
+  "id": "2026-08-30-seb-builds-editorial-redesign",
+  "date": "2026-08-30",
+  "text": "Redesigned Seb Builds as an editorial publication",
+  "detail": "Replaced the former terminal-style interface with a LaTeX-inspired black-and-white publication, added accessible system, light, and dark controls, improved section spacing and mobile behavior, and kept the static GitHub Pages build path intact."
+}

@@ -1,0 +1,6 @@
+{
+  "id": "2026-08-28-airader-portable-session-replay",
+  "date": "2026-08-28",
+  "text": "Made airader's session replay stack more portable",
+  "detail": "Moved the session-replay product onto a more portable full-stack foundation with scoped authentication, durable session storage and retention, updated security baselines, and clearer public positioning around customer-journey evidence."
+}
