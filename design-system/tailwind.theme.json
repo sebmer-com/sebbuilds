@@ -1,0 +1,170 @@
+{
+  "theme": {
+    "extend": {
+      "colors": {
+        "primary": "#111111",
+        "secondary": "#3f3f3f",
+        "tertiary": "#686868",
+        "neutral": "#ffffff",
+        "paper": "#ffffff",
+        "paper-subtle": "#f3f3f3",
+        "ink": "#111111",
+        "ink-soft": "#3f3f3f",
+        "ink-muted": "#686868",
+        "rule": "#171717",
+        "hairline": "#c8c8c8",
+        "focus": "#000000",
+        "dark-paper": "#111111",
+        "dark-paper-subtle": "#1a1a1a",
+        "dark-ink": "#f2f2f2",
+        "dark-ink-soft": "#cccccc",
+        "dark-ink-muted": "#9c9c9c",
+        "dark-rule": "#f2f2f2",
+        "dark-hairline": "#414141"
+      },
+      "fontFamily": {
+        "display": [
+          "Latin Modern"
+        ],
+        "h1": [
+          "Latin Modern"
+        ],
+        "h2": [
+          "Latin Modern"
+        ],
+        "h3": [
+          "Latin Modern"
+        ],
+        "body": [
+          "Latin Modern"
+        ],
+        "body-small": [
+          "Latin Modern"
+        ],
+        "label": [
+          "Arial"
+        ],
+        "metadata": [
+          "Arial"
+        ],
+        "code": [
+          "Menlo"
+        ],
+        "slide-title": [
+          "Cambria"
+        ],
+        "slide-body": [
+          "Cambria"
+        ],
+        "print-body": [
+          "Latin Modern"
+        ]
+      },
+      "fontSize": {
+        "display": [
+          "6rem",
+          {
+            "letterSpacing": "-0.06em",
+            "fontWeight": "400"
+          }
+        ],
+        "h1": [
+          "4rem",
+          {
+            "letterSpacing": "-0.045em",
+            "fontWeight": "400"
+          }
+        ],
+        "h2": [
+          "2.25rem",
+          {
+            "letterSpacing": "-0.025em",
+            "fontWeight": "400"
+          }
+        ],
+        "h3": [
+          "1.5rem",
+          {
+            "letterSpacing": "-0.015em",
+            "fontWeight": "400"
+          }
+        ],
+        "body": [
+          "1.125rem",
+          {
+            "letterSpacing": "0em",
+            "fontWeight": "400"
+          }
+        ],
+        "body-small": [
+          "0.95rem",
+          {
+            "letterSpacing": "0em",
+            "fontWeight": "400"
+          }
+        ],
+        "label": [
+          "0.75rem",
+          {
+            "letterSpacing": "0.1em",
+            "fontWeight": "700"
+          }
+        ],
+        "metadata": [
+          "0.75rem",
+          {
+            "letterSpacing": "0.08em",
+            "fontWeight": "400"
+          }
+        ],
+        "code": [
+          "0.82rem",
+          {
+            "letterSpacing": "0em",
+            "fontWeight": "400"
+          }
+        ],
+        "slide-title": [
+          "4rem",
+          {
+            "letterSpacing": "-0.035em",
+            "fontWeight": "400"
+          }
+        ],
+        "slide-body": [
+          "2rem",
+          {
+            "letterSpacing": "0em",
+            "fontWeight": "400"
+          }
+        ],
+        "print-body": [
+          "0.65625rem",
+          {
+            "letterSpacing": "0em",
+            "fontWeight": "400"
+          }
+        ]
+      },
+      "borderRadius": {
+        "none": "0px",
+        "sm": "2px",
+        "md": "2px",
+        "lg": "2px"
+      },
+      "spacing": {
+        "xxs": "4px",
+        "xs": "8px",
+        "sm": "12px",
+        "md": "16px",
+        "lg": "24px",
+        "xl": "32px",
+        "2xl": "48px",
+        "3xl": "64px",
+        "4xl": "80px",
+        "5xl": "96px",
+        "6xl": "112px"
+      }
+    }
+  }
+}

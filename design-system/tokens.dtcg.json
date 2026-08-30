@@ -1,0 +1,494 @@
+{
+  "$schema": "https://www.designtokens.org/schemas/2025.10/format.json",
+  "$description": "A monochrome publication system for web interfaces, editorial slides, printable reports, and agent-generated artifacts.",
+  "color": {
+    "$type": "color",
+    "primary": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.067,
+          0.067,
+          0.067
+        ],
+        "hex": "#111111"
+      }
+    },
+    "secondary": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.247,
+          0.247,
+          0.247
+        ],
+        "hex": "#3f3f3f"
+      }
+    },
+    "tertiary": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.408,
+          0.408,
+          0.408
+        ],
+        "hex": "#686868"
+      }
+    },
+    "neutral": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          1,
+          1,
+          1
+        ],
+        "hex": "#ffffff"
+      }
+    },
+    "paper": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          1,
+          1,
+          1
+        ],
+        "hex": "#ffffff"
+      }
+    },
+    "paper-subtle": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.953,
+          0.953,
+          0.953
+        ],
+        "hex": "#f3f3f3"
+      }
+    },
+    "ink": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.067,
+          0.067,
+          0.067
+        ],
+        "hex": "#111111"
+      }
+    },
+    "ink-soft": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.247,
+          0.247,
+          0.247
+        ],
+        "hex": "#3f3f3f"
+      }
+    },
+    "ink-muted": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.408,
+          0.408,
+          0.408
+        ],
+        "hex": "#686868"
+      }
+    },
+    "rule": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.09,
+          0.09,
+          0.09
+        ],
+        "hex": "#171717"
+      }
+    },
+    "hairline": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.784,
+          0.784,
+          0.784
+        ],
+        "hex": "#c8c8c8"
+      }
+    },
+    "focus": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0,
+          0,
+          0
+        ],
+        "hex": "#000000"
+      }
+    },
+    "dark-paper": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.067,
+          0.067,
+          0.067
+        ],
+        "hex": "#111111"
+      }
+    },
+    "dark-paper-subtle": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.102,
+          0.102,
+          0.102
+        ],
+        "hex": "#1a1a1a"
+      }
+    },
+    "dark-ink": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.949,
+          0.949,
+          0.949
+        ],
+        "hex": "#f2f2f2"
+      }
+    },
+    "dark-ink-soft": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.8,
+          0.8,
+          0.8
+        ],
+        "hex": "#cccccc"
+      }
+    },
+    "dark-ink-muted": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.612,
+          0.612,
+          0.612
+        ],
+        "hex": "#9c9c9c"
+      }
+    },
+    "dark-rule": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.949,
+          0.949,
+          0.949
+        ],
+        "hex": "#f2f2f2"
+      }
+    },
+    "dark-hairline": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.255,
+          0.255,
+          0.255
+        ],
+        "hex": "#414141"
+      }
+    }
+  },
+  "spacing": {
+    "$type": "dimension",
+    "xxs": {
+      "$value": {
+        "value": 4,
+        "unit": "px"
+      }
+    },
+    "xs": {
+      "$value": {
+        "value": 8,
+        "unit": "px"
+      }
+    },
+    "sm": {
+      "$value": {
+        "value": 12,
+        "unit": "px"
+      }
+    },
+    "md": {
+      "$value": {
+        "value": 16,
+        "unit": "px"
+      }
+    },
+    "lg": {
+      "$value": {
+        "value": 24,
+        "unit": "px"
+      }
+    },
+    "xl": {
+      "$value": {
+        "value": 32,
+        "unit": "px"
+      }
+    },
+    "2xl": {
+      "$value": {
+        "value": 48,
+        "unit": "px"
+      }
+    },
+    "3xl": {
+      "$value": {
+        "value": 64,
+        "unit": "px"
+      }
+    },
+    "4xl": {
+      "$value": {
+        "value": 80,
+        "unit": "px"
+      }
+    },
+    "5xl": {
+      "$value": {
+        "value": 96,
+        "unit": "px"
+      }
+    },
+    "6xl": {
+      "$value": {
+        "value": 112,
+        "unit": "px"
+      }
+    }
+  },
+  "rounded": {
+    "$type": "dimension",
+    "none": {
+      "$value": {
+        "value": 0,
+        "unit": "px"
+      }
+    },
+    "sm": {
+      "$value": {
+        "value": 2,
+        "unit": "px"
+      }
+    },
+    "md": {
+      "$value": {
+        "value": 2,
+        "unit": "px"
+      }
+    },
+    "lg": {
+      "$value": {
+        "value": 2,
+        "unit": "px"
+      }
+    }
+  },
+  "typography": {
+    "display": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "Latin Modern",
+        "fontSize": {
+          "value": 6,
+          "unit": "rem"
+        },
+        "fontWeight": 400,
+        "letterSpacing": {
+          "value": -0.06,
+          "unit": "em"
+        }
+      }
+    },
+    "h1": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "Latin Modern",
+        "fontSize": {
+          "value": 4,
+          "unit": "rem"
+        },
+        "fontWeight": 400,
+        "letterSpacing": {
+          "value": -0.045,
+          "unit": "em"
+        }
+      }
+    },
+    "h2": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "Latin Modern",
+        "fontSize": {
+          "value": 2.25,
+          "unit": "rem"
+        },
+        "fontWeight": 400,
+        "letterSpacing": {
+          "value": -0.025,
+          "unit": "em"
+        }
+      }
+    },
+    "h3": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "Latin Modern",
+        "fontSize": {
+          "value": 1.5,
+          "unit": "rem"
+        },
+        "fontWeight": 400,
+        "letterSpacing": {
+          "value": -0.015,
+          "unit": "em"
+        }
+      }
+    },
+    "body": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "Latin Modern",
+        "fontSize": {
+          "value": 1.125,
+          "unit": "rem"
+        },
+        "fontWeight": 400,
+        "letterSpacing": {
+          "value": 0,
+          "unit": "em"
+        }
+      }
+    },
+    "body-small": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "Latin Modern",
+        "fontSize": {
+          "value": 0.95,
+          "unit": "rem"
+        },
+        "fontWeight": 400,
+        "letterSpacing": {
+          "value": 0,
+          "unit": "em"
+        }
+      }
+    },
+    "label": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "Arial",
+        "fontSize": {
+          "value": 0.75,
+          "unit": "rem"
+        },
+        "fontWeight": 700,
+        "letterSpacing": {
+          "value": 0.1,
+          "unit": "em"
+        }
+      }
+    },
+    "metadata": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "Arial",
+        "fontSize": {
+          "value": 0.75,
+          "unit": "rem"
+        },
+        "fontWeight": 400,
+        "letterSpacing": {
+          "value": 0.08,
+          "unit": "em"
+        }
+      }
+    },
+    "code": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "Menlo",
+        "fontSize": {
+          "value": 0.82,
+          "unit": "rem"
+        },
+        "fontWeight": 400,
+        "letterSpacing": {
+          "value": 0,
+          "unit": "em"
+        }
+      }
+    },
+    "slide-title": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "Cambria",
+        "fontSize": {
+          "value": 4,
+          "unit": "rem"
+        },
+        "fontWeight": 400,
+        "letterSpacing": {
+          "value": -0.035,
+          "unit": "em"
+        }
+      }
+    },
+    "slide-body": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "Cambria",
+        "fontSize": {
+          "value": 2,
+          "unit": "rem"
+        },
+        "fontWeight": 400,
+        "letterSpacing": {
+          "value": 0,
+          "unit": "em"
+        }
+      }
+    },
+    "print-body": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "Latin Modern",
+        "fontSize": {
+          "value": 0.65625,
+          "unit": "rem"
+        },
+        "fontWeight": 400,
+        "letterSpacing": {
+          "value": 0,
+          "unit": "em"
+        }
+      }
+    }
+  }
+}

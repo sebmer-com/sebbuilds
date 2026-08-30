@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Seb Editorial System / Continuous A4 Report</title>
+    <link rel="stylesheet" href="../seb-editorial.css" />
+  </head>
+  <body class="se-root">
+    <main class="se-document se-document--flow">
+      <article class="se-document-page">
+        <p class="se-label">Continuous report / Template</p>
+        <h1 style="max-width: 12ch; margin-top: 8mm; font-size: 34pt; font-weight: 400; line-height: 0.98">
+          Evidence that flows with the argument.
+        </h1>
+
+        <section class="se-document__abstract">
+          <p class="se-label">Abstract</p>
+          <p>
+            This variant is for long reports whose sections must continue across
+            automatic browser-created pages. A4 margins are supplied by the named
+            page rule, while simulated running headers and folios are disabled.
+          </p>
+        </section>
+
+        <section class="se-document__section">
+          <header class="se-document__section-header">
+            <span class="se-index">01</span>
+            <h2>Begin with the decision context</h2>
+          </header>
+          <div class="se-document__prose">
+            <p>
+              State the audience, decision, evidence standard, and practical
+              consequence before presenting detail. The opening should let the
+              reader understand why the document exists and what a useful outcome
+              looks like.
+            </p>
+            <p>
+              Keep facts, interpretations, and recommendations distinguishable.
+              Cite claims near the sentence or figure they support. Move complete
+              reference metadata to an appendix only when that improves reading.
+            </p>
+          </div>
+        </section>
+
+        <section class="se-document__section">
+          <header class="se-document__section-header">
+            <span class="se-index">02</span>
+            <h2>Structure the evidence as an argument</h2>
+          </header>
+          <div class="se-document__prose">
+            <p>
+              Use major sections for changes in reasoning, not merely changes in
+              source material. Strong rules introduce those sections. Hairlines
+              separate comparable rows and supporting records.
+            </p>
+            <p>
+              Long sections may now break naturally across A4 pages. The heading
+              remains attached to the first following paragraph, while figures,
+              tables, and callouts retain their own break protections.
+            </p>
+          </div>
+        </section>
+
+        <section class="se-document__section">
+          <header class="se-document__section-header">
+            <span class="se-index">03</span>
+            <h2>Compare formats without changing the grammar</h2>
+          </header>
+          <div class="se-document__prose">
+            <p>
+              Web publications, slides, and PDF reports use different dimensions,
+              but the same hierarchy. Serif typography carries ideas and narrative.
+              Sans-serif typography carries metadata, labels, sources, and controls.
+            </p>
+          </div>
+          <table class="se-table" style="margin-top: 8mm">
+            <thead>
+              <tr>
+                <th>Canvas</th>
+                <th>Primary measure</th>
+                <th data-type="number">Body</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Responsive web</td>
+                <td>72 character reading width</td>
+                <td data-type="number">17–19px</td>
+              </tr>
+              <tr>
+                <td>Editorial slide</td>
+                <td>1600 × 900px source</td>
+                <td data-type="number">17–21pt output</td>
+              </tr>
+              <tr>
+                <td>Continuous PDF</td>
+                <td>A4 named-page margins</td>
+                <td data-type="number">10.5pt</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section class="se-document__section">
+          <header class="se-document__section-header">
+            <span class="se-index">04</span>
+            <h2>Use figures as evidence</h2>
+          </header>
+          <div class="se-document__prose">
+            <p>
+              Every figure needs a purpose, caption, and source. Grayscale is the
+              default. Retain color only when it carries data meaning, and mark that
+              exception explicitly with the evidence-color modifier.
+            </p>
+            <blockquote class="se-callout">
+              <p class="se-callout__statement">
+                Decoration never substitutes for a missing relationship or claim.
+              </p>
+            </blockquote>
+          </div>
+        </section>
+
+        <section class="se-document__section">
+          <header class="se-document__section-header">
+            <span class="se-index">05</span>
+            <h2>End with the consequence</h2>
+          </header>
+          <div class="se-document__prose">
+            <p>
+              State what the evidence changes, what remains uncertain, and which
+              action follows. A conclusion should advance the decision rather than
+              repeat every section heading.
+            </p>
+          </div>
+        </section>
+      </article>
+    </main>
+  </body>
+</html>

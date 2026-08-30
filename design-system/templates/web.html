@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Seb Editorial System / Web Starter</title>
+    <link rel="stylesheet" href="../seb-editorial.css" />
+    <style>
+      .web-hero {
+        display: grid;
+        grid-template-columns: minmax(0, 1.25fr) minmax(280px, 0.75fr);
+        gap: clamp(40px, 7vw, 96px);
+        align-items: end;
+        border-bottom: var(--se-rule-hairline);
+        padding: 96px 0 104px;
+      }
+
+      .web-hero__context {
+        border-top: var(--se-rule-strong);
+        padding-top: 18px;
+      }
+
+      .web-hero__context p {
+        color: var(--se-ink-soft);
+      }
+
+      .web-hero__actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 28px;
+      }
+
+      .web-sections {
+        display: grid;
+        gap: 80px;
+        padding: 96px 0;
+      }
+
+      .web-two-column {
+        display: grid;
+        grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+        gap: 64px;
+      }
+
+      .web-footer {
+        display: flex;
+        justify-content: space-between;
+        gap: 24px;
+        border-top: var(--se-rule-strong);
+        padding: 24px 0 32px;
+      }
+
+      @media (max-width: 760px) {
+        .web-hero,
+        .web-two-column {
+          grid-template-columns: 1fr;
+        }
+
+        .web-hero {
+          padding: 64px 0;
+        }
+
+        .web-hero__actions {
+          align-items: stretch;
+          flex-direction: column;
+        }
+
+        .web-hero__actions .se-button {
+          width: 100%;
+        }
+
+        .web-footer {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body class="se-root">
+    <main class="se-publication">
+      <header class="se-masthead">
+        <a class="se-masthead__brand" href="#">Seb Editorial</a>
+        <span class="se-masthead__meta">Web starter / v1</span>
+      </header>
+
+      <section class="web-hero" aria-labelledby="web-title">
+        <div>
+          <p class="se-label">Publication system / Web</p>
+          <h1 class="se-display" id="web-title">Ideas need structure.</h1>
+        </div>
+        <div class="web-hero__context">
+          <p class="se-label">Abstract</p>
+          <p>
+            A monochrome editorial framework for products, evidence, research,
+            and technical narratives. Hierarchy comes from typography, rules,
+            and alignment rather than decorative UI furniture.
+          </p>
+          <div class="web-hero__actions">
+            <a class="se-button se-button--primary" href="#specimen">View specimen</a>
+            <a class="se-button" href="../../DESIGN.md">Read DESIGN.md</a>
+          </div>
+        </div>
+      </section>
+
+      <div class="web-sections" id="specimen">
+        <section class="se-indexed-section">
+          <header class="se-indexed-section__header">
+            <div class="se-indexed-section__title">
+              <span class="se-index">01</span>
+              <h2 class="se-h2">Publication rows</h2>
+            </div>
+            <span class="se-label">Recent evidence</span>
+          </header>
+          <div class="se-indexed-section__body">
+            <div class="se-row-list">
+              <article class="se-row">
+                <div class="se-row__meta">2026-08-30<br />Design system</div>
+                <div>
+                  <h3 class="se-row__title">One visual grammar across formats</h3>
+                  <p class="se-row__description">
+                    Web, slides, and reports share the same type roles, neutral
+                    palette, rule hierarchy, and indexed section pattern.
+                  </p>
+                </div>
+                <span aria-hidden="true">→</span>
+              </article>
+              <article class="se-row">
+                <div class="se-row__meta">Status<br />Ready</div>
+                <div>
+                  <h3 class="se-row__title">Machine-readable tokens</h3>
+                  <p class="se-row__description">
+                    DESIGN.md exports to DTCG and Tailwind while the portable CSS
+                    remains usable without a framework.
+                  </p>
+                </div>
+                <span aria-hidden="true">→</span>
+              </article>
+              <article class="se-row">
+                <div class="se-row__meta">Rule<br />Invariant</div>
+                <div>
+                  <h3 class="se-row__title">No decorative color</h3>
+                  <p class="se-row__description">
+                    Scale, weight, spacing, and evidence labels do the visual work.
+                  </p>
+                </div>
+                <span aria-hidden="true">→</span>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="se-indexed-section">
+          <header class="se-indexed-section__header">
+            <div class="se-indexed-section__title">
+              <span class="se-index">02</span>
+              <h2 class="se-h2">Evidence layout</h2>
+            </div>
+          </header>
+          <div class="se-indexed-section__body web-two-column">
+            <div class="se-callout">
+              <p class="se-label">Takeaway</p>
+              <p class="se-callout__statement">
+                Minimal does not mean empty. Every quiet area must strengthen hierarchy.
+              </p>
+            </div>
+            <div>
+              <table class="se-table">
+                <thead>
+                  <tr>
+                    <th>Format</th>
+                    <th>Primary grid</th>
+                    <th data-type="number">Body size</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Web</td>
+                    <td>1180px / 72ch</td>
+                    <td data-type="number">17–19px</td>
+                  </tr>
+                  <tr>
+                    <td>Slides</td>
+                    <td>1600 × 900</td>
+                    <td data-type="number">17–21pt</td>
+                  </tr>
+                  <tr>
+                    <td>PDF</td>
+                    <td>A4 / 20mm margins</td>
+                    <td data-type="number">10.5pt</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <footer class="web-footer">
+        <span class="se-label">Seb Editorial System</span>
+        <span class="se-meta">Black / white / evidence</span>
+      </footer>
+    </main>
+  </body>
+</html>

@@ -86,6 +86,13 @@ npm run typecheck
 npm run build
 ```
 
+## Design System
+
+The cross-format Seb Editorial System is documented in [`DESIGN.md`](./DESIGN.md).
+Reusable implementation assets live in [`design-system/`](./design-system/README.md),
+including DTCG and Tailwind token exports, portable CSS, a PowerPoint adapter, and
+renderable starters for responsive web pages, 16:9 slides, and A4 PDFs.
+
 The site is statically exported for GitHub Pages. Content changes become live after pushing to `main` and the Pages workflow deploys the generated `out/` artifact.
 
 ## License
