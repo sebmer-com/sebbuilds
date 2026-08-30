@@ -1,20 +1,18 @@
 import Link from "next/link";
-import { CommandLine } from "@/components/command-line";
-import { TerminalFrame } from "@/components/terminal-frame";
+import { EditorialLabel } from "@/components/editorial-label";
+import { PublicationShell } from "@/components/publication-shell";
 
 export default function NotFound() {
   return (
-    <main className="site-shell">
-      <TerminalFrame>
-        <section className="terminal-page">
-          <CommandLine command="cat missing-file.md" />
-          <h1>404: command not found</h1>
-          <p>The file you asked for is not in this build log.</p>
-          <Link className="button button--primary" href="/">
-            Return Home
-          </Link>
-        </section>
-      </TerminalFrame>
-    </main>
+    <PublicationShell>
+      <section className="publication-page not-found-page" aria-labelledby="not-found-title">
+        <EditorialLabel>Error / 404</EditorialLabel>
+        <h1 id="not-found-title">Page not found</h1>
+        <p>The page you asked for is not in this publication.</p>
+        <Link className="button button--primary" href="/">
+          Return Home
+        </Link>
+      </section>
+    </PublicationShell>
   );
 }

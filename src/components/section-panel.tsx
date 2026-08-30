@@ -1,44 +1,38 @@
-import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 import type { ReactNode } from "react";
 
 type SectionPanelProps = {
   title: string;
-  icon?: ReactNode;
+  index?: string;
   id?: string;
   href?: string;
   linkLabel?: string;
-  command?: string;
   children: ReactNode;
 };
 
 export function SectionPanel({
   title,
-  icon,
+  index,
   id,
   href,
-  linkLabel = "Open",
-  command,
+  linkLabel = "Read all",
   children,
 }: SectionPanelProps) {
   return (
     <section className="section-panel" id={id}>
-      <div className="section-panel__header">
-        <h2>
-          {icon}
-          <span>{title}</span>
-        </h2>
+      <header className="section-panel__header">
+        <div className="section-panel__heading">
+          {index ? <span className="section-panel__index">{index}</span> : null}
+          <h2>{title}</h2>
+        </div>
         {href ? (
           <Link className="text-link" href={href}>
-            <span>{linkLabel}</span>
-            <ArrowRight aria-hidden="true" size={16} />
+            {linkLabel} <span aria-hidden="true">→</span>
           </Link>
         ) : null}
-      </div>
+      </header>
 
       <div className="section-panel__body">{children}</div>
-
-      {command ? <div className="section-panel__command">{command}</div> : null}
     </section>
   );
 }

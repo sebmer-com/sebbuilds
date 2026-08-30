@@ -4,9 +4,9 @@ import { MDXRemote } from "next-mdx-remote/rsc";
 import { ArticleHeader } from "@/components/content-card";
 import { JsonLd } from "@/components/json-ld";
 import { mdxComponents } from "@/components/mdx-content";
-import { TerminalFrame } from "@/components/terminal-frame";
-import { contentJsonLd } from "@/lib/json-ld";
+import { PublicationShell } from "@/components/publication-shell";
 import { getEntryBySlug, getProjects } from "@/lib/content";
+import { contentJsonLd } from "@/lib/json-ld";
 import { siteConfig } from "@/lib/site";
 
 type ProjectPageProps = {
@@ -39,7 +39,7 @@ export async function generateMetadata({
     },
     openGraph: {
       type: "article",
-      title: `${project.title} - ${siteConfig.name}`,
+      title: project.title + " — " + siteConfig.name,
       description: project.description,
       url: project.href,
       publishedTime: project.date,
@@ -47,7 +47,7 @@ export async function generateMetadata({
     },
     twitter: {
       card: "summary_large_image",
-      title: `${project.title} - ${siteConfig.name}`,
+      title: project.title + " — " + siteConfig.name,
       description: project.description,
     },
   };
@@ -64,16 +64,14 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
   return (
     <>
       <JsonLd data={contentJsonLd(project)} />
-      <main className="site-shell">
-        <TerminalFrame active="Projects">
-          <article className="article-shell">
-            <ArticleHeader entry={project} />
-            <div className="mdx-content">
-              <MDXRemote components={mdxComponents} source={project.content} />
-            </div>
-          </article>
-        </TerminalFrame>
-      </main>
+      <PublicationShell active="Projects">
+        <article className="article-shell">
+          <ArticleHeader entry={project} />
+          <div className="mdx-content">
+            <MDXRemote components={mdxComponents} source={project.content} />
+          </div>
+        </article>
+      </PublicationShell>
     </>
   );
 }

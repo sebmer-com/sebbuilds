@@ -2,22 +2,25 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import type { ReactNode } from "react";
-import { CommandLine } from "@/components/command-line";
+import { EditorialLabel } from "@/components/editorial-label";
 import { JsonLd } from "@/components/json-ld";
-import { TerminalFrame } from "@/components/terminal-frame";
+import { PublicationShell } from "@/components/publication-shell";
 import { getSebastianAbout, getSebastianAboutSectionContent } from "@/lib/about";
 import { personJsonLd } from "@/lib/json-ld";
 import { siteConfig } from "@/lib/site";
 
+const aboutDescription =
+  "The public profile, work, and builder context of Sebastian Mertens.";
+
 export const metadata: Metadata = {
-  title: "About Sebastian",
-  description: "Canonical public profile and builder context for Sebastian Mertens on Seb Builds.",
+  title: "About Sebastian Mertens",
+  description: aboutDescription,
   alternates: {
     canonical: "/about",
   },
   openGraph: {
-    title: `About Sebastian - ${siteConfig.name}`,
-    description: "Canonical public profile and builder context for Sebastian Mertens on Seb Builds.",
+    title: "About Sebastian Mertens — " + siteConfig.name,
+    description: aboutDescription,
     url: "/about",
   },
 };
@@ -32,16 +35,6 @@ type MarkdownBlock =
       type: "paragraph";
     };
 
-const detailSectionTitles = [
-  "What Sebastian Builds",
-  "Current Work",
-  "Experience Highlights",
-  "Education",
-  "Certifications",
-  "Public Themes",
-  "Links",
-];
-
 export default function AboutPage() {
   const about = getSebastianAbout();
   const heading = about.sections.find((section) => section.level === 1)?.title ?? "Sebastian Mertens";
@@ -50,69 +43,71 @@ export default function AboutPage() {
     (block): block is Extract<MarkdownBlock, { type: "paragraph" }> =>
       block.type === "paragraph",
   );
-  const detailSections = detailSectionTitles
-    .map((title) => about.sections.find((section) => section.title === title))
-    .filter((section) => section !== undefined);
+  const detailSections = about.sections.filter(
+    (section) =>
+      section.level === 2 &&
+      section.title.trim().toLowerCase() !== "short bio",
+  );
 
   return (
     <>
       <JsonLd data={personJsonLd()} />
-      <main className="site-shell">
-        <TerminalFrame active="About">
-          <section className="terminal-page about-page" aria-labelledby="about-title">
-            <CommandLine command="cat ./about/sebastian.md" />
-            <div className="about-hero">
-              <div>
-                <div className="page-heading">
-                  <h1 id="about-title">{heading}</h1>
-                  <p>Canonical public profile and builder context for Seb Builds.</p>
-                </div>
-
-                <div className="about-copy">
-                  {shortBioParagraphs.map((paragraph) => (
-                    <p key={paragraph.text}>{renderInlineMarkdown(paragraph.text)}</p>
-                  ))}
-                </div>
+      <PublicationShell active="About">
+        <section className="publication-page about-page" aria-labelledby="about-title">
+          <EditorialLabel>Profile / Sebastian Mertens</EditorialLabel>
+          <div className="about-hero">
+            <div className="about-introduction">
+              <div className="page-heading">
+                <h1 id="about-title">{heading}</h1>
+                <p>{aboutDescription}</p>
               </div>
 
-              <Image
-                alt="Sebastian Mertens"
-                className="about-portrait"
-                height={800}
-                priority
-                src="/images/sebastian-mertens.png"
-                width={800}
-              />
+              <div className="about-copy">
+                {shortBioParagraphs.map((paragraph) => (
+                  <p key={paragraph.text}>{renderInlineMarkdown(paragraph.text)}</p>
+                ))}
+              </div>
             </div>
 
-            <div className="about-lines" aria-label="About Sebastian highlights">
-              {detailSections.map((section, index) => (
-                <div className="about-line" key={section.slug}>
-                  <span>{String(index + 1).padStart(2, "0")}</span>
-                  <div>
-                    <h2>{section.title}</h2>
-                    {renderMarkdownBlocks(section.content)}
-                  </div>
+            <Image
+              alt="Sebastian Mertens"
+              className="about-portrait"
+              height={800}
+              priority
+              src="/images/sebastian-mertens.png"
+              width={800}
+            />
+          </div>
+
+          <div className="about-lines" aria-label="About Sebastian highlights">
+            {detailSections.map((section, index) => (
+              <section className="about-line" key={section.slug}>
+                <span className="about-line__number">
+                  {String(index + 1).padStart(2, "0")}
+                </span>
+                <div>
+                  <h2>{section.title}</h2>
+                  {renderMarkdownBlocks(section.content)}
                 </div>
-              ))}
-            </div>
+              </section>
+            ))}
+          </div>
 
-            <div className="about-actions">
-              <Link className="button button--primary" href="/projects">
-                View Projects
-              </Link>
-              <a
-                className="button button--secondary"
-                href={siteConfig.contactUrl}
-                rel="noreferrer"
-                target="_blank"
-              >
-                Contact Sebastian
-              </a>
-            </div>
-          </section>
-        </TerminalFrame>
-      </main>
+          <div className="about-actions">
+            <Link className="button button--primary" href="/projects">
+              View Projects
+            </Link>
+            <a
+              className="button button--secondary"
+              href={siteConfig.contactUrl}
+              rel="noreferrer"
+              target="_blank"
+            >
+              Contact Sebastian
+            </a>
+          </div>
+        </section>
+      </PublicationShell>
     </>
   );
 }
@@ -121,7 +116,7 @@ function renderMarkdownBlocks(content: string) {
   return getMarkdownBlocks(content).map((block, index) => {
     if (block.type === "list") {
       return (
-        <ul key={`${block.type}-${index}`}>
+        <ul key={block.type + "-" + index}>
           {block.items.map((item) => (
             <li key={item}>{renderInlineMarkdown(item)}</li>
           ))}
@@ -129,7 +124,7 @@ function renderMarkdownBlocks(content: string) {
       );
     }
 
-    return <p key={`${block.type}-${index}`}>{renderInlineMarkdown(block.text)}</p>;
+    return <p key={block.type + "-" + index}>{renderInlineMarkdown(block.text)}</p>;
   });
 }
 
@@ -201,7 +196,7 @@ function renderInlineMarkdown(text: string): ReactNode[] {
     }
 
     nodes.push(
-      <a href={href} key={`${href}-${index}`} rel="noreferrer" target="_blank">
+      <a href={href} key={href + "-" + index} rel="noreferrer" target="_blank">
         {label}
       </a>,
     );

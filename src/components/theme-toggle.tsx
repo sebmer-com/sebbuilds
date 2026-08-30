@@ -2,55 +2,47 @@
 
 import { Monitor, Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
-import { useMemo, useSyncExternalStore } from "react";
+import { useSyncExternalStore } from "react";
 
-const themes = ["system", "light", "dark"] as const;
+const themes = [
+  { name: "light", label: "Light mode", Icon: Sun },
+  { name: "system", label: "Use system theme", Icon: Monitor },
+  { name: "dark", label: "Dark mode", Icon: Moon },
+] as const;
+const themeNames = themes.map(({ name }) => name);
 const emptySubscribe = () => () => {};
 const clientSnapshot = () => true;
 const serverSnapshot = () => false;
 
 export function ThemeToggle() {
-  const { resolvedTheme, setTheme, theme } = useTheme();
+  const { setTheme, theme } = useTheme();
   const mounted = useSyncExternalStore(
     emptySubscribe,
     clientSnapshot,
     serverSnapshot,
   );
 
-  const activeTheme = mounted ? theme ?? "system" : "system";
-  const Icon = useMemo(() => {
-    if (!mounted || activeTheme === "system") {
-      return Monitor;
-    }
-
-    return resolvedTheme === "dark" ? Moon : Sun;
-  }, [activeTheme, mounted, resolvedTheme]);
-
-  const label =
-    activeTheme === "system"
-      ? "Auto"
-      : activeTheme === "dark"
-        ? "Dark"
-        : "Light";
-
-  function cycleTheme() {
-    const currentIndex = themes.indexOf(activeTheme as (typeof themes)[number]);
-    const nextTheme = themes[(currentIndex + 1) % themes.length];
-
-    setTheme(nextTheme);
-  }
+  const activeTheme =
+    mounted && themeNames.includes(theme as (typeof themeNames)[number])
+      ? theme
+      : "system";
 
   return (
-    <button
-      type="button"
-      className="theme-toggle"
-      aria-label={`Switch color theme. Current theme: ${label}`}
-      onClick={cycleTheme}
-      suppressHydrationWarning
-    >
-      <span className="theme-toggle__dot" aria-hidden="true" />
-      <span>{label}</span>
-      <Icon aria-hidden="true" size={16} strokeWidth={1.8} />
-    </button>
+    <div className="theme-selector" role="group" aria-label="Color theme">
+      {themes.map(({ name, label, Icon }) => (
+        <button
+          aria-label={label}
+          aria-pressed={activeTheme === name}
+          className="theme-selector__option"
+          key={name}
+          onClick={() => setTheme(name)}
+          suppressHydrationWarning
+          title={label}
+          type="button"
+        >
+          <Icon aria-hidden="true" size={16} strokeWidth={1.75} />
+        </button>
+      ))}
+    </div>
   );
 }

@@ -1,19 +1,8 @@
-import {
-  Github,
-  Instagram,
-  Linkedin,
-  Music2,
-  X as XIcon,
-  Youtube,
-  type LucideIcon,
-} from "lucide-react";
-
 export type SocialLink = {
   name: string;
   href?: string;
   label: string;
   status: "live" | "pending" | "soon";
-  icon: LucideIcon;
 };
 
 export type NavLink = {
@@ -28,41 +17,35 @@ const socialLinks: SocialLink[] = [
     href: "https://www.linkedin.com/in/auto-mate/",
     label: "LinkedIn",
     status: "live",
-    icon: Linkedin,
   },
   {
     name: "Instagram",
     href: "https://www.instagram.com/sebmer_/",
     label: "Instagram",
     status: "live",
-    icon: Instagram,
   },
   {
     name: "X",
     href: "https://x.com/sebmer_com",
     label: "X",
     status: "live",
-    icon: XIcon,
   },
   {
     name: "YouTube",
     href: "https://www.youtube.com/@Sebmer-automate",
     label: "YouTube",
     status: "live",
-    icon: Youtube,
   },
   {
     name: "GitHub",
     href: "https://github.com/sebmer-com",
     label: "GitHub",
     status: "live",
-    icon: Github,
   },
   {
     name: "TikTok",
     label: "TikTok soon",
     status: "soon",
-    icon: Music2,
   },
 ];
 
@@ -73,6 +56,8 @@ export const siteConfig = {
   locale: "en_US",
   tagline: "products in public.",
   description:
+    "Projects, build logs, and lessons from Sebastian Mertens, published while the work is still in motion.",
+  contentDescription:
     "Seb Builds is Sebastian's public builder log for useful products, build logs, videos, and lessons from shipping in public.",
   contactUrl: "https://tally.so/r/3jeJVa",
   legal: {

@@ -1,19 +1,20 @@
 import type { Metadata } from "next";
-import { CommandLine } from "@/components/command-line";
-import { TerminalFrame } from "@/components/terminal-frame";
+import { EditorialLabel } from "@/components/editorial-label";
+import { PublicationShell } from "@/components/publication-shell";
 import { siteConfig } from "@/lib/site";
 
+const legalDescription =
+  "Company information, privacy policy, and cookie policy for Seb Builds by Mertens Advies.";
+
 export const metadata: Metadata = {
-  title: "Legal",
-  description:
-    "Company information, privacy policy, and cookie policy for Seb Builds by Mertens Advies.",
+  title: "Legal, Privacy & Cookies",
+  description: legalDescription,
   alternates: {
     canonical: "/legal",
   },
   openGraph: {
-    title: `Legal - ${siteConfig.name}`,
-    description:
-      "Company information, privacy policy, and cookie policy for Seb Builds by Mertens Advies.",
+    title: "Legal, Privacy & Cookies — " + siteConfig.name,
+    description: legalDescription,
     url: "/legal",
   },
 };
@@ -22,13 +23,13 @@ const legalSections = [
   {
     title: "Company Info",
     items: [
-      `Brand: ${siteConfig.name}`,
-      `Registered business: ${siteConfig.legal.businessName}`,
-      `Owner: ${siteConfig.legal.ownerName}`,
-      `KVK number: ${siteConfig.legal.kvkNumber}`,
-      `Website: ${siteConfig.domain}`,
-      `Business address: ${siteConfig.legal.addressLabel}`,
-      `Contact email: ${siteConfig.legal.contactLabel}`,
+      "Brand: " + siteConfig.name,
+      "Registered business: " + siteConfig.legal.businessName,
+      "Owner: " + siteConfig.legal.ownerName,
+      "KVK number: " + siteConfig.legal.kvkNumber,
+      "Website: " + siteConfig.domain,
+      "Business address: " + siteConfig.legal.addressLabel,
+      "Contact email: " + siteConfig.legal.contactLabel,
     ],
   },
   {
@@ -54,28 +55,34 @@ const legalSections = [
 
 export default function LegalPage() {
   return (
-    <main className="site-shell">
-      <TerminalFrame>
-        <section className="terminal-page legal-page" aria-labelledby="legal-title">
-          <CommandLine command="cat ./legal/company-privacy-cookies.md" />
-          <div className="page-heading">
-            <h1 id="legal-title">Legal</h1>
-            <p>Company info, privacy, and cookies for Seb Builds.</p>
-          </div>
+    <PublicationShell>
+      <section className="publication-page legal-page" aria-labelledby="legal-title">
+        <EditorialLabel>Information / Legal</EditorialLabel>
+        <div className="page-heading">
+          <h1 id="legal-title">Legal, Privacy &amp; Cookies</h1>
+          <p>Company info, privacy, and cookies for Seb Builds.</p>
+        </div>
 
-          <div className="legal-stack">
-            {legalSections.map((section) => (
-              <section className="legal-section" key={section.title}>
+        <div className="legal-stack">
+          {legalSections.map((section, index) => (
+            <section className="legal-section" key={section.title}>
+              <span className="legal-section__number">
+                {String(index + 1).padStart(2, "0")}
+              </span>
+              <div>
                 <h2>{section.title}</h2>
                 <ul>
                   {section.items.map((item) => (
                     <li key={item}>{item}</li>
                   ))}
                 </ul>
-              </section>
-            ))}
+              </div>
+            </section>
+          ))}
 
-            <section className="legal-section">
+          <section className="legal-section">
+            <span className="legal-section__number">04</span>
+            <div>
               <h2>Contact</h2>
               <p>
                 Address and direct contact details are available on request via
@@ -89,15 +96,15 @@ export default function LegalPage() {
               >
                 Contact Sebastian
               </a>
-            </section>
+            </div>
+          </section>
 
-            <p className="legal-note">
-              Last updated: May 1, 2026. This page is maintained as a practical
-              website notice and is not legal advice.
-            </p>
-          </div>
-        </section>
-      </TerminalFrame>
-    </main>
+          <p className="legal-note">
+            Last updated: May 1, 2026. This page is maintained as a practical
+            website notice and is not legal advice.
+          </p>
+        </div>
+      </section>
+    </PublicationShell>
   );
 }

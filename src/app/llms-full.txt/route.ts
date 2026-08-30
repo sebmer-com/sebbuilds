@@ -50,7 +50,7 @@ ${project.body}
 
   const text = `# ${siteConfig.name} Full LLM Context
 
-${siteConfig.description}
+${siteConfig.contentDescription}
 
 This file is designed for language models and agents that need enough context to answer questions about ${siteConfig.name} without scraping every page first.
 
