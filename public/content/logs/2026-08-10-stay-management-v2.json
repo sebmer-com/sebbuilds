@@ -1,0 +1,6 @@
+{
+  "id": "2026-08-10-stay-management-v2",
+  "date": "2026-08-10",
+  "text": "Rebuilt Stay Simpli around a canonical stay-management model",
+  "detail": "Turned the accommodation workflow into a structured system for stays, people, groups, rooms, beds, planner assignments, CSV operations, invitations, and guarded management actions."
+}

@@ -1,0 +1,6 @@
+{
+  "id": "2026-08-25-ohmyhost-reconciliation-safety",
+  "date": "2026-08-25",
+  "text": "Hardened OhMyHost workflow replay and provider reconciliation",
+  "detail": "Separated provider claims from workflow replay, gated replay persistence by exact attempts, retained redacted provider diagnostics, and made uncertain infrastructure outcomes recoverable without repeating blind mutations."
+}

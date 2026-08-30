@@ -1,0 +1,6 @@
+{
+  "id": "2026-08-28-maasstudio-portable-checkin",
+  "date": "2026-08-28",
+  "text": "Moved MaasStudio guest check-in onto a portable runtime",
+  "detail": "Reworked the multilingual guest-registration flow around a portable application runtime, private database access, atomic initial-admin setup, optional server-side OCR credentials, and clearer secure check-in messaging."
+}

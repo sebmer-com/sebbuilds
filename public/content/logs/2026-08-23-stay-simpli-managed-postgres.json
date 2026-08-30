@@ -1,0 +1,6 @@
+{
+  "id": "2026-08-23-stay-simpli-managed-postgres",
+  "date": "2026-08-23",
+  "text": "Moved Stay Simpli's management workflows to managed PostgreSQL",
+  "detail": "Migrated stay listings, planner reads, accommodation resources, reference data, and management writes to a managed PostgreSQL boundary with explicit health checks and bounded runtime write paths."
+}

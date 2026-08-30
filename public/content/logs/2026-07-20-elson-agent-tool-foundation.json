@@ -1,0 +1,6 @@
+{
+  "id": "2026-07-20-elson-agent-tool-foundation",
+  "date": "2026-07-20",
+  "text": "Built ELSON's sourcing, ranking, and market-monitoring agent tools",
+  "detail": "Added company and people sourcing, per-company buyer-fit ranking, owned-site and RSS news monitoring, dashboard search, background polling, retries, and durable batch results as one connected research workflow."
+}

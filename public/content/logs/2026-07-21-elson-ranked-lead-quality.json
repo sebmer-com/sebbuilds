@@ -1,0 +1,6 @@
+{
+  "id": "2026-07-21-elson-ranked-lead-quality",
+  "date": "2026-07-21",
+  "text": "Stopped ELSON from shipping unjudged ranked leads",
+  "detail": "Hardened model-output parsing and batch completion so malformed judge responses can be recovered while leads without an actual evaluation remain blocked from results."
+}

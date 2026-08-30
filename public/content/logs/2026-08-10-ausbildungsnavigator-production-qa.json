@@ -1,0 +1,6 @@
+{
+  "id": "2026-08-10-ausbildungsnavigator-production-qa",
+  "date": "2026-08-10",
+  "text": "Hardened AusbildungsNavigator report workflows and production QA",
+  "detail": "Expanded correction and review flows, reminder-delivery guards, role and row isolation, local-draft recovery, admin workflows, and automated browser scenarios for the digital training-record product."
+}

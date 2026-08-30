@@ -1,0 +1,6 @@
+{
+  "id": "2026-08-30-ohmyhost-full-stack-poc",
+  "date": "2026-08-30",
+  "text": "Ran an end-to-end full-stack hosting POC with OhMyHost",
+  "detail": "Exercised domain authorization, framework build discovery, scheduled functions, email identity setup, health checks, and recovery paths against a real multi-service hosting flow, turning provider failures into explicit evidence instead of silent success."
+}

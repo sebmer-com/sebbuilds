@@ -1,0 +1,6 @@
+{
+  "id": "2026-08-05-elson-sourcing-enrichment",
+  "date": "2026-08-05",
+  "text": "Expanded ELSON sourcing, enrichment, and worker efficiency",
+  "detail": "Added attribution-safe lead joins, location-aware sourcing, batch profile enrichment with bounded provider fallbacks, and a faster worker path for larger research runs."
+}

@@ -1,0 +1,6 @@
+{
+  "id": "2026-08-29-ohmyhost-provider-cutover-safety",
+  "date": "2026-08-29",
+  "text": "Made OhMyHost provider cutovers reversible and evidence-bound",
+  "detail": "Added signed domain-authorization state, exact active-deployment binding, staged preflight receipts, bounded retries, and cleanup checkpoints so a provider cutover cannot advance on stale or ambiguous state."
+}

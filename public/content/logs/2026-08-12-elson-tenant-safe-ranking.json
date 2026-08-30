@@ -1,0 +1,6 @@
+{
+  "id": "2026-08-12-elson-tenant-safe-ranking",
+  "date": "2026-08-12",
+  "text": "Made ELSON's shadow lead ranking tenant-safe",
+  "detail": "Hardened authorization, request identity, leases, storage, model policy, and result retrieval so ranking batches remain isolated, reproducible, and safe to resume."
+}

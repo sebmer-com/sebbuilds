@@ -1,0 +1,6 @@
+{
+  "id": "2026-08-16-elson-buyer-committee-evaluation",
+  "date": "2026-08-16",
+  "text": "Added reproducible buyer-committee evaluation to ELSON",
+  "detail": "Built preregistered challenger runs, frozen holdout consumption, deterministic committee seats, replay receipts, and evidence-bound promotion gates so ranking improvements could be measured before adoption."
+}
