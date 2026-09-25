@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="aios-diagram" width="1080" height="1051" viewBox="0 0 1080 1051" role="img" aria-labelledby="f4-title f4-desc">
+<title id="f4-title">Routing a request</title>
+<desc id="f4-desc">Proposed architecture. Identity and task scope determine authorization and temporal eligibility before retrieval exposes source content. Hierarchical, lexical and semantic retrieval produce candidates, precise evidence supports context assembly, and authorized actions require verification. Ineligible evidence or unresolved authority conflicts route to clarification or abstention.</desc>
+<defs><marker id="f4-arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#111"/></marker></defs>
+<style>
+  .aios-diagram .paper { fill:#fff; }
+  .aios-diagram .ink { fill:#111; }
+  .aios-diagram .line { fill:none; stroke:#111; stroke-width:1.6; stroke-linecap:round; stroke-linejoin:round; }
+  .aios-diagram .quiet { fill:none; stroke:#777; stroke-width:1.2; stroke-linecap:round; stroke-linejoin:round; }
+  .aios-diagram .dash { stroke-dasharray:5 6; }
+  .aios-diagram .node { fill:#fff; stroke:#111; stroke-width:1.6; }
+  .aios-diagram .frame { fill:#fff; stroke:#777; stroke-width:1.1; }
+  .aios-diagram text { fill:#111; font-family:'Liberation Serif','Times New Roman',serif; }
+  .aios-diagram .title { font-size:36px; }
+  .aios-diagram .subtitle { font-size:19px; fill:#555; letter-spacing:1px; }
+  .aios-diagram .label { font-size:27px; }
+  .aios-diagram .body { font-size:23px; }
+  .aios-diagram .small { font-size:21px; fill:#444; }
+  .aios-diagram .meta { font-size:18px; fill:#555; letter-spacing:.8px; }
+  .aios-diagram .math { font-style:italic; }
+  .aios-diagram .rule { stroke:#111; stroke-width:1.2; }
+  .aios-diagram .motion { pointer-events:none; }
+  @media (prefers-reduced-motion: reduce) { .aios-diagram .motion { display:none; } }
+</style>
+<rect width="1080" height="1051" class="paper"/>
+<text x="60" y="53" class="title" text-anchor="start" ><tspan x="60" dy="0">Routing a request</tspan></text><text x="60" y="90" class="subtitle" text-anchor="start" ><tspan x="60" dy="0">FIGURE 4  /  PROPOSED ARCHITECTURE  /  ACCESS FIRST, EVIDENCE BEFORE ACTION</tspan></text><line x1="60" y1="111" x2="1020" y2="111" class="rule"/><path d="M 420 220 V 280" class="line" marker-end="url(#f4-arrow)"/><path d="M 420 370 V 430" class="line" marker-end="url(#f4-arrow)"/><path d="M 420 520 V 580" class="line" marker-end="url(#f4-arrow)"/><path d="M 420 670 V 730" class="line" marker-end="url(#f4-arrow)"/><path d="M 420 820 V 880" class="line" marker-end="url(#f4-arrow)"/><path d="M 780 325 H 935 V 580" class="line" marker-end="url(#f4-arrow)"/><path d="M 780 625 H 850" class="line" marker-end="url(#f4-arrow)"/><rect x="60" y="130" width="720" height="90" rx="2" class="node"/><text x="420.0" y="184.0" class="label" text-anchor="middle" ><tspan x="420.0" dy="0">Request + identity + task scope</tspan></text><rect x="60" y="280" width="720" height="90" rx="2" class="node"/><text x="420.0" y="334.0" class="label" text-anchor="middle" ><tspan x="420.0" dy="0">Filter access, scope and effective time</tspan></text><rect x="60" y="430" width="720" height="90" rx="2" class="node"/><text x="420.0" y="484.0" class="label" text-anchor="middle" ><tspan x="420.0" dy="0">Generate and rank retrieval candidates</tspan></text><rect x="60" y="580" width="720" height="90" rx="2" class="node"/><text x="420.0" y="634.0" class="label" text-anchor="middle" ><tspan x="420.0" dy="0">Retrieve precise evidence + source anchors</tspan></text><rect x="60" y="730" width="720" height="90" rx="2" class="node"/><text x="420.0" y="784.0" class="label" text-anchor="middle" ><tspan x="420.0" dy="0">Assemble context within the token budget</tspan></text><rect x="60" y="880" width="720" height="90" rx="2" class="node"/><text x="420.0" y="934.0" class="label" text-anchor="middle" ><tspan x="420.0" dy="0">Act within authority; verify the outcome</tspan></text><rect x="850" y="580" width="170" height="90" rx="2" class="node"/><text x="935.0" y="619.0" class="body" text-anchor="middle" ><tspan x="935.0" dy="0">Clarify</tspan><tspan x="935.0" dy="30">or abstain</tspan></text><rect x="849" y="390" width="172" height="72" fill="#fff"/><text x="935" y="420" class="small" text-anchor="middle" ><tspan x="935" dy="0">No eligible</tspan><tspan x="935" dy="27">evidence</tspan></text><text x="935" y="707" class="small" text-anchor="middle" ><tspan x="935" dy="0">Unresolved</tspan><tspan x="935" dy="25">conflict</tspan></text><rect x="175" y="534" width="490" height="29" fill="#fff"/><text x="420" y="554" class="small" text-anchor="middle" ><tspan x="420" dy="0">hierarchy + lexical search + semantic search</tspan></text><text x="60" y="1011" class="small" text-anchor="start" ><tspan x="60" dy="0">Source permissions are enforced before content is exposed to the agent.</tspan></text><g class="motion" aria-hidden="true"><circle r="4" fill="#111"><animateMotion dur="7s" begin="0s" repeatCount="indefinite" path="M 420 220 V 280"/></circle></g><g class="motion" aria-hidden="true"><circle r="4" fill="#111"><animateMotion dur="7s" begin="2s" repeatCount="indefinite" path="M 420 520 V 580"/></circle></g><g class="motion" aria-hidden="true"><circle r="4" fill="#111"><animateMotion dur="7s" begin="4s" repeatCount="indefinite" path="M 420 820 V 880"/></circle></g>
+</svg>

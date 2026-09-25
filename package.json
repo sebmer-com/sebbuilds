@@ -2,6 +2,7 @@
   "name": "seb-builds-site",
   "version": "0.1.0",
   "private": true,
+  "packageManager": "npm@11.5.1",
   "bin": {
     "seb-builds": "./packages/cli/bin/seb-builds.mjs"
   },
@@ -19,11 +20,12 @@
     "@mdx-js/react": "^3.1.1",
     "latex.css": "1.14.0",
     "lucide-react": "^0.555.0",
-    "next": "^16.2.4",
+    "next": "16.2.4",
     "next-mdx-remote": "^6.0.0",
     "next-themes": "^0.4.6",
-    "react": "^19.2.5",
-    "react-dom": "^19.2.5"
+    "react": "19.2.5",
+    "react-dom": "19.2.5",
+    "remark-gfm": "^4.0.1"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.2.4",

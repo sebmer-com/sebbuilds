@@ -329,13 +329,29 @@ body.publication-root {
   color: var(--ink-soft);
 }
 
+.masthead__identity {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.masthead__portrait {
+  width: 32px;
+  height: 32px;
+  object-fit: cover;
+  object-position: 50% 30%;
+  border-radius: 0;
+  filter: none;
+}
+
 .home-cover {
   display: grid;
-  grid-template-columns: minmax(0, 1.25fr) minmax(280px, 0.75fr);
-  gap: clamp(40px, 7vw, 96px);
-  align-items: end;
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 1fr);
+  gap: clamp(32px, 5vw, 64px);
+  align-items: center;
   border-bottom: 1px solid var(--hairline);
-  padding: 96px 0 104px;
+  padding: 40px 0 72px;
 }
 
 .display-title {

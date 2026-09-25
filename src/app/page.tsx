@@ -5,7 +5,7 @@ import { JsonLd } from "@/components/json-ld";
 import { PublicationShell } from "@/components/publication-shell";
 import { SectionPanel } from "@/components/section-panel";
 import { getSebastianAbout, getSebastianAboutSectionContent } from "@/lib/about";
-import { getFeaturedProjects, getLogs, getProjects } from "@/lib/content";
+import { getFeaturedProjects, getLogs, getProjects, getResearch } from "@/lib/content";
 import { personJsonLd, websiteJsonLd } from "@/lib/json-ld";
 import { siteConfig } from "@/lib/site";
 
@@ -13,6 +13,7 @@ export default function Home() {
   const pinnedProjects = getFeaturedProjects();
   const projects = (pinnedProjects.length > 0 ? pinnedProjects : getProjects()).slice(0, 3);
   const latestLogs = getLogs().slice(0, 5);
+  const research = getResearch();
   const about = getSebastianAbout();
   const shortBioParagraphs = getSebastianAboutSectionContent(about, "Short Bio")
     .split(/\n\s*\n/)
@@ -90,6 +91,22 @@ export default function Home() {
             </div>
           </SectionPanel>
         </section>
+
+        {research.length > 0 && (
+          <SectionPanel
+            href="/research"
+            id="research"
+            index="03"
+            linkLabel="Read all"
+            title="Research & Essays"
+          >
+            <div className="content-list">
+              {research.map((entry) => (
+                <ContentCard entry={entry} key={entry.slug} />
+              ))}
+            </div>
+          </SectionPanel>
+        )}
 
         <section className="home-follow" id="follow">
           <div>

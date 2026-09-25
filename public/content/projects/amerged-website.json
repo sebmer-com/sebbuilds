@@ -1,0 +1,15 @@
+{
+  "title": "Amerged",
+  "slug": "amerged-website",
+  "description": "An interactive consultancy website explaining custom AI software, agentic workflows, context engineering, and hands-on training.",
+  "date": "2026-09-22",
+  "tags": [
+    "Next.js",
+    "Editorial Design",
+    "AI"
+  ],
+  "status": "building",
+  "featured": true,
+  "body": "Amerged is an interactive company website presenting AI software development, agentic workflows, context engineering, and hands-on training. This project is the website implementation, not a claim that every advertised service is a finished software product.\n\n## What was built\n\nA Next.js editorial landing page uses custom SVG artwork and an animated brand narrative to explain the company’s work. A knowledge-funnel animation makes the context-engineering story visible as the reader reaches it.\n\n## Recent work\n\nSeptember work refined the animated hero, improved the mobile composition so the brand, headline, and call to action fit together, and added canonical metadata, organization structured data, social previews, and a cookie notice.\n\n## Design direction\n\nThe website connects an expressive visual identity to a concrete explanation of the work. Animation supports the narrative rather than replacing it.",
+  "demoUrl": "https://amerged.com"
+}

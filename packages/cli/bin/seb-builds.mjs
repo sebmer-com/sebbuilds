@@ -35,6 +35,23 @@ async function main() {
     return;
   }
 
+  if (command === "ls" && target === "./research" && flag === "--all") {
+    const research = await getResearch();
+    console.log("SEB BUILDS / research & essays\n");
+    for (const entry of research) console.log(`${entry.title}  ${entry.href}`);
+    return;
+  }
+
+  if (command === "cat" && target?.startsWith("./research/") && target.endsWith(".md")) {
+    const slug = target.slice("./research/".length, -3);
+    const entry = (await getResearch()).find((item) => item.slug === slug);
+    if (!entry) throw new Error(`Research not found: ${slug}`);
+    console.log(`# ${entry.title}\n\n${entry.description}\n`);
+    if (entry.demoUrl) console.log(`Related post: ${entry.demoUrl}\n`);
+    console.log(entry.body);
+    return;
+  }
+
   if (command === "tail" && target === "-f" && flag === "./build.log") {
     await printLogs();
     return;
@@ -57,7 +74,7 @@ async function main() {
 }
 
 async function listAll() {
-  const [projects, logs] = await Promise.all([getProjects(), getLogs()]);
+  const [projects, research, logs] = await Promise.all([getProjects(), getResearch(), getLogs()]);
 
   console.log("SEB BUILDS / virtual files");
   console.log("");
@@ -72,6 +89,11 @@ async function listAll() {
   for (const project of projects) {
     console.log(`./projects/${project.slug}.md`);
   }
+
+  console.log("./research/");
+  for (const entry of research) console.log(`./research/${entry.slug}.md`);
+  console.log("./content/research/index.json");
+  for (const entry of research) console.log(`./content/research/${entry.slug}.json`);
 
   console.log("./content/about/sebastian.md");
   console.log("./content/projects/index.json");
@@ -153,6 +175,8 @@ function printHelp() {
   console.log("Usage:");
   console.log("  npx github:sebmer-com/sebbuilds ls ./ --all");
   console.log("  npx github:sebmer-com/sebbuilds ls ./projects --all");
+  console.log("  npx github:sebmer-com/sebbuilds ls ./research --all");
+  console.log("  npx github:sebmer-com/sebbuilds cat ./research/the-headless-product.md");
   console.log("  npx github:sebmer-com/sebbuilds cat ./projects/elson-ai.md");
   console.log("  npx github:sebmer-com/sebbuilds tail -f ./build.log");
   console.log("  npx github:sebmer-com/sebbuilds cat ./about/sebastian.md");
@@ -173,6 +197,13 @@ async function getProjects() {
     ...project,
     href: `/projects/${project.slug}`,
   }));
+}
+
+async function getResearch() {
+  const manifest = await fetchJson("/content/research/index.json");
+  const files = normalizeManifest(manifest, "research");
+  const entries = await Promise.all(files.map((file) => fetchJson(`/content/research/${file}`)));
+  return entries.map((entry) => ({ ...entry, href: `/research/${entry.slug}` }));
 }
 
 async function getLogs() {

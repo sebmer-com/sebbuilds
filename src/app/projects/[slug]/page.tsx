@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import { ArticleHeader } from "@/components/content-card";
@@ -9,6 +10,8 @@ import { getEntryBySlug, getProjects } from "@/lib/content";
 import { contentJsonLd } from "@/lib/json-ld";
 import { siteConfig } from "@/lib/site";
 
+const relocatedResearchSlugs = ["the-headless-product", "ai-frontier-acceleration-forecast"];
+
 type ProjectPageProps = {
   params: Promise<{
     slug: string;
@@ -16,16 +19,16 @@ type ProjectPageProps = {
 };
 
 export function generateStaticParams() {
-  return getProjects().map((project) => ({
-    slug: project.slug,
-  }));
+  return [...getProjects().map((project) => ({ slug: project.slug })),
+    ...relocatedResearchSlugs.map((slug) => ({ slug }))];
 }
 
 export async function generateMetadata({
   params,
 }: ProjectPageProps): Promise<Metadata> {
   const { slug } = await params;
-  const project = getEntryBySlug("projects", slug);
+  const research = relocatedResearchSlugs.includes(slug) ? getEntryBySlug("research", slug) : undefined;
+  const project = research ?? getEntryBySlug("projects", slug);
 
   if (!project) {
     return {};
@@ -55,10 +58,25 @@ export async function generateMetadata({
 
 export default async function ProjectPage({ params }: ProjectPageProps) {
   const { slug } = await params;
-  const project = getEntryBySlug("projects", slug);
+  const research = relocatedResearchSlugs.includes(slug) ? getEntryBySlug("research", slug) : undefined;
+  const project = research ?? getEntryBySlug("projects", slug);
 
   if (!project) {
     notFound();
+  }
+
+  if (research) {
+    return (
+      <PublicationShell active="Research & Essays">
+        <section className="publication-page">
+          <div className="page-heading">
+            <h1>{research.title}</h1>
+            <p>This essay is now part of Research & Essays.</p>
+          </div>
+          <Link className="text-link" href={research.href}>Read {research.title} →</Link>
+        </section>
+      </PublicationShell>
+    );
   }
 
   return (

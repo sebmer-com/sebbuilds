@@ -1,0 +1,14 @@
+{
+  "title": "MaasStudio Guest Check-in",
+  "slug": "maasstudio",
+  "description": "A multilingual guest-registration app with guided pre-arrival check-in, document-assisted entry, and an administrative visit workspace.",
+  "date": "2026-09-15",
+  "tags": [
+    "Hospitality",
+    "Workflow",
+    "OCR"
+  ],
+  "status": "building",
+  "featured": true,
+  "body": "MaasStudio Guest Check-in is a guest-registration application. It connects a guided multilingual pre-arrival flow with an administrative workspace for reviewing visits.\n\n## What it does\n\nThe application supports document-assisted data entry and gives guests access to practical arrival information and local guides. Administrators can inspect visit details without working through disconnected forms.\n\n## Recent work\n\nSeptember work integrated document recognition into the registration flow, added scheduled identity-image cleanup, improved visit-detail routing and date handling, and bundled guest information with the application.\n\n## Current boundary\n\nThis remains a development project. Legal and privacy questions around identity-image collection require resolution before relying on that workflow in production. The project is not presented as a compliance certification."
+}

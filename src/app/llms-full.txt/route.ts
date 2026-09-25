@@ -1,5 +1,5 @@
 import { getSebastianAbout } from "@/lib/about";
-import { getLogs, getProjects } from "@/lib/content";
+import { getLogs, getProjects, getResearch } from "@/lib/content";
 import { siteConfig } from "@/lib/site";
 
 export const dynamic = "force-static";
@@ -27,6 +27,18 @@ ${project.body}
 `,
     )
     .join("\n---\n\n");
+  const research = getResearch().map((entry) => `## ${entry.title}
+
+- URL: ${siteConfig.url}${entry.href}
+- Public JSON: ${siteConfig.url}/content/research/${entry.slug}.json
+- Date: ${entry.date}
+- Tags: ${entry.tags.join(", ")}
+- Description: ${entry.description}
+${entry.demoUrl ? `- Related post: ${entry.demoUrl}\n` : ""}
+### Full Public Essay Body
+
+${entry.body}
+`).join("\n---\n\n");
   const logs = logEntries
     .map((log) => {
       const image = log.imageUrl ? ` Image: ${siteConfig.url}${log.imageUrl}` : "";
@@ -73,6 +85,7 @@ This file is designed for language models and agents that need enough context to
 - Home: ${siteConfig.url}
 - About: ${siteConfig.url}/about
 - Projects: ${siteConfig.url}/projects
+- Research & Essays: ${siteConfig.url}/research
 - Logs: ${siteConfig.url}/logs
 - Legal: ${siteConfig.url}/legal
 - RSS: ${siteConfig.url}/rss.xml
@@ -81,13 +94,15 @@ This file is designed for language models and agents that need enough context to
 
 ## Public Content Model
 
-The site is a public JSON-backed Next.js site. Projects are long-form public posts. Logs are short updates and do not have individual detail pages in v1.
+The site is a public JSON-backed Next.js site. Projects are long-form public posts. Research and essays are a separate collection without project status or featured fields. Logs are short updates and do not have individual detail pages in v1.
 
 - About Sebastian Markdown: ${siteConfig.url}/content/about/sebastian.md
 - About Sebastian JSON: ${siteConfig.url}/about/sebastian.json
 - Projects manifest: ${siteConfig.url}/content/projects/index.json
+- Research manifest: ${siteConfig.url}/content/research/index.json
 - Logs manifest: ${siteConfig.url}/content/logs/index.json
 - Project item pattern: ${siteConfig.url}/content/projects/[slug].json
+- Research item pattern: ${siteConfig.url}/content/research/[slug].json
 - Log item pattern: ${siteConfig.url}/content/logs/[id].json
 
 ## Public Safety Notes For Agents
@@ -125,6 +140,10 @@ ${projectIndex}
 ## Full Project Context
 
 ${projects}
+
+## Research & Essays
+
+${research}
 
 ## Build Logs
 

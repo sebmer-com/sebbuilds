@@ -31,7 +31,11 @@ export function ContentCard({
   const cardContent = (
     <>
       <div className="content-card__meta">
-        <span className="metadata-label">Status:</span> {entry.status}
+        {entry.kind === "projects" ? (
+          <><span className="metadata-label">Status:</span> {entry.status}</>
+        ) : (
+          <time dateTime={entry.date}>{formatDate(entry.date)}</time>
+        )}
       </div>
       <div className="content-card__main">
         <Heading className="content-card__title">{entry.title}</Heading>
@@ -79,13 +83,13 @@ export function ArticleHeader({ entry }: ArticleHeaderProps) {
   return (
     <header className="article-header">
       <nav aria-label="Breadcrumb" className="article-breadcrumb">
-        <Link href="/projects">Projects</Link>
+        <Link href={`/${entry.kind}`}>{entry.kind === "projects" ? "Projects" : "Research & Essays"}</Link>
         <span aria-hidden="true"> / </span>
         <span aria-current="page">{entry.title}</span>
       </nav>
 
       <div className="article-header__meta">
-        <span>Status: {entry.status}</span>
+        {entry.kind === "projects" && <span>Status: {entry.status}</span>}
         <time dateTime={entry.date}>{formatDate(entry.date)}</time>
         <span>{entry.readingTime}</span>
       </div>
@@ -103,7 +107,13 @@ export function ArticleHeader({ entry }: ArticleHeaderProps) {
           </span>
         ))}
       </div>
-      <ProjectLinks project={entry} />
+      {entry.kind === "projects" ? <ProjectLinks project={entry} /> : entry.demoUrl ? (
+        <div className="project-links">
+          <a href={entry.demoUrl} rel="noreferrer" target="_blank">
+            Related post <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      ) : null}
     </header>
   );
 }

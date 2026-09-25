@@ -2,7 +2,7 @@
 
 Seb Builds is Sebastian Mertens' public builder site at `https://sebmer.com`.
 
-It contains public project pages, short build logs, agent-readable context files, and a GitHub-sourced CLI for inspecting the same content from a terminal.
+It contains public project pages, research and essays, short build logs, agent-readable context files, and a GitHub-sourced CLI for inspecting the same content from a terminal.
 
 ## Who Seb Is
 
@@ -22,9 +22,10 @@ Content is public and folder-based:
 
 - About Sebastian: `public/content/about/sebastian.md`
 - Projects: `public/content/projects/index.json` plus one JSON file per project
+- Research & Essays: `public/content/research/index.json` plus one JSON file per essay (no project status or featured fields)
 - Logs: `public/content/logs/index.json` plus one JSON file per build log
 
-Projects render as long-form Markdown pages at `/projects/[slug]`. Logs stay short and render on `/logs`.
+Projects render as long-form Markdown pages at `/projects/[slug]`. Research and essays render at `/research/[slug]`, with an archive at `/research`. The two original essay URLs under `/projects/` remain static relocation pages with canonical links to their research URLs. Logs stay short and render on `/logs`.
 
 ### Build-log content rule
 
@@ -40,6 +41,7 @@ https://sebmer.com/about/sebastian.json
 https://sebmer.com/llms.txt
 https://sebmer.com/llms-full.txt
 https://sebmer.com/content/projects/index.json
+https://sebmer.com/content/research/index.json
 https://sebmer.com/content/logs/index.json
 ```
 
@@ -64,6 +66,8 @@ npx github:sebmer-com/sebbuilds cat ./about/sebastian.md
 npx github:sebmer-com/sebbuilds cat ./about/sebastian.json
 npx github:sebmer-com/sebbuilds cat ./context/llms.txt
 npx github:sebmer-com/sebbuilds cat ./context/llms-full.txt
+npx github:sebmer-com/sebbuilds ls ./research --all
+npx github:sebmer-com/sebbuilds cat ./research/the-headless-product.md
 npx github:sebmer-com/sebbuilds ls ./projects --all
 npx github:sebmer-com/sebbuilds cat ./projects/elson-ai.md
 npx github:sebmer-com/sebbuilds tail -f ./build.log
@@ -84,6 +88,7 @@ npm run dev
 npm run lint
 npm run typecheck
 npm run build
+RESEARCH_EXPORT_TEST=1 node --test scripts/research.test.mjs
 ```
 
 ## Design System

@@ -1,4 +1,4 @@
-import { getLogs, getProjects } from "@/lib/content";
+import { getLogs, getAllEntries } from "@/lib/content";
 import { siteConfig } from "@/lib/site";
 
 export const dynamic = "force-static";
@@ -8,16 +8,16 @@ type FeedEntry = {
   href: string;
   date: string;
   description: string;
-  kind: "log" | "project";
+  kind: "log" | "projects" | "research";
 };
 
 export function GET() {
-  const projectEntries: FeedEntry[] = getProjects().map((project) => ({
+  const projectEntries: FeedEntry[] = getAllEntries().map((project) => ({
     title: project.title,
     href: project.href,
     date: project.date,
     description: project.description,
-    kind: "project",
+    kind: project.kind,
   }));
   const logEntries: FeedEntry[] = getLogs().map((log) => ({
     title: log.text,
@@ -33,7 +33,7 @@ export function GET() {
   const items = entries
     .map((entry) => {
       const pubDate =
-        entry.kind === "project"
+        entry.kind !== "log"
           ? "<pubDate>" + new Date(entry.date).toUTCString() + "</pubDate>"
           : "";
 

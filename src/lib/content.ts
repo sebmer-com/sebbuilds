@@ -3,9 +3,9 @@ import path from "node:path";
 
 const publicContentDirectory = path.join(process.cwd(), "public", "content");
 
-export type ContentKind = "projects";
+export type ContentKind = "projects" | "research";
 
-export type ProjectStatus = "shipped" | "building" | "idea";
+export type ProjectStatus = "shipped" | "building" | "idea" | "deprecated";
 
 export type BaseEntry = {
   kind: ContentKind;
@@ -29,7 +29,12 @@ export type ProjectEntry = BaseEntry & {
   featured: boolean;
 };
 
-export type ContentEntry = ProjectEntry;
+export type ResearchEntry = BaseEntry & {
+  kind: "research";
+  demoUrl?: string;
+};
+
+export type ContentEntry = ProjectEntry | ResearchEntry;
 
 export type LogEntry = {
   id: string;
@@ -58,6 +63,8 @@ type RawProject = {
   body?: unknown;
 };
 
+type RawResearch = Pick<RawProject, "title" | "slug" | "description" | "date" | "tags" | "body" | "demoUrl">;
+
 type RawLog = {
   id?: unknown;
   date?: unknown;
@@ -81,7 +88,7 @@ function readJson(filePath: string): unknown {
   }
 }
 
-function readManifest(kind: "projects" | "logs") {
+function readManifest(kind: ContentKind | "logs") {
   const manifestPath = path.join(publicContentDirectory, kind, "index.json");
   const manifest = readJson(manifestPath) as Manifest;
 
@@ -155,6 +162,27 @@ function readProject(fileName: string): ProjectEntry {
   };
 }
 
+function readResearch(fileName: string): ResearchEntry {
+  const filePath = path.join(publicContentDirectory, "research", fileName);
+  const raw = readJson(filePath) as RawResearch;
+  const body = requireString(raw.body, "body", filePath);
+  const slug = requireString(raw.slug, "slug", filePath);
+
+  return {
+    kind: "research",
+    title: requireString(raw.title, "title", filePath),
+    slug,
+    description: requireString(raw.description, "description", filePath),
+    date: requireString(raw.date, "date", filePath),
+    tags: readTags(raw.tags, filePath),
+    demoUrl: optionalString(raw.demoUrl),
+    body,
+    content: body,
+    readingTime: getReadingTime(body),
+    href: `/research/${slug}`,
+  };
+}
+
 function readLog(fileName: string): LogEntry {
   const filePath = path.join(publicContentDirectory, "logs", fileName);
   const raw = readJson(filePath) as RawLog;
@@ -170,7 +198,7 @@ function readLog(fileName: string): LogEntry {
 }
 
 function isProjectStatus(status: string): status is ProjectStatus {
-  return status === "shipped" || status === "building" || status === "idea";
+  return status === "shipped" || status === "building" || status === "idea" || status === "deprecated";
 }
 
 function getReadingTime(content: string) {
@@ -187,6 +215,10 @@ export function getProjects() {
   return readManifest("projects").map(readProject);
 }
 
+export function getResearch() {
+  return readManifest("research").map(readResearch);
+}
+
 export function getFeaturedProjects() {
   return getProjects().filter((project) => project.featured);
 }
@@ -196,16 +228,17 @@ export function getLogs() {
 }
 
 export function getAllEntries() {
-  return getProjects();
+  return [...getProjects(), ...getResearch()];
 }
 
 export function getEntryBySlug(kind: "projects", slug: string): ProjectEntry | undefined;
+export function getEntryBySlug(kind: "research", slug: string): ResearchEntry | undefined;
 export function getEntryBySlug(kind: ContentKind, slug: string) {
   if (kind === "projects") {
     return getProjects().find((entry) => entry.slug === slug);
   }
 
-  return undefined;
+  return getResearch().find((entry) => entry.slug === slug);
 }
 
 export function getAllTags(entries: ContentEntry[]) {

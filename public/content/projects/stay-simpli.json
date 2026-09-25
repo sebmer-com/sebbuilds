@@ -1,0 +1,14 @@
+{
+  "title": "Stay Simpli / Zimmerbuch",
+  "slug": "stay-simpli",
+  "description": "An accommodation-management workspace for stays, people, groups, rooms, and bed-level planning.",
+  "date": "2026-08-23",
+  "tags": [
+    "Operations",
+    "PostgreSQL",
+    "Workflow"
+  ],
+  "status": "building",
+  "featured": false,
+  "body": "Stay Simpli, also called Zimmerbuch, replaces spreadsheet-based accommodation planning with a structured workspace for stays, people, groups, rooms, and bed spaces.\n\n## What it does\n\nA monthly planner connects stays to rooms and bed spaces. Staff can manage groups, distinguish internal and external accommodation, and use CSV previews, imports, and exports for people and group records.\n\n## Recent work\n\nThe August implementation moved stay listings, planner reads, accommodation resources, reference data, and management writes toward a managed PostgreSQL boundary. The work emphasizes explicit data ownership and bounded write paths rather than maintaining competing copies of the same planning spreadsheet.\n\n## Current boundary\n\nThis is an operational application under development, not a public guest-data demo. A multi-user deployment requires its own access, privacy, and backup review."
+}

@@ -1,0 +1,6 @@
+{
+  "id": "2026-09-02-mono-trade-data-contracts",
+  "date": "2026-09-02",
+  "text": "Made market-data correctness boundaries explicit",
+  "detail": "Added provider-neutral data contracts and separated deterministic, integration, replay, and opt-in live-data tests. Audited legacy libraries as recovery candidates without assuming completed adapters."
+}

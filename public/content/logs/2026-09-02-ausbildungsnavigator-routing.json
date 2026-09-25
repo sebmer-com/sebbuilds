@@ -1,0 +1,6 @@
+{
+  "id": "2026-09-02-ausbildungsnavigator-routing",
+  "date": "2026-09-02",
+  "text": "Clarified training-record review blockers",
+  "detail": "Improved report-routing diagnostics, training-plan reassignment checks, and pilot regression coverage for AusbildungsNavigator."
+}

@@ -1,0 +1,14 @@
+{
+  "title": "AusbildungsNavigator",
+  "slug": "ausbildungsnavigator",
+  "description": "A pilot training-record workspace connecting paramedic apprentices, report review, and administrative routing diagnostics.",
+  "date": "2026-09-02",
+  "tags": [
+    "Education",
+    "Workflow",
+    "Next.js"
+  ],
+  "status": "building",
+  "featured": false,
+  "body": "AusbildungsNavigator is a pilot workspace for digital training records in paramedic education. It connects report submission with responsible-reviewer approval and gives administrators a way to understand blocked review workflows.\n\n## What it does\n\nApprentices submit records, reviewers work through their assigned reports, and administrators can inspect the causes of routing problems rather than treating every missing approval as the same error.\n\n## Recent work\n\nSeptember work grouped routing blockers into clearer causes, improved dashboard guidance, extended diagnostics for training-plan reassignment, and expanded regression coverage for routing, isolation, and onboarding. Demo-reset support helps keep pilot scenarios repeatable.\n\n## Current boundary\n\nBinding use remains subject to professional, legal, and privacy acceptance. This is not an accredited certification system, and AI processing is not assumed to be approved."
+}

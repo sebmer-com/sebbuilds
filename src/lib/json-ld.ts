@@ -46,7 +46,7 @@ export function personJsonLd() {
 export function contentJsonLd(entry: ContentEntry) {
   return {
     "@context": "https://schema.org",
-    "@type": "CreativeWork",
+    "@type": entry.kind === "research" ? "Article" : "CreativeWork",
     headline: entry.title,
     description: entry.description,
     datePublished: entry.date,

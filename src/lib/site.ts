@@ -73,6 +73,7 @@ export const siteConfig = {
   },
   nav: [
     { label: "Projects", href: "/projects" },
+    { label: "Research & Essays", href: "/research" },
     { label: "Build Log", href: "/logs" },
     { label: "About", href: "/about" },
     { label: "Follow", href: "/#follow" },

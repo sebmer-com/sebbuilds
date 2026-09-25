@@ -1,21 +1,25 @@
 {
   "items": [
-    "ai-frontier-acceleration-forecast.json",
-    "wispr-alternatve-local-llm.json",
+    "ohmyhost.json",
+    "amerged-website.json",
+    "maasstudio.json",
+    "airader.json",
+    "mono-trade.json",
+    "ausbildungsnavigator.json",
     "project-elson.json",
+    "wispr-alternatve-local-llm.json",
+    "stay-simpli.json",
     "elson-ai.json",
-    "project-apex.json",
     "seb-builds.json",
     "make-skills.json",
     "devlo-aios.json",
-    "airader.json",
     "tempo-ai.json",
-    "mono-trade.json",
     "hermes-on-rocket.json",
     "tracker.json",
-    "gairvis.json",
     "enhanced-onvista.json",
+    "social-rocket.json",
+    "gairvis.json",
     "lovalingo.json",
-    "social-rocket.json"
+    "project-apex.json"
   ]
 }

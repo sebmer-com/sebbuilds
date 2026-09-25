@@ -1,0 +1,6 @@
+{
+  "id": "2026-09-15-maasstudio-check-in",
+  "date": "2026-09-15",
+  "text": "Connected guest check-in and administrative visit review",
+  "detail": "Integrated document-assisted registration, improved visit routing and date handling, and added identity-image cleanup in the development app. Privacy and legal acceptance remain separate gates."
+}
