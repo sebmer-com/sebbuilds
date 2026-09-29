@@ -87,9 +87,18 @@ npm install
 npm run dev
 npm run lint
 npm run typecheck
+npm test
 npm run build
-RESEARCH_EXPORT_TEST=1 node --test scripts/research.test.mjs
+GITHUB_ACTIONS=true npm run build
+RESEARCH_EXPORT_TEST=1 npm test
 ```
+
+Project and research JSON bodies are the editable source. The development server
+and build compile them into static React modules; generated `.mjs` files are not
+committed. Content edits refresh during development. Markdown, literal HTML/SVG
+and the existing component mappings are supported; research also supports GFM
+tables and lists. MDX JavaScript expressions, imports and exports fail compilation.
+Pages render the compiled modules without evaluating source code at request time.
 
 ## Design System
 
@@ -98,7 +107,7 @@ Reusable implementation assets live in [`design-system/`](./design-system/README
 including DTCG and Tailwind token exports, portable CSS, a PowerPoint adapter, and
 renderable starters for responsive web pages, 16:9 slides, and A4 PDFs.
 
-The site is statically exported for GitHub Pages. Content changes become live after pushing to `main` and the Pages workflow deploys the generated `out/` artifact.
+The GitHub Pages workflow exports the site to `out/`. Content changes become live after pushing to `main` and that workflow deploys the artifact. Other hosts use the standard Next.js build from the same `npm run build` command.
 
 ## License
 

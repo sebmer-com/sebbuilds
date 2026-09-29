@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { MDXRemote } from "next-mdx-remote/rsc";
 import { ArticleHeader } from "@/components/content-card";
 import { JsonLd } from "@/components/json-ld";
 import { mdxComponents } from "@/components/mdx-content";
 import { PublicationShell } from "@/components/publication-shell";
 import { getEntryBySlug, getProjects } from "@/lib/content";
+import { CompiledMdx } from "@/lib/compiled-mdx";
 import { contentJsonLd } from "@/lib/json-ld";
 import { siteConfig } from "@/lib/site";
 
@@ -86,7 +86,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
         <article className="article-shell">
           <ArticleHeader entry={project} />
           <div className="mdx-content">
-            <MDXRemote components={mdxComponents} source={project.content} />
+            <CompiledMdx kind="projects" slug={project.slug} components={mdxComponents} />
           </div>
         </article>
       </PublicationShell>

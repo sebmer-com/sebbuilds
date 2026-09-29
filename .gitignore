@@ -14,3 +14,5 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 /.ohmyhost/
+/src/generated/mdx/**/*.mjs
+/src/generated/mdx/**/*.tmp-*

@@ -1,12 +1,11 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { MDXRemote } from "next-mdx-remote/rsc";
-import remarkGfm from "remark-gfm";
 import { ArticleHeader } from "@/components/content-card";
 import { JsonLd } from "@/components/json-ld";
 import { mdxComponents } from "@/components/mdx-content";
 import { PublicationShell } from "@/components/publication-shell";
 import { getEntryBySlug, getResearch } from "@/lib/content";
+import { CompiledMdx } from "@/lib/compiled-mdx";
 import { contentJsonLd } from "@/lib/json-ld";
 import { siteConfig } from "@/lib/site";
 
@@ -69,11 +68,7 @@ export default async function ResearchPage({ params }: ResearchPageProps) {
         <article className="article-shell">
           <ArticleHeader entry={entry} />
           <div className="mdx-content">
-            <MDXRemote
-              components={mdxComponents}
-              source={entry.content}
-              options={{ mdxOptions: { remarkPlugins: [remarkGfm] } }}
-            />
+            <CompiledMdx kind="research" slug={entry.slug} components={mdxComponents} />
           </div>
         </article>
       </PublicationShell>

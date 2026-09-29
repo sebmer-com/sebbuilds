@@ -1,4 +1,5 @@
 import type { NextConfig } from "next";
+import { PHASE_DEVELOPMENT_SERVER, PHASE_PRODUCTION_BUILD } from "next/constants.js";
 
 const nextConfig: NextConfig = {
   // GitHub Pages needs a static export; ohmyho.st builds the normal Next.js edge app.
@@ -10,4 +11,11 @@ const nextConfig: NextConfig = {
   },
 };
 
-export default nextConfig;
+export default async function configureNext(phase: string): Promise<NextConfig> {
+  if (phase === PHASE_PRODUCTION_BUILD || phase === PHASE_DEVELOPMENT_SERVER) {
+    const { compileContentMdx, watchContentMdx } = await import("./scripts/compile-content-mdx.mjs");
+    await compileContentMdx();
+    if (phase === PHASE_DEVELOPMENT_SERVER) watchContentMdx();
+  }
+  return nextConfig;
+}
