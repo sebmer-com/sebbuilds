@@ -66,6 +66,10 @@ body.publication-root {
   text-rendering: optimizeLegibility;
 }
 
+.dark body.publication-root {
+  background: var(--paper);
+}
+
 *,
 *::before,
 *::after {
