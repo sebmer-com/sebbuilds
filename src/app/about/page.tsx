@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import type { ReactNode } from "react";
 import { EditorialLabel } from "@/components/editorial-label";
@@ -69,11 +68,14 @@ export default function AboutPage() {
               </div>
             </div>
 
-            <Image
+            {/* eslint-disable-next-line @next/next/no-img-element -- Native images preserve strict CSP without inline styles. */}
+            <img
               alt="Sebastian Mertens"
               className="about-portrait"
               height={800}
-              priority
+              loading="eager"
+              fetchPriority="high"
+              decoding="async"
               src="/images/sebastian-mertens.png"
               width={800}
             />

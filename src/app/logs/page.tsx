@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import { EditorialLabel } from "@/components/editorial-label";
 import { PublicationShell } from "@/components/publication-shell";
 import { getLogs } from "@/lib/content";
@@ -42,16 +41,19 @@ export default function LogsPage() {
               <div className="log-entry__body">
                 <h2>{item.text}</h2>
                 <p>{item.detail}</p>
+                {/* eslint-disable @next/next/no-img-element -- Native images preserve strict CSP without inline styles. */}
                 {item.imageUrl ? (
-                  <Image
+                  <img
                     alt={item.imageAlt ?? "Build log visual for " + item.text}
                     className="log-entry__image"
                     height={820}
                     loading="lazy"
+                    decoding="async"
                     src={item.imageUrl}
                     width={1400}
                   />
                 ) : null}
+                {/* eslint-enable @next/next/no-img-element */}
               </div>
             </article>
           ))}

@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import type { ReactNode } from "react";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { siteConfig } from "@/lib/site";
@@ -22,7 +21,16 @@ export function PublicationShell({ active, children }: PublicationShellProps) {
             <Link className="masthead__brand" href="/" aria-label="Seb Builds home">
               Seb Builds
             </Link>
-            <Image className="masthead__portrait" src="/images/sebastian-mertens.png" alt="Sebastian Mertens" width={32} height={32} unoptimized />
+            {/* eslint-disable-next-line @next/next/no-img-element -- Native images preserve strict CSP without inline styles. */}
+            <img
+              className="masthead__portrait"
+              src="/images/sebastian-mertens.png"
+              alt="Sebastian Mertens"
+              width={32}
+              height={32}
+              loading="lazy"
+              decoding="async"
+            />
           </div>
           <p className="masthead__tagline">{siteConfig.tagline}</p>
         </div>
