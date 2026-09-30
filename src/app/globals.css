@@ -501,7 +501,8 @@ body.publication-root {
   text-decoration: underline;
   text-underline-offset: 4px;
   text-transform: uppercase;
-  white-space: nowrap;
+  white-space: normal;
+  overflow-wrap: anywhere;
 }
 
 .text-link:hover,
