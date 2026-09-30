@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { socialImage } from "@/lib/brand";
 import { ContentCard } from "@/components/content-card";
 import { EditorialLabel } from "@/components/editorial-label";
 import { PublicationShell } from "@/components/publication-shell";
@@ -14,6 +15,7 @@ export const metadata: Metadata = {
     canonical: "/projects",
   },
   openGraph: {
+    images: [socialImage],
     title: "Projects — " + siteConfig.name,
     description: projectsDescription,
     url: "/projects",

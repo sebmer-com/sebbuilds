@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { socialImage } from "@/lib/brand";
 import { EditorialLabel } from "@/components/editorial-label";
 import { PublicationShell } from "@/components/publication-shell";
 import { siteConfig } from "@/lib/site";
@@ -13,6 +14,7 @@ export const metadata: Metadata = {
     canonical: "/legal",
   },
   openGraph: {
+    images: [socialImage],
     title: "Legal, Privacy & Cookies — " + siteConfig.name,
     description: legalDescription,
     url: "/legal",

@@ -19,5 +19,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.75,
   }));
 
-  return [...routes, ...entries];
+  return [...routes, ...entries, {
+    url: `${siteConfig.url}/brand`,
+    lastModified: new Date("2026-09-30"),
+    changeFrequency: "monthly",
+    priority: 0.4,
+  }];
 }

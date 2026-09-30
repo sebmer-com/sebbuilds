@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import type { ReactNode } from "react";
 import { ThemeProvider } from "@/components/theme-provider";
+import { socialImage } from "@/lib/brand";
 import { siteConfig } from "@/lib/site";
 import "./globals.css";
 
@@ -30,20 +31,13 @@ export const metadata: Metadata = {
     title: "Seb Builds — Products in Public",
     description: siteConfig.description,
     locale: siteConfig.locale,
-    images: [
-      {
-        url: "/og-image.png",
-        width: 1536,
-        height: 864,
-        alt: "Seb Builds website preview",
-      },
-    ],
+    images: [socialImage],
   },
   twitter: {
     card: "summary_large_image",
     title: "Seb Builds — Products in Public",
     description: siteConfig.description,
-    images: ["/og-image.png"],
+    images: [socialImage.url],
   },
 };
 

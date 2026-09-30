@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { socialImage } from "@/lib/brand";
 import Link from "next/link";
 import type { ReactNode } from "react";
 import { EditorialLabel } from "@/components/editorial-label";
@@ -18,6 +19,7 @@ export const metadata: Metadata = {
     canonical: "/about",
   },
   openGraph: {
+    images: [socialImage],
     title: "About Sebastian Mertens — " + siteConfig.name,
     description: aboutDescription,
     url: "/about",
@@ -186,11 +188,13 @@ function getMarkdownBlocks(content: string): MarkdownBlock[] {
 
 function renderInlineMarkdown(text: string): ReactNode[] {
   const nodes: ReactNode[] = [];
-  const linkPattern = /\[([^\]]+)\]\((https?:\/\/[^)]+)\)/g;
+  const linkPattern = /\[([^\]]+)\]\((https?:\/\/[^)]+)\)|(https?:\/\/[^\s<>]+)/g;
   let lastIndex = 0;
 
   for (const match of text.matchAll(linkPattern)) {
-    const [raw, label, href] = match;
+    const [raw, markdownLabel, markdownHref, bareHref] = match;
+    const href = markdownHref ?? bareHref;
+    const label = markdownLabel ?? bareHref;
     const index = match.index ?? 0;
 
     if (index > lastIndex) {

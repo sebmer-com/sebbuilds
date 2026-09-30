@@ -1,0 +1,70 @@
+{
+  "name": "Seb Builds",
+  "tagline": "products in public.",
+  "website": "https://sebmer.com",
+  "colours": {
+    "ink": "#111111",
+    "paper": "#FFFFFF",
+    "textOnInk": "#F2F2F2",
+    "softOnInk": "#CCCCCC",
+    "mutedOnInk": "#9C9C9C",
+    "ruleOnInk": "#414141"
+  },
+  "typography": {
+    "editorial": "Latin Modern",
+    "fallback": "Georgia",
+    "utility": "Arial",
+    "titleWeight": 400
+  },
+  "presentation": {
+    "width": 1600,
+    "height": 900,
+    "margin": 112,
+    "file": "assets/seb-builds-presentation-template.html"
+  },
+  "social": [
+    {
+      "file": "open-graph",
+      "label": "Open Graph",
+      "width": 1200,
+      "height": 630
+    },
+    {
+      "file": "linkedin",
+      "label": "LinkedIn post",
+      "width": 1200,
+      "height": 627
+    },
+    {
+      "file": "twitter",
+      "label": "X / Twitter card",
+      "width": 1200,
+      "height": 675
+    },
+    {
+      "file": "square",
+      "label": "Square post",
+      "width": 1080,
+      "height": 1080
+    },
+    {
+      "file": "github",
+      "label": "GitHub preview",
+      "width": 1280,
+      "height": 640
+    },
+    {
+      "file": "x-header",
+      "label": "X header",
+      "width": 1500,
+      "height": 500
+    }
+  ],
+  "defaultSocialImage": "assets/open-graph-dark-v1.png",
+  "usage": [
+    "Keep the wordmark proportions.",
+    "Use large regular serif titles and italic claims.",
+    "Use thin rules and uppercase utility labels.",
+    "Do not invent results or figures."
+  ]
+}

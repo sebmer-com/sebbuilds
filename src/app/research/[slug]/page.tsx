@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { socialImage } from "@/lib/brand";
 import { notFound } from "next/navigation";
 import { ArticleHeader } from "@/components/content-card";
 import { JsonLd } from "@/components/json-ld";
@@ -38,6 +39,7 @@ export async function generateMetadata({
       canonical: entry.href,
     },
     openGraph: {
+      images: [socialImage],
       type: "article",
       title: entry.title + " — " + siteConfig.name,
       description: entry.description,
@@ -46,6 +48,7 @@ export async function generateMetadata({
       tags: entry.tags,
     },
     twitter: {
+      images: [socialImage.url],
       card: "summary_large_image",
       title: entry.title + " — " + siteConfig.name,
       description: entry.description,
