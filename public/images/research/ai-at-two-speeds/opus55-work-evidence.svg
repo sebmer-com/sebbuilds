@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="1010" viewBox="0 0 720 1010" role="img" aria-labelledby="title desc">
+<title id="title">Longer jobs, not just longer answers</title>
+<desc id="desc">Three examples reported at the September 22 launch of Claude Opus 5.5: a HAProxy rewrite in 9.5 hours, an overnight Clio task across six repositories lasting over 18 hours, and a fictional merger spreadsheet and presentation in 63 minutes. Internal tests and customer testimony, not general completion guarantees.</desc>
+<style>text{font-family:Georgia,"Times New Roman",serif;fill:#171717} .minor{fill:#494949}</style>
+<rect width="720" height="1010" fill="white"/>
+<text x="48" y="45" font-size="22" font-weight="normal">SEB BUILDS  /  AI AT TWO SPEEDS  /  02</text>
+<line x1="48" y1="64" x2="672" y2="64" stroke="#aaa"/>
+<text x="48" y="120" font-size="40" font-weight="normal">Longer jobs,</text>
+<text x="48" y="168" font-size="40" font-weight="normal">not just longer answers</text>
+<text x="48" y="211" font-size="25" font-weight="normal">Claude Opus 5.5 · Released September 22, 2026</text>
+<line x1="48" y1="239" x2="672" y2="239" stroke="#aaa"/>
+<text x="48" y="286" font-size="44" font-weight="bold">9.5 hours</text>
+<text x="48" y="330" font-size="29" font-weight="bold">Rewrite HAProxy from C into Rust</text>
+<text x="48" y="367" font-size="26" font-weight="normal">Nearly all existing regression tests passed.</text>
+<text x="48" y="402" font-size="26" font-weight="normal">Anthropic internal test; not proof of readiness.</text>
+<line x1="48" y1="431" x2="672" y2="431" stroke="#aaa"/>
+<text x="48" y="478" font-size="44" font-weight="bold">Over 18 hours</text>
+<text x="48" y="522" font-size="29" font-weight="bold">Work across six code repositories</text>
+<text x="48" y="559" font-size="26" font-weight="normal">An overnight task linking software services.</text>
+<text x="48" y="594" font-size="26" font-weight="normal">Report by Clio developer Sean Heintz.</text>
+<line x1="48" y1="623" x2="672" y2="623" stroke="#aaa"/>
+<text x="48" y="670" font-size="44" font-weight="bold">63 minutes</text>
+<text x="48" y="714" font-size="29" font-weight="bold">Build a spreadsheet and presentation</text>
+<text x="48" y="751" font-size="26" font-weight="normal">Assess a merger between fictional companies.</text>
+<text x="48" y="786" font-size="26" font-weight="normal">Anthropic internal test.</text>
+<line x1="48" y1="816" x2="672" y2="816" stroke="#aaa"/>
+<text x="48" y="854" font-size="26" font-weight="normal">Selected examples, not typical completion times.</text>
+<text x="48" y="889" font-size="26" font-weight="normal">No claim that all tasks succeed.</text>
+<line x1="48" y1="922" x2="672" y2="922" stroke="#aaa"/>
+<a href="https://www.anthropic.com/claude-opus-5-5">
+<text x="48" y="962" font-size="24" font-weight="normal">Source: Anthropic launch · September 22, 2026</text>
+</a>
+</svg>

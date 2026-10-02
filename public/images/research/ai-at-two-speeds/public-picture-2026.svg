@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="830" viewBox="0 0 720 830" role="img" aria-labelledby="title desc">
+<title id="title">The name is familiar. The experience is uneven.</title>
+<desc id="desc">Among US adults surveyed in February 2026, 96% had heard at least a little about AI, 51% did not use chatbots and 18% were very or extremely confident using chatbots. These are separate questions, not parts of one whole.</desc>
+<style>text{font-family:Georgia,"Times New Roman",serif;fill:#171717} .minor{fill:#494949}</style>
+<rect width="720" height="830" fill="white"/>
+<text x="48" y="45" font-size="22" font-weight="normal">SEB BUILDS  /  AI AT TWO SPEEDS  /  01</text>
+<line x1="48" y1="64" x2="672" y2="64" stroke="#aaa"/>
+<text x="48" y="120" font-size="40" font-weight="normal">The name is familiar.</text>
+<text x="48" y="168" font-size="40" font-weight="normal">The experience is uneven.</text>
+<text x="48" y="211" font-size="26" font-weight="normal">US adults · February 17–23, 2026</text>
+<text x="48" y="272" font-size="27" font-weight="normal">Have heard at least a little about AI</text>
+<rect x="48" y="291" width="624" height="36" fill="#ededed"/>
+<rect x="48" y="291" width="599.04" height="36" fill="#171717"/>
+<text x="672" y="360" font-size="29" font-weight="bold" text-anchor="end">96%</text>
+<text x="48" y="402" font-size="27" font-weight="normal">Do not use AI chatbots</text>
+<rect x="48" y="421" width="624" height="36" fill="#ededed"/>
+<rect x="48" y="421" width="318.24" height="36" fill="#171717"/>
+<text x="672" y="490" font-size="29" font-weight="bold" text-anchor="end">51%</text>
+<text x="48" y="532" font-size="27" font-weight="normal">Very / extremely confident using chatbots</text>
+<rect x="48" y="551" width="624" height="36" fill="#ededed"/>
+<rect x="48" y="551" width="112.32" height="36" fill="#171717"/>
+<text x="672" y="620" font-size="29" font-weight="bold" text-anchor="end">18%</text>
+<line x1="48" y1="646" x2="672" y2="646" stroke="#aaa"/>
+<line x1="48.0" y1="646" x2="48.0" y2="654" stroke="#aaa"/>
+<text x="48.0" y="682" font-size="24" font-weight="normal" text-anchor="middle">0%</text>
+<line x1="360.0" y1="646" x2="360.0" y2="654" stroke="#aaa"/>
+<text x="360.0" y="682" font-size="24" font-weight="normal" text-anchor="middle">50%</text>
+<line x1="672.0" y1="646" x2="672.0" y2="654" stroke="#aaa"/>
+<text x="672.0" y="682" font-size="24" font-weight="normal" text-anchor="middle">100%</text>
+<text x="48" y="721" font-size="25" font-weight="normal">Separate questions · 5,119 adults surveyed</text>
+<line x1="48" y1="742" x2="672" y2="742" stroke="#aaa"/>
+<a href="https://www.pewresearch.org/internet/2026/06/17/what-do-americans-think-ai-is/">
+<text x="48" y="782" font-size="24" font-weight="normal">Source: Pew Research Center · June 17, 2026</text>
+</a>
+</svg>
