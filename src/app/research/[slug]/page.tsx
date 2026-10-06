@@ -32,6 +32,10 @@ export async function generateMetadata({
     return {};
   }
 
+  const entrySocialImage = entry.ogImage
+    ? { url: entry.ogImage, alt: entry.ogImageAlt ?? entry.title }
+    : undefined;
+
   return {
     title: entry.title,
     description: entry.description,
@@ -39,7 +43,7 @@ export async function generateMetadata({
       canonical: entry.href,
     },
     openGraph: {
-      images: [socialImage],
+      images: [entrySocialImage ?? socialImage],
       type: "article",
       title: entry.title + " — " + siteConfig.name,
       description: entry.description,
@@ -48,7 +52,7 @@ export async function generateMetadata({
       tags: entry.tags,
     },
     twitter: {
-      images: [socialImage.url],
+      images: [entrySocialImage ?? socialImage.url],
       card: "summary_large_image",
       title: entry.title + " — " + siteConfig.name,
       description: entry.description,

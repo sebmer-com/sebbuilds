@@ -38,7 +38,7 @@ test("CLI lists and reads research separately without project statuses", async (
 const source = fs.readFileSync("src/lib/content.ts", "utf8");
 const compiled = ts.transpileModule(source, { compilerOptions: { module: ts.ModuleKind.ESNext } }).outputText;
 const content = await import(`data:text/javascript;base64,${Buffer.from(compiled).toString("base64")}`);
-const slugs = ["ai-at-two-speeds", "ai-engineering-vs-vibe-coding", "the-headless-product", "ai-frontier-acceleration-forecast", "how-do-i-build-an-aios"];
+const slugs = ["the-biggest-lie-of-our-industry", "ai-at-two-speeds", "ai-engineering-vs-vibe-coding", "the-headless-product", "ai-frontier-acceleration-forecast", "how-do-i-build-an-aios"];
 const relocatedSlugs = ["the-headless-product", "ai-frontier-acceleration-forecast"];
 
 // Run after npm run build: RESEARCH_EXPORT_TEST=1 node --test scripts/research.test.mjs

@@ -32,6 +32,8 @@ export type ProjectEntry = BaseEntry & {
 export type ResearchEntry = BaseEntry & {
   kind: "research";
   demoUrl?: string;
+  ogImage?: string;
+  ogImageAlt?: string;
 };
 
 export type ContentEntry = ProjectEntry | ResearchEntry;
@@ -63,7 +65,10 @@ type RawProject = {
   body?: unknown;
 };
 
-type RawResearch = Pick<RawProject, "title" | "slug" | "description" | "date" | "tags" | "body" | "demoUrl">;
+type RawResearch = Pick<RawProject, "title" | "slug" | "description" | "date" | "tags" | "body" | "demoUrl"> & {
+  ogImage?: unknown;
+  ogImageAlt?: unknown;
+};
 
 type RawLog = {
   id?: unknown;
@@ -176,6 +181,8 @@ function readResearch(fileName: string): ResearchEntry {
     date: requireString(raw.date, "date", filePath),
     tags: readTags(raw.tags, filePath),
     demoUrl: optionalString(raw.demoUrl),
+    ogImage: optionalString(raw.ogImage),
+    ogImageAlt: optionalString(raw.ogImageAlt),
     body,
     content: body,
     readingTime: getReadingTime(body),
