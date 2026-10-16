@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import type { ReactNode } from "react";
+import { HostedByOhmyhost } from "@/components/hosted-by-ohmyhost";
 import { ThemeProvider } from "@/components/theme-provider";
 import { socialImage } from "@/lib/brand";
 import { siteConfig } from "@/lib/site";
@@ -56,6 +57,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           enableSystem
         >
           {children}
+          <HostedByOhmyhost />
         </ThemeProvider>
       </body>
     </html>
