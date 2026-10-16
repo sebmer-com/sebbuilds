@@ -62,7 +62,9 @@ export function HostedByOhmyhost() {
         rel="sponsored noopener"
         target="_blank"
       >
-        Hosted on ohmyho.st
+        <span>
+          Runs on <span className={styles.domain}>ohmyho.st</span>
+        </span>
       </a>
     </details>
   );

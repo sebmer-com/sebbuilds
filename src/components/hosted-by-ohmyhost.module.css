@@ -85,7 +85,7 @@
   text-decoration: none;
 }
 
-.flag .link:hover {
+.domain {
   text-decoration: underline;
 }
 
