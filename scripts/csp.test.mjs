@@ -23,8 +23,8 @@ async function moduleFromTsx(t, source) {
 test("site images retain their presentation and loading without inline styles", async (t) => {
   const cases = [
     { file: "src/components/publication-shell.tsx", className: "masthead__portrait", width: 32, height: 32, loading: "lazy", src: "/images/sebastian-mertens.png", alt: "Sebastian Mertens" },
-    { file: "src/app/about/page.tsx", className: "about-portrait", width: 800, height: 800, loading: "eager", src: "/images/sebastian-mertens.png", alt: "Sebastian Mertens", priority: "high" },
-    { file: "src/app/logs/page.tsx", className: "log-entry__image", width: 1400, height: 820, loading: "lazy", src: "/content/logs/example.svg", alt: "Example build visual" },
+    { file: "src/views/about/page.tsx", className: "about-portrait", width: 800, height: 800, loading: "eager", src: "/images/sebastian-mertens.png", alt: "Sebastian Mertens", priority: "high" },
+    { file: "src/views/logs/page.tsx", className: "log-entry__image", width: 1400, height: 820, loading: "lazy", src: "/content/logs/example.svg", alt: "Example build visual" },
   ];
   for (const item of cases) {
     const source = await fs.readFile(path.join(root, item.file), "utf8");
@@ -50,24 +50,12 @@ test("site images retain their presentation and loading without inline styles", 
   }
 });
 
-test("theme nonce is available before rendering next-themes, without waiting for an effect", async (t) => {
-  const source = await fs.readFile(path.join(root, "src/components/theme-provider.tsx"), "utf8");
-  const { ThemeProvider } = await moduleFromTsx(t, source);
-  const originalDocument = Object.getOwnPropertyDescriptor(globalThis, "document");
-  t.after(() => {
-    if (originalDocument) Object.defineProperty(globalThis, "document", originalDocument);
-    else delete globalThis.document;
-  });
-  let reads = 0;
-  globalThis.document = { head: { querySelector(selector) {
-    assert.equal(selector, 'meta[property="csp-nonce"]');
-    reads += 1;
-    return { content: "trusted-response-nonce" };
-  } } };
-  const html = renderToStaticMarkup(createElement(ThemeProvider, { disableTransitionOnChange: true }, "content"));
-  assert.equal(reads, 1);
-  assert.match(html, /<script[^>]* nonce="trusted-response-nonce"/);
-  assert.match(html, /content/);
-  delete globalThis.document;
-  assert.doesNotThrow(() => renderToStaticMarkup(createElement(ThemeProvider, {}, "server content")));
+test("theme preference uses the external Astro browser script without inline styling", async () => {
+  const source = await fs.readFile(path.join(root, "public/theme.js"), "utf8");
+  const layout = await fs.readFile(path.join(root, "src/layouts/Document.astro"), "utf8");
+  assert.match(source, /localStorage\.getItem\("theme"\)/);
+  assert.match(source, /prefers-color-scheme: dark/);
+  assert.match(source, /aria-pressed/);
+  assert.match(layout, /src="\/theme\.js"/);
+  assert.doesNotMatch(source, /\.style[.[]/);
 });

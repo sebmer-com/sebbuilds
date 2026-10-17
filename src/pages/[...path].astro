@@ -1,0 +1,10 @@
+---
+import Document from "@/layouts/Document.astro";
+import { pageRoutes } from "@/lib/page-routes";
+export function getStaticPaths() { return pageRoutes().map(({path}) => ({params: {path}})); }
+const route = pageRoutes().find(route => route.path === Astro.params.path)!;
+const metadata = await route.metadata();
+const element = await route.render();
+const Content = () => element;
+---
+<Document metadata={metadata}><Content /></Document>

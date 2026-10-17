@@ -1,0 +1,6 @@
+{
+  "id": "2026-10-17-seb-builds-astro",
+  "date": "2026-10-17",
+  "text": "Moved Seb Builds to Astro on ohmyho.st",
+  "detail": "Rebuilt the publication as static Astro pages while keeping its design, URLs, research, feeds and public JSON."
+}

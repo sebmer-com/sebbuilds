@@ -10,20 +10,20 @@
     "packages/*"
   ],
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
+    "dev": "astro dev",
+    "build": "astro build",
+    "start": "astro preview",
     "lint": "eslint .",
-    "typecheck": "tsc --noEmit",
+    "typecheck": "astro check && tsc --noEmit",
     "test": "node --test scripts/*.test.mjs"
   },
   "dependencies": {
     "latex.css": "1.14.0",
     "lucide-react": "^0.555.0",
-    "next": "16.3.8",
-    "next-themes": "^0.4.6",
     "react": "19.2.5",
-    "react-dom": "19.2.5"
+    "react-dom": "19.2.5",
+    "astro": "7.4.0",
+    "@astrojs/react": "7.1.0"
   },
   "devDependencies": {
     "@mdx-js/mdx": "3.1.1",
@@ -32,12 +32,16 @@
     "@types/react": "^19.2.7",
     "@types/react-dom": "^19.2.3",
     "eslint": "^9.39.1",
-    "eslint-config-next": "16.3.7",
     "remark-gfm": "4.0.1",
     "tailwindcss": "^4.2.4",
-    "typescript": "^5.9.3"
+    "typescript": "^5.9.3",
+    "@astrojs/check": "0.9.10",
+    "@tailwindcss/vite": "4.2.4",
+    "typescript-eslint": "8.71.1",
+    "oxc-transform-react": "0.145.0"
   },
   "overrides": {
-    "postcss": "^8.5.10"
+    "postcss": "^8.5.10",
+    "@vitejs/plugin-react": "6.1.1"
   }
 }

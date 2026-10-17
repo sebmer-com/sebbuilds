@@ -44,7 +44,7 @@ const relocatedSlugs = ["the-headless-product", "ai-frontier-acceleration-foreca
 // Run after npm run build: RESEARCH_EXPORT_TEST=1 node --test scripts/research.test.mjs
 if (process.env.RESEARCH_EXPORT_TEST === "1") {
   test("AIOS renders its original Markdown evaluation matrix as a table", () => {
-    const file = "out/research/how-do-i-build-an-aios/index.html";
+    const file = "dist/research/how-do-i-build-an-aios/index.html";
     assert.ok(fs.existsSync(file), "AIOS export exists");
     const html = fs.readFileSync(file, "utf8");
     assert.ok(html.includes("<table"));
@@ -52,7 +52,10 @@ if (process.env.RESEARCH_EXPORT_TEST === "1") {
     assert.ok(html.includes("<td>Abstention</td>"));
   });
   test("static research pages, relocation pages, and discovery feeds use canonical research URLs", () => {
-    const read = (name) => fs.readFileSync(`out/${name}`, "utf8");
+    const read = (name) => fs.readFileSync(`dist/${name}`, "utf8");
+    const notes = read("notes/index.html");
+    assert.ok(notes.includes('href="https://sebmer.com/logs/"'));
+    assert.ok(notes.includes("Build Log"));
     const archive = read("research/index.html");
     assert.ok(archive.includes("Research &amp; Essays"));
     assert.ok(!archive.includes("Status:"));
@@ -65,7 +68,7 @@ if (process.env.RESEARCH_EXPORT_TEST === "1") {
         assert.ok(!html.includes("Status:"));
       }
       if (legacy) assert.ok(legacy.includes(`href="${href}/"`) || legacy.includes(`href="${href}"`));
-      else assert.ok(!fs.existsSync(`out/projects/${slug}/index.html`));
+      else assert.ok(!fs.existsSync(`dist/projects/${slug}/index.html`));
       assert.ok(page.includes('&quot;Article&quot;') || page.includes('"@type":"Article"'));
       assert.ok(archive.includes(href));
       assert.ok(read("index.html").includes(href));
@@ -75,7 +78,7 @@ if (process.env.RESEARCH_EXPORT_TEST === "1") {
         assert.ok(text.includes(href), `${file} missing ${href}`);
         assert.ok(!text.includes(`https://sebmer.com/projects/${slug}`) && !text.includes(`](/projects/${slug}`), `${file} has old article URL`);
       }
-      assert.ok(!fs.existsSync(`out/content/projects/${slug}.json`));
+      assert.ok(!fs.existsSync(`dist/content/projects/${slug}.json`));
     }
   });
 }

@@ -16,3 +16,5 @@ pnpm-debug.log*
 /.ohmyhost/
 /src/generated/mdx/**/*.mjs
 /src/generated/mdx/**/*.tmp-*
+
+.astro/

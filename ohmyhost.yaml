@@ -3,9 +3,9 @@ project: sebmer-com
 build:
   install: npm ci --ignore-scripts
   command: npm run build
-  output: .open-next/assets
+  output: dist
 runtime:
-  mode: edge
+  mode: static
 database:
   enabled: false
 auth:

@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from "@/components/link";
 import type { ContentEntry, ProjectEntry } from "@/lib/content";
 import { formatDate } from "@/lib/format";
 

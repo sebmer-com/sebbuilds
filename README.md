@@ -77,7 +77,7 @@ npx github:sebmer-com/sebbuilds open contact.txt
 For local testing, point the CLI at a running local site:
 
 ```bash
-SEB_BUILDS_BASE_URL=http://127.0.0.1:3000 node packages/cli/bin/seb-builds.mjs ls ./ --all
+SEB_BUILDS_BASE_URL=http://127.0.0.1:4321 node packages/cli/bin/seb-builds.mjs ls ./ --all
 ```
 
 ## Development
@@ -89,7 +89,6 @@ npm run lint
 npm run typecheck
 npm test
 npm run build
-GITHUB_ACTIONS=true npm run build
 RESEARCH_EXPORT_TEST=1 npm test
 ```
 
@@ -107,7 +106,9 @@ Reusable implementation assets live in [`design-system/`](./design-system/README
 including DTCG and Tailwind token exports, portable CSS, a PowerPoint adapter, and
 renderable starters for responsive web pages, 16:9 slides, and A4 PDFs.
 
-The GitHub Pages workflow exports the site to `out/`. Content changes become live after pushing to `main` and that workflow deploys the artifact. Other hosts use the standard Next.js build from the same `npm run build` command.
+The publication uses Astro static output in `dist/` and is hosted on ohmyho.st. Astro owns routing and the document shell; reusable React components render at build time, and a small external script handles theme preference and the hosting flag. `npm run start` previews the built site. The GitHub Pages workflow builds on main pushes but publishes its `dist/` fallback only when manually dispatched. It never changes the production domain or automatically publishes a second copy during the ohmyho.st rollout.
+
+The lockfile pins the tested Astro/React toolchain. The React integration uses an explicit Vite React-plugin override to keep its OXC peer requirement aligned with the installed transform version. MDX remains a deterministic build step; public JSON and manifest ordering remain canonical.
 
 ## License
 
