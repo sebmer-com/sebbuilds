@@ -1,0 +1,6 @@
+{
+  "id": "2026-10-10-ohmyhost-next-cache-components",
+  "date": "2026-10-10",
+  "text": "Expanded Next.js support on ohmyho.st",
+  "detail": "Added Next.js 16.4 and Cache Components support, with compatibility checks and recovery improvements in client release 0.1.33."
+}

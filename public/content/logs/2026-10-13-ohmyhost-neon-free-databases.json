@@ -1,0 +1,6 @@
+{
+  "id": "2026-10-13-ohmyhost-neon-free-databases",
+  "date": "2026-10-13",
+  "text": "Fixed ohmyho.st database provisioning on Neon Free",
+  "detail": "Fixed managed Postgres provisioning on Neon’s Free plan and verified database reads and writes in Dev and Prod."
+}

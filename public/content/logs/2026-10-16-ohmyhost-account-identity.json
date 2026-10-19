@@ -1,0 +1,6 @@
+{
+  "id": "2026-10-16-ohmyhost-account-identity",
+  "date": "2026-10-16",
+  "text": "Made ohmyho.st account identity clearer",
+  "detail": "Released account email and organization names across the API, CLI and MCP so agents can identify the selected account and workspace."
+}

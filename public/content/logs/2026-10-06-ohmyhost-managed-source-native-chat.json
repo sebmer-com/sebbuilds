@@ -1,0 +1,6 @@
+{
+  "id": "2026-10-06-ohmyhost-managed-source-native-chat",
+  "date": "2026-10-06",
+  "text": "Brought managed source to ohmyho.st agent conversations",
+  "detail": "Added managed application versions and OAuth-based MCP access so connected agents can continue projects without requiring a GitHub repository."
+}

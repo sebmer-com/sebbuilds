@@ -1,0 +1,6 @@
+{
+  "id": "2026-10-09-ohmyhost-customer-database-policies",
+  "date": "2026-10-09",
+  "text": "Added opt-in database policies to ohmyho.st",
+  "detail": "Added customer-controlled Postgres row-level-security support and improved account access routing in the public clients."
+}

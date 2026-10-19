@@ -1,0 +1,6 @@
+{
+  "id": "2026-10-17-ohmyhost-astro-hosting",
+  "date": "2026-10-17",
+  "text": "Shipped native Astro hosting on ohmyho.st",
+  "detail": "Added static and Workers server-rendered Astro hosting, then verified the sebmer.com migration through Dev and Prod with client release 0.1.35."
+}

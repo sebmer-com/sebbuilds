@@ -1,15 +1,15 @@
 {
   "title": "Amerged",
   "slug": "amerged-website",
-  "description": "An interactive consultancy website explaining custom AI software, agentic workflows, context engineering, and hands-on training.",
-  "date": "2026-09-22",
+  "description": "Amerged’s AI consultancy website, with an animated brand story, reusable presentation templates and a multilingual document library.",
+  "date": "2026-10-19",
   "tags": [
-    "Next.js",
+    "AI Software",
     "Editorial Design",
-    "AI"
+    "Next.js"
   ],
   "status": "building",
   "featured": true,
-  "body": "Amerged is an interactive company website presenting AI software development, agentic workflows, context engineering, and hands-on training. This project is the website implementation, not a claim that every advertised service is a finished software product.\n\n## What was built\n\nA Next.js editorial landing page uses custom SVG artwork and an animated brand narrative to explain the company’s work. A knowledge-funnel animation makes the context-engineering story visible as the reader reaches it.\n\n## Recent work\n\nSeptember work refined the animated hero, improved the mobile composition so the brand, headline, and call to action fit together, and added canonical metadata, organization structured data, social previews, and a cookie notice.\n\n## Design direction\n\nThe website connects an expressive visual identity to a concrete explanation of the work. Animation supports the narrative rather than replacing it.",
+  "body": "[Amerged](https://amerged.com) works on custom AI software, agentic workflows, context engineering and practical training. I built its company website and the brand tools that support that work.\n\n## An editorial website for technical work\n\nThe website combines a drawn-a brand story with an interactive explanation of context engineering. Visitors can explore how process signals become shared context, working software and operational value. The initial website work began on 18 September 2026, followed by refinements to the animated hero, mobile layout and social previews on 22 September.\n\n## A reusable brand and presentation system\n\nThe 29 September work brought the identity into a public brand library, with logo variants, an email signature and ten reusable presentation layouts. PowerPoint and editable single-file HTML downloads make the same visual language useful beyond the website.\n\n## Recent work: documents in three languages\n\nOn 19 October 2026, I added a dedicated library for six agreements and privacy documents in Dutch, English and German. Each document has a readable web page and a PDF download generated in the browser. Markdown source pages make the published text accessible to agents and other tools.\n\n## Follow the project\n\n[Visit Amerged](https://amerged.com), explore the [brand library](https://amerged.com/brand) or read the [document library](https://amerged.com/legal?lang=en).",
   "demoUrl": "https://amerged.com"
 }
