@@ -1,0 +1,6 @@
+{
+  "id": "2026-10-28-maas-studio-tv",
+  "date": "2026-10-28",
+  "text": "Installed a cast-only guest TV home for Maas Studio",
+  "detail": "Built a native Android TV welcome screen with English, German and Dutch, ten-second Wi-Fi/check-in QR alternation, complete FAQ answers and photos, and twelve local tips with Maps codes. Verified the installed home and idle screens; 87 native tests pass. Casting, phone scans and wider hardware acceptance remain separate checks."
+}
