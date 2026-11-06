@@ -1,0 +1,6 @@
+{
+  "id": "2026-09-29-airader-replay-storage",
+  "date": "2026-09-29",
+  "text": "Made airader replay storage verifiable and cleanup resumable",
+  "detail": "Added immutable replay-file revisions with size and checksum checks, bounded session-list summaries, and cleanup records that survive retries. Updated the hosting runtime dependency; this is storage and portability work, not a new production-retention claim."
+}

@@ -1,0 +1,6 @@
+{
+  "id": "2026-11-01-ohmyhost-database-events",
+  "date": "2026-11-01",
+  "text": "Added database tables and change-event watches",
+  "detail": "Added table creation through the API, CLI and local MCP tools, plus table watches that deliver change events to webhooks. Verified table creation on the production platform and an insert-to-webhook flow in development."
+}

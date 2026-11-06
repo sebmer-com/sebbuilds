@@ -1,0 +1,6 @@
+{
+  "id": "2026-09-25-wispr-transcription-options",
+  "date": "2026-09-25",
+  "text": "Expanded local transcription options and command safeguards",
+  "detail": "Removed the fixed recording cutoff, updated the default speech model to Parakeet Ultra, added optional local Qwen3-ASR transcription and tightened handling of incomplete hosted-command responses."
+}

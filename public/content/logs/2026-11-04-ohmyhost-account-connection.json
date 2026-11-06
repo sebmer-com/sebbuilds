@@ -1,0 +1,6 @@
+{
+  "id": "2026-11-04-ohmyhost-account-connection",
+  "date": "2026-11-04",
+  "text": "Simplified account access for connected coding agents",
+  "detail": "Connected agents now use the account’s current permissions without a separate project-grant step. Verified an existing ChatGPT connection creating an app, deploying it to Dev and promoting the same build to Prod; vendor-directory publication is a separate boundary."
+}

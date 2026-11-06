@@ -1,0 +1,6 @@
+{
+  "id": "2026-10-16-mono-trade-reproducible-research",
+  "date": "2026-10-16",
+  "text": "Consolidated Mono Trade’s reproducible research stack",
+  "detail": "Brought market-data collection, PostgreSQL persistence and frozen-input research workflows into one codebase. Observation provenance and data-quality limits remain explicit, and historical implementations stay distinct from current research."
+}

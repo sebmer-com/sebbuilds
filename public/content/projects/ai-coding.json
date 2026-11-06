@@ -1,0 +1,15 @@
+{
+  "title": "AI-Coding: A Test-First Workflow for Coding Agents",
+  "slug": "ai-coding",
+  "description": "Bilingual examples, templates and guides that connect product context, small implementation plans and test evidence for development with coding agents.",
+  "date": "2026-10-25",
+  "tags": [
+    "AI Engineering",
+    "Coding Agents",
+    "Test-Driven Development"
+  ],
+  "status": "shipped",
+  "featured": true,
+  "repoUrl": "https://github.com/sebmer-com/AI-Coding",
+  "body": "Coding agents need more than a prompt to build useful software. AI-Coding makes the surrounding work concrete: define the use case, sketch the product, write acceptance criteria, implement a small change and keep the evidence beside the code.\n\n## Context before code\n\nThe public repository contains matching English and German examples, reusable templates and short setup guides. A one-pager, moodboard, wireframes, architecture and small product requirements give an agent a concrete product to build rather than an open-ended instruction.\n\nA fictional Request board connects those documents to a React application with request capture, status changes, filtering and browser-local storage. Unit and browser tests sit alongside the requirements they check.\n\n## Small implementation loops\n\nThe workflow separates planning, implementation and verification. Each work package has an explicit status and evidence gate. An agent works on a bounded change; the result is reviewed against the acceptance criteria before the next package starts.\n\n## Recent work\n\nThe 25 October update added status filtering, design guidance, architecture sources and generated diagrams using [Mermaider](/projects/mermaider/). It also made the evidence required to move a work package from planned to done explicit.\n\nThe example remains deliberately local: sign-in and shared data are future work, not implemented capabilities. This page describes the public examples and templates, not the release of a wider course or workbook.\n\n[Explore the examples and templates on GitHub](https://github.com/sebmer-com/AI-Coding)."
+}

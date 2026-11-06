@@ -1,0 +1,6 @@
+{
+  "id": "2026-09-24-maasstudio-document-deletion",
+  "date": "2026-09-24",
+  "text": "Improved check-in resilience and document-deletion tracking",
+  "detail": "Decoupled core application startup from optional email configuration and preserved deletion evidence while hiding deleted document images from application reads. Legal and privacy acceptance remains a separate review."
+}

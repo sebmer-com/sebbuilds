@@ -1,0 +1,6 @@
+{
+  "id": "2026-10-25-ai-coding-workflow",
+  "date": "2026-10-25",
+  "text": "Connected AI-Coding examples to tests, diagrams and evidence gates",
+  "detail": "Extended the English and German Request board examples with status filtering and accompanying unit and browser tests. Added design guidance, Mermaid architecture sources, generated CI and status diagrams, and explicit evidence requirements for work-package statuses."
+}

@@ -1,0 +1,6 @@
+{
+  "id": "2026-09-28-project-elson-mailbox-connections",
+  "date": "2026-09-28",
+  "text": "Added controlled mailbox connections to Project ELSON",
+  "detail": "Implemented Microsoft 365 and SMTP/IMAP connection flows with workspace-scoped access and guarded pause, resume and disconnection. Extended review-controlled campaign workflows without implying unattended outreach is enabled."
+}

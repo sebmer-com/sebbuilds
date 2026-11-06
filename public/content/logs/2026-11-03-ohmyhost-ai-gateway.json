@@ -1,0 +1,6 @@
+{
+  "id": "2026-11-03-ohmyhost-ai-gateway",
+  "date": "2026-11-03",
+  "text": "Added AI access alongside application hosting",
+  "detail": "Shipped the ohmyho.st AI gateway and verified chat and streaming through deployed applications. AI access is configured alongside the app, with usage attributed to its project and environment. Live realtime voice remains unverified."
+}

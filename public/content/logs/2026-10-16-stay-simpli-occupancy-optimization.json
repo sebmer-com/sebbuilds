@@ -1,0 +1,6 @@
+{
+  "id": "2026-10-16-stay-simpli-occupancy-optimization",
+  "date": "2026-10-16",
+  "text": "Added reviewable occupancy optimization to Stay Simpli",
+  "detail": "Added room-allocation previews that respect existing occupancy constraints, reject stale plans before application and support a separate synthetic-data local demo without copying guest records."
+}
